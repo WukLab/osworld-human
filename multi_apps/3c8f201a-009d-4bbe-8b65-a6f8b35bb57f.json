@@ -1,0 +1,84 @@
+{
+  "id": "3c8f201a-009d-4bbe-8b65-a6f8b35bb57f",
+  "snapshot": "gimp",
+  "instruction": "Download the image from \"https://drive.google.com/uc?export=download&id=1VIwIhLpkRr72DTuJINsZQ-DDwHAtfddq\", and then use GIMP to compress it to under 600KB as \"compressed.jpeg\" on the Desktop. Resize if needed.",
+  "source": "",
+  "config": [
+    {
+      "type": "execute",
+      "parameters": {
+        "command": [
+          "python",
+          "-c",
+          "import pyautogui; import time; pyautogui.hotkey(\"ctrl\", \"alt\", \"t\"); time.sleep(0.5);"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "gimp",
+    "os"
+  ],
+  "evaluator": {
+    "func": "check_image_file_size",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/compressed.jpeg",
+      "dest": "compressed.jpeg"
+    },
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "max_size": 600000
+      }
+    }
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
+      "`TYPING` wget -O /home/user/Desktop/downloaded_image.jpeg \"https://drive.google.com/uc?export=download&id=1VIwIhLpkRr72DTuJINsZQ-DDwHAtfddq\"",
+      "`PRESS` Enter",
+      "`TYPING` gimp /home/user/Desktop/downloaded_image.jpeg",
+      "`PRESS` Enter",
+      "`WAIT`",
+      "`CLICK` on 'File'",
+      "`CLICK` on 'Export As'",
+      "`TYPING` /home/user/Desktop/compressed.jpeg",
+      "`CLICK` on 'Export'",
+      "`CLICK` on the 'Quality' slider and adjust it until the file size is below 600KB",
+      "`CLICK` on 'Export'"
+    ],
+    "grouped-action": [
+      [
+        "`TYPING` wget -O /home/user/Desktop/downloaded_image.jpeg \"https://drive.google.com/uc?export=download&id=1VIwIhLpkRr72DTuJINsZQ-DDwHAtfddq\"",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` gimp /home/user/Desktop/downloaded_image.jpeg",
+        "`PRESS` Enter"
+      ],
+      [
+        "`WAIT`"
+      ],
+      [
+        "`CLICK` on 'File'"
+      ],
+      [
+        "`CLICK` on 'Export As'"
+      ],
+      [
+        "`TYPING` /home/user/Desktop/compressed.jpeg"
+      ],
+      [
+        "`CLICK` on 'Export'"
+      ],
+      [
+        "`CLICK` on the 'Quality' slider and adjust it until the file size is below 600KB"
+      ],
+      [
+        "`CLICK` on 'Export'"
+      ]
+    ]
+  }
+}

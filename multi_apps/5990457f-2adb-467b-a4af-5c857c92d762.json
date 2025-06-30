@@ -1,0 +1,159 @@
+{
+  "id": "5990457f-2adb-467b-a4af-5c857c92d762",
+  "snapshot": "chrome",
+  "instruction": "Append one entry of AI researcher Yann LeCun from Google Scholar into an existing table researchers.xlsx.",
+  "source": "authors",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "google-chrome",
+          "--remote-debugging-port=1337"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "socat",
+          "tcp-listen:9222,fork",
+          "tcp:localhost:1337"
+        ]
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://drive.usercontent.google.com/download?id=1EbQ75SHLthiZCBqCJtO0fLXJZcKrNler&export=download&authuser=0&confirm=t",
+            "path": "/home/user/Desktop/researchers.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "nautilus",
+          "/home/user/Desktop"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "chrome",
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "func": "literal_match",
+    "result": {
+      "type": "content_from_vm_file",
+      "path": "/home/user/Desktop/researchers.xlsx",
+      "file_type": "xlsx",
+      "file_content": "last_row"
+    },
+    "expected": {
+      "type": "info_from_website",
+      "url": "https://scholar.google.com/citations?user=WLN3QrAAAAAJ&hl=en",
+      "infos": [
+        {
+          "action": "inner_text",
+          "selector": "#gsc_prf_in"
+        },
+        {
+          "action": "inner_text",
+          "selector": "#gsc_rsb_st > tbody > tr:nth-child(1) > td:nth-child(2)"
+        },
+        {
+          "action": "inner_text",
+          "selector": "#gsc_rsb_st > tbody > tr:nth-child(2) > td:nth-child(2)"
+        },
+        {
+          "action": "inner_text",
+          "selector": "#gsc_rsb_st > tbody > tr:nth-child(3) > td:nth-child(2)"
+        },
+        {
+          "action": "inner_text",
+          "selector": "#gsc_a_b > tr:nth-child(1) > td.gsc_a_t > a"
+        },
+        {
+          "action": "click_and_attribute",
+          "selector": [
+            "#gsc_a_b > tr:nth-child(1) > td.gsc_a_t > a",
+            "#gsc_oci_title_gg > div:nth-child(1) > a"
+          ],
+          "attribute": "href"
+        }
+      ],
+      "backups": [
+        "Yann LeCun",
+        "345074",
+        "147",
+        "372",
+        "Deep learning",
+        "https://hal.science/hal-04206682/document"
+      ]
+    },
+    "options": {
+      "type": "list",
+      "ignore_case": true
+    }
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
+      "`TYPING` google-chrome https://scholar.google.com/",
+      "`PRESS` enter",
+      "`TYPING` Yann LeCun",
+      "`CLICK` on 'Search' button",
+      "`TYPING` Please manually copy the desired information for Yann LeCun (e.g., name, current affiliation) from the Google Scholar page.",
+      "`WAIT` 5",
+      "`TYPING` libreoffice --calc /home/user/Desktop/researchers.xlsx",
+      "`PRESS` enter",
+      "`CLICK` on the first empty cell in the row after the last existing entry (e.g., if data ends at row 10, click A11)",
+      "`HOTKEY` ['control', 'v']",
+      "`TYPING` (After pasting the first piece of information, you may need to use 'Tab' or 'Right Arrow' and then 'Control+V' again to paste other pieces of information, like affiliation, into subsequent columns, assuming you copied them separately or can parse them visually.)",
+      "`HOTKEY` ['control', 's']"
+    ],
+    "grouped-action": [
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
+      ],
+      [
+        "`TYPING` google-chrome https://scholar.google.com/",
+        "`PRESS` enter"
+      ],
+      [
+        "`TYPING` Yann LeCun",
+        "`CLICK` on 'Search' button"
+      ],
+      [
+        "`TYPING` Please manually copy the desired information for Yann LeCun (e.g., name, current affiliation) from the Google Scholar page."
+      ],
+      [
+        "`WAIT` 5"
+      ],
+      [
+        "`TYPING` libreoffice --calc /home/user/Desktop/researchers.xlsx",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the first empty cell in the row after the last existing entry (e.g., if data ends at row 10, click A11)"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']"
+      ],
+      [
+        "`TYPING` (After pasting the first piece of information, you may need to use 'Tab' or 'Right Arrow' and then 'Control+V' again to paste other pieces of information, like affiliation, into subsequent columns, assuming you copied them separately or can parse them visually.)"
+      ],
+      [
+        "`HOTKEY` ['control', 's']"
+      ]
+    ]
+  }
+}

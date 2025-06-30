@@ -1,0 +1,49 @@
+{
+  "id": "7c4cc09e-7a92-40dd-8338-b2286535c4ed",
+  "snapshot": "vscode",
+  "instruction": "Please help me change the display language of VS Code to \"Arabic\".",
+  "source": "",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Visual Studio Code"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "vscode"
+  ],
+  "evaluator": {
+    "func": "infeasible"
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY` 'ctrl-P'",
+      "`TYPING` '> Configure Display Language'",
+      "`PRESS` 'enter'",
+      "`TYPING` 'arabic'",
+      "`FAIL`"
+    ],
+    "grouped-action": [
+      [
+        "`HOTKEY` 'ctrl-P'",
+        "`TYPING` '> Configure Display Language'",
+        "`PRESS` 'enter'",
+        "`TYPING` 'arabic'"
+      ],
+      [
+        "`FAIL`"
+      ]
+    ]
+  }
+}

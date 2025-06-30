@@ -1,0 +1,429 @@
+{
+  "id": "df67aebb-fb3a-44fd-b75b-51b6012df509",
+  "snapshot": "vscode",
+  "instruction": "I am writing my paper thesis. I have listed all referenced papers in the opened docx. But my mentor asked me to use latex instead of word writer. So could you help me export the dblp bibtex of these papers into 'references.bib'. By the way, if the paper is published, do not use the arxiv version. Separate each bibtex dict with a blank line for clarity.",
+  "source": "authors",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "google-chrome",
+          "--remote-debugging-port=1337"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "socat",
+          "tcp-listen:9222,fork",
+          "tcp:localhost:1337"
+        ]
+      }
+    },
+    {
+      "type": "chrome_open_tabs",
+      "parameters": {
+        "urls_to_open": [
+          "https://dblp.org/"
+        ]
+      }
+    },
+    {
+      "type": "execute",
+      "parameters": {
+        "command": [
+          "touch",
+          "/home/user/Desktop/references.bib"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "code",
+          "/home/user/Desktop/references.bib"
+        ]
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://drive.usercontent.google.com/download?id=1NDYJ7XyiUVJYuMBDAYvObrSZdODrhUMi&export=download&authuser=0&confirm=t",
+            "path": "/home/user/Desktop/references.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "libreoffice",
+          "--writer",
+          "/home/user/Desktop/references.docx"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "chrome",
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "func": "compare_text_file",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/references.bib",
+      "dest": "references.bib"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://drive.usercontent.google.com/download?id=1eeaPRSAWhzsNGFuda_u6phsdQMZHBkb2&export=download&authuser=0&confirm=t",
+      "dest": "gold_references.bib"
+    },
+    "options": {
+      "ignore_blanks": true
+    }
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
+      "`TYPING` google-chrome https://dblp.org/",
+      "`PRESS` Enter",
+      "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+      "`MOVE_TO` paper title location",
+      "`DRAG_TO` select the paper title",
+      "`HOTKEY`'Ctrl+C' copy title",
+      "`HOTKEY`'Alt+Tab' return to Chrome",
+      "`MOVE_TO` dblp search bar",
+      "`TYPING` paste copied title",
+      "`HOTKEY`'Ctrl+V'",
+      "`PRESS` Enter",
+      "`CLICK` on published version if available, else arXiv",
+      "`CLICK` on BibTeX link",
+      "`MOVE_TO` BibTeX text",
+      "`DRAG_TO` select BibTeX entry",
+      "`HOTKEY`'Ctrl+C' copy BibTeX",
+      "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+      "`TYPING` nano /home/user/Desktop/references.bib",
+      "`PRESS` Enter",
+      "`MOVE_TO` editor insert point",
+      "`HOTKEY`'Ctrl+V' paste BibTeX",
+      "`PRESS` Enter twice to insert blank line",
+      "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+      "`MOVE_TO` paper title location",
+      "`DRAG_TO` select the paper title",
+      "`HOTKEY`'Ctrl+C' copy title",
+      "`HOTKEY`'Alt+Tab' return to Chrome",
+      "`MOVE_TO` dblp search bar",
+      "`TYPING` paste copied title",
+      "`HOTKEY`'Ctrl+V'",
+      "`PRESS` Enter",
+      "`CLICK` on published version if available, else arXiv",
+      "`CLICK` on BibTeX link",
+      "`MOVE_TO` BibTeX text",
+      "`DRAG_TO` select BibTeX entry",
+      "`HOTKEY`'Ctrl+C' copy BibTeX",
+      "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+      "`TYPING` nano /home/user/Desktop/references.bib",
+      "`PRESS` Enter",
+      "`MOVE_TO` editor insert point",
+      "`HOTKEY`'Ctrl+V' paste BibTeX",
+      "`PRESS` Enter twice to insert blank line",
+      "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+      "`MOVE_TO` paper title location",
+      "`DRAG_TO` select the paper title",
+      "`HOTKEY`'Ctrl+C' copy title",
+      "`HOTKEY`'Alt+Tab' return to Chrome",
+      "`MOVE_TO` dblp search bar",
+      "`TYPING` paste copied title",
+      "`HOTKEY`'Ctrl+V'",
+      "`PRESS` Enter",
+      "`CLICK` on published version if available, else arXiv",
+      "`CLICK` on BibTeX link",
+      "`MOVE_TO` BibTeX text",
+      "`DRAG_TO` select BibTeX entry",
+      "`HOTKEY`'Ctrl+C' copy BibTeX",
+      "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+      "`TYPING` nano /home/user/Desktop/references.bib",
+      "`PRESS` Enter",
+      "`MOVE_TO` editor insert point",
+      "`HOTKEY`'Ctrl+V' paste BibTeX",
+      "`PRESS` Enter twice to insert blank line",
+      "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+      "`MOVE_TO` paper title location",
+      "`DRAG_TO` select the paper title",
+      "`HOTKEY`'Ctrl+C' copy title",
+      "`HOTKEY`'Alt+Tab' return to Chrome",
+      "`MOVE_TO` dblp search bar",
+      "`TYPING` paste copied title",
+      "`HOTKEY`'Ctrl+V'",
+      "`PRESS` Enter",
+      "`CLICK` on published version if available, else arXiv",
+      "`CLICK` on BibTeX link",
+      "`MOVE_TO` BibTeX text",
+      "`DRAG_TO` select BibTeX entry",
+      "`HOTKEY`'Ctrl+C' copy BibTeX",
+      "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+      "`TYPING` nano /home/user/Desktop/references.bib",
+      "`PRESS` Enter",
+      "`MOVE_TO` editor insert point",
+      "`HOTKEY`'Ctrl+V' paste BibTeX",
+      "`PRESS` Enter twice to insert blank line",
+      "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+      "`MOVE_TO` paper title location",
+      "`DRAG_TO` select the paper title",
+      "`HOTKEY`'Ctrl+C' copy title",
+      "`HOTKEY`'Alt+Tab' return to Chrome",
+      "`MOVE_TO` dblp search bar",
+      "`TYPING` paste copied title",
+      "`HOTKEY`'Ctrl+V'",
+      "`PRESS` Enter",
+      "`CLICK` on published version if available, else arXiv",
+      "`CLICK` on BibTeX link",
+      "`MOVE_TO` BibTeX text",
+      "`DRAG_TO` select BibTeX entry",
+      "`HOTKEY`'Ctrl+C' copy BibTeX",
+      "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+      "`TYPING` nano /home/user/Desktop/references.bib",
+      "`PRESS` Enter",
+      "`MOVE_TO` editor insert point",
+      "`HOTKEY`'Ctrl+V' paste BibTeX",
+      "`PRESS` Enter twice to insert blank line",
+      "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+      "`MOVE_TO` paper title location",
+      "`DRAG_TO` select the paper title",
+      "`HOTKEY`'Ctrl+C' copy title",
+      "`HOTKEY`'Alt+Tab' return to Chrome",
+      "`MOVE_TO` dblp search bar",
+      "`TYPING` paste copied title",
+      "`HOTKEY`'Ctrl+V'",
+      "`PRESS` Enter",
+      "`CLICK` on published version if available, else arXiv",
+      "`CLICK` on BibTeX link",
+      "`MOVE_TO` BibTeX text",
+      "`DRAG_TO` select BibTeX entry",
+      "`HOTKEY`'Ctrl+C' copy BibTeX",
+      "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+      "`TYPING` nano /home/user/Desktop/references.bib",
+      "`PRESS` Enter",
+      "`MOVE_TO` editor insert point",
+      "`HOTKEY`'Ctrl+V' paste BibTeX",
+      "`PRESS` Enter twice to insert blank line",
+      "`PRESS` Ctrl+O to save",
+      "`PRESS` Ctrl+X to exit"
+    ],
+    "grouped-action": [
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
+      ],
+      [
+        "`TYPING` google-chrome https://dblp.org/",
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+        "`MOVE_TO` paper title location",
+        "`DRAG_TO` select the paper title",
+        "`HOTKEY`'Ctrl+C' copy title"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' return to Chrome",
+        "`MOVE_TO` dblp search bar",
+        "`TYPING` paste copied title",
+        "`HOTKEY`'Ctrl+V'",
+        "`PRESS` Enter"
+      ],
+      [
+        "`CLICK` on published version if available, else arXiv"
+      ],
+      [
+        "`CLICK` on BibTeX link",
+        "`MOVE_TO` BibTeX text",
+        "`DRAG_TO` select BibTeX entry",
+        "`HOTKEY`'Ctrl+C' copy BibTeX"
+      ],
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+        "`TYPING` nano /home/user/Desktop/references.bib",
+        "`PRESS` Enter"
+      ],
+      [
+        "`MOVE_TO` editor insert point",
+        "`HOTKEY`'Ctrl+V' paste BibTeX",
+        "`PRESS` Enter twice to insert blank line"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+        "`MOVE_TO` paper title location",
+        "`DRAG_TO` select the paper title",
+        "`HOTKEY`'Ctrl+C' copy title"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' return to Chrome",
+        "`MOVE_TO` dblp search bar",
+        "`TYPING` paste copied title",
+        "`HOTKEY`'Ctrl+V'",
+        "`PRESS` Enter"
+      ],
+      [
+        "`CLICK` on published version if available, else arXiv"
+      ],
+      [
+        "`CLICK` on BibTeX link",
+        "`MOVE_TO` BibTeX text",
+        "`DRAG_TO` select BibTeX entry",
+        "`HOTKEY`'Ctrl+C' copy BibTeX"
+      ],
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+        "`TYPING` nano /home/user/Desktop/references.bib",
+        "`PRESS` Enter"
+      ],
+      [
+        "`MOVE_TO` editor insert point",
+        "`HOTKEY`'Ctrl+V' paste BibTeX",
+        "`PRESS` Enter twice to insert blank line"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+        "`MOVE_TO` paper title location",
+        "`DRAG_TO` select the paper title",
+        "`HOTKEY`'Ctrl+C' copy title"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' return to Chrome",
+        "`MOVE_TO` dblp search bar",
+        "`TYPING` paste copied title",
+        "`HOTKEY`'Ctrl+V'",
+        "`PRESS` Enter"
+      ],
+      [
+        "`CLICK` on published version if available, else arXiv"
+      ],
+      [
+        "`CLICK` on BibTeX link",
+        "`MOVE_TO` BibTeX text",
+        "`DRAG_TO` select BibTeX entry",
+        "`HOTKEY`'Ctrl+C' copy BibTeX"
+      ],
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+        "`TYPING` nano /home/user/Desktop/references.bib",
+        "`PRESS` Enter"
+      ],
+      [
+        "`MOVE_TO` editor insert point",
+        "`HOTKEY`'Ctrl+V' paste BibTeX",
+        "`PRESS` Enter twice to insert blank line"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+        "`MOVE_TO` paper title location",
+        "`DRAG_TO` select the paper title",
+        "`HOTKEY`'Ctrl+C' copy title"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' return to Chrome",
+        "`MOVE_TO` dblp search bar",
+        "`TYPING` paste copied title",
+        "`HOTKEY`'Ctrl+V'",
+        "`PRESS` Enter"
+      ],
+      [
+        "`CLICK` on published version if available, else arXiv"
+      ],
+      [
+        "`CLICK` on BibTeX link",
+        "`MOVE_TO` BibTeX text",
+        "`DRAG_TO` select BibTeX entry",
+        "`HOTKEY`'Ctrl+C' copy BibTeX"
+      ],
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+        "`TYPING` nano /home/user/Desktop/references.bib",
+        "`PRESS` Enter"
+      ],
+      [
+        "`MOVE_TO` editor insert point",
+        "`HOTKEY`'Ctrl+V' paste BibTeX",
+        "`PRESS` Enter twice to insert blank line"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+        "`MOVE_TO` paper title location",
+        "`DRAG_TO` select the paper title",
+        "`HOTKEY`'Ctrl+C' copy title"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' return to Chrome",
+        "`MOVE_TO` dblp search bar",
+        "`TYPING` paste copied title",
+        "`HOTKEY`'Ctrl+V'",
+        "`PRESS` Enter"
+      ],
+      [
+        "`CLICK` on published version if available, else arXiv"
+      ],
+      [
+        "`CLICK` on BibTeX link",
+        "`MOVE_TO` BibTeX text",
+        "`DRAG_TO` select BibTeX entry",
+        "`HOTKEY`'Ctrl+C' copy BibTeX"
+      ],
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+        "`TYPING` nano /home/user/Desktop/references.bib",
+        "`PRESS` Enter"
+      ],
+      [
+        "`MOVE_TO` editor insert point",
+        "`HOTKEY`'Ctrl+V' paste BibTeX",
+        "`PRESS` Enter twice to insert blank line"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' to switch to LibreOffice Writer",
+        "`MOVE_TO` paper title location",
+        "`DRAG_TO` select the paper title",
+        "`HOTKEY`'Ctrl+C' copy title"
+      ],
+      [
+        "`HOTKEY`'Alt+Tab' return to Chrome",
+        "`MOVE_TO` dblp search bar",
+        "`TYPING` paste copied title",
+        "`HOTKEY`'Ctrl+V'",
+        "`PRESS` Enter"
+      ],
+      [
+        "`CLICK` on published version if available, else arXiv"
+      ],
+      [
+        "`CLICK` on BibTeX link",
+        "`MOVE_TO` BibTeX text",
+        "`DRAG_TO` select BibTeX entry",
+        "`HOTKEY`'Ctrl+C' copy BibTeX"
+      ],
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open a second terminal",
+        "`TYPING` nano /home/user/Desktop/references.bib",
+        "`PRESS` Enter"
+      ],
+      [
+        "`MOVE_TO` editor insert point",
+        "`HOTKEY`'Ctrl+V' paste BibTeX",
+        "`PRESS` Enter twice to insert blank line"
+      ],
+      [
+        "`PRESS` Ctrl+O to save",
+        "`PRESS` Ctrl+X to exit"
+      ]
+    ]
+  }
+}

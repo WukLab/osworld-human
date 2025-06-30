@@ -1,0 +1,131 @@
+{
+  "id": "236833a3-5704-47fc-888c-4f298f09f799",
+  "snapshot": "chrome",
+  "instruction": "Find the daily paper list on Huggingface and take down the meta information of papers on 1st March, 2024 in the opened .docx file. I have recorded two papers. Please conform to the format and complete others.",
+  "source": "authors",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "google-chrome",
+          "--remote-debugging-port=1337"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "socat",
+          "tcp-listen:9222,fork",
+          "tcp:localhost:1337"
+        ]
+      }
+    },
+    {
+      "type": "chrome_open_tabs",
+      "parameters": {
+        "urls_to_open": [
+          "https://huggingface.co/"
+        ]
+      }
+    },
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://drive.usercontent.google.com/download?id=1WEDfILO-NijZBGArZ3ovO1933uHeOi1A&export=download&authuser=0&confirm=t",
+            "path": "/home/user/Desktop/paper_reading_2024_03_01.docx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "libreoffice",
+          "--writer",
+          "/home/user/Desktop/paper_reading_2024_03_01.docx"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "chrome",
+    "libreoffice_writer"
+  ],
+  "evaluator": {
+    "func": "compare_docx_files",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/paper_reading_2024_03_01.docx",
+      "dest": "paper_reading_2024_03_01.docx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://drive.usercontent.google.com/download?id=1wb0sQnVDCAz8sS49kO8boJIa1kqI5mx0&export=download&authuser=0&confirm=t",
+      "dest": "gold_paper_reading_2024_03_01.docx"
+    },
+    "options": {
+      "ignore_blanks": true,
+      "ignore_case": true,
+      "ignore_order": true
+    }
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
+      "`TYPING` firefox https://huggingface.co/papers",
+      "`PRESS` Enter",
+      "`WAIT` for the Hugging Face Papers page to load",
+      "`SCROLL` navigate to March 1st, 2024",
+      "`CLICK` the section for papers on 1st March, 2024",
+      "`MOVE_TO` before the title, authors, publication venue, and URL for each paper",
+      "`DRAG_TO` after the title, authors, publication venue, and URL for each paper",
+      "`HOTKEY` 'Ctrl+C'",
+      "`HOTKEY`'Ctrl+Alt+T' open new terminal or reuse",
+      "`TYPING` libreoffice --writer ~/Desktop/daily_papers.docx",
+      "`PRESS` Enter",
+      "`WAIT` for document to open",
+      "`SCROLL` navigate to the end",
+      "`CLICK` to write",
+      "`HOTKEY` 'Ctrl+V' append the remaining paper entries under March 1st, 2024, matching the format of the first two",
+      "`SAVE` the document"
+    ],
+    "grouped-action": [
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open the terminal",
+        "`TYPING` firefox https://huggingface.co/papers",
+        "`PRESS` Enter"
+      ],
+      [
+        "`WAIT` for the Hugging Face Papers page to load",
+        "`SCROLL` navigate to March 1st, 2024",
+        "`CLICK` the section for papers on 1st March, 2024"
+      ],
+      [
+        "`MOVE_TO` before the title, authors, publication venue, and URL for each paper",
+        "`DRAG_TO` after the title, authors, publication venue, and URL for each paper",
+        "`HOTKEY` 'Ctrl+C'"
+      ],
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open new terminal or reuse",
+        "`TYPING` libreoffice --writer ~/Desktop/daily_papers.docx",
+        "`PRESS` Enter",
+        "`WAIT` for document to open"
+      ],
+      [
+        "`SCROLL` navigate to the end",
+        "`CLICK` to write"
+      ],
+      [
+        "`HOTKEY` 'Ctrl+V' append the remaining paper entries under March 1st, 2024, matching the format of the first two",
+        "`SAVE` the document"
+      ]
+    ]
+  }
+}

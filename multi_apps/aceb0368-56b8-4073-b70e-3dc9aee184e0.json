@@ -1,0 +1,243 @@
+{
+  "id": "aceb0368-56b8-4073-b70e-3dc9aee184e0",
+  "snapshot": "libreoffice_calc",
+  "instruction": "I am grading students' English exam papers, but the test consists only of multiple-choice questions. It's too exhausting to check each question one by one and record the detailed scores. Can you help me compare the remaining students' answers with the answer key and record the detailed scoring in the opened spreadsheet?",
+  "source": "authors",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://drive.usercontent.google.com/download?id=1CfzBZxhhV1_vUKhxsP_4M574-XFm1qIo&export=download&authuser=0&confirm=t",
+            "path": "/home/user/exam.zip"
+          }
+        ]
+      }
+    },
+    {
+      "type": "execute",
+      "parameters": {
+        "command": [
+          "unzip",
+          "/home/user/exam.zip",
+          "-d",
+          "/home/user/"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "libreoffice",
+          "--writer",
+          "/home/user/exam/ReferenceAnswers.docx"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "libreoffice",
+          "--calc",
+          "/home/user/exam/grades.xlsx"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "nautilus",
+          "/home/user/exam/"
+        ]
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "thunderbird",
+    "os"
+  ],
+  "evaluator": {
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://drive.google.com/uc?id=1a0gZwixcJuZAUtqGR3L5P20JmoWfQU_d&export=download&authuser=0&confirm=t",
+      "dest": "gold_grades.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/exam/grades.xlsx",
+      "dest": "grades.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        }
+      ]
+    }
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`CLICK` /home/user/exam/ReferenceAnswers.docx",
+      "`CLICK` on the LibreOffice Writer window to make it active",
+      "`HOTKEY` 'Ctrl+Home' to go to the beginning of the document",
+      "`DOUBLE_CLICK` /home/user/exam/",
+      "`DOUBLE_CLICK` on the first student's exam paper",
+      "`CLICK` on the student's exam paper window to make it active",
+      "`SCROLL` down to view the answers",
+      "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+      "`SCROLL` down to view the corresponding reference answers",
+      "`CLICK` on the LibreOffice Calc window to make it active",
+      "`CLICK` on the cell where the first student's score should be entered",
+      "`TYPING` [score for this student]",
+      "`PRESS` Enter",
+      "`CLICK` close [student exam paper window]",
+      "`DOUBLE_CLICK` on the next student's exam paper",
+      "`CLICK` on the student's exam paper window to make it active",
+      "`SCROLL` down to view the answers",
+      "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+      "`SCROLL` down to view the corresponding reference answers",
+      "`CLICK` on the LibreOffice Calc window to make it active",
+      "`CLICK` on the cell for the next student's score",
+      "`TYPING` [score for this student]",
+      "`PRESS` Enter",
+      "`CLICK` close [student exam paper window]",
+      "`DOUBLE_CLICK` on the next student's exam paper",
+      "`CLICK` on the student's exam paper window to make it active",
+      "`SCROLL` down to view the answers",
+      "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+      "`SCROLL` down to view the corresponding reference answers",
+      "`CLICK` on the LibreOffice Calc window to make it active",
+      "`CLICK` on the cell for the next student's score",
+      "`TYPING` [score for this student]",
+      "`PRESS` Enter",
+      "`CLICK` close [student exam paper window]",
+      "`DOUBLE_CLICK` on the next student's exam paper",
+      "`CLICK` on the student's exam paper window to make it active",
+      "`SCROLL` down to view the answers",
+      "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+      "`SCROLL` down to view the corresponding reference answers",
+      "`CLICK` on the LibreOffice Calc window to make it active",
+      "`CLICK` on the cell for the next student's score",
+      "`TYPING` [score for this student]",
+      "`PRESS` Enter",
+      "`CLICK` close [student exam paper window]",
+      "`DOUBLE_CLICK` on the next student's exam paper",
+      "`CLICK` on the student's exam paper window to make it active",
+      "`SCROLL` down to view the answers",
+      "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+      "`SCROLL` down to view the corresponding reference answers",
+      "`CLICK` on the LibreOffice Calc window to make it active",
+      "`CLICK` on the cell for the next student's score",
+      "`TYPING` [score for this student]",
+      "`PRESS` Enter",
+      "`CLICK` close [student exam paper window]",
+      "`DOUBLE_CLICK` on the next student's exam paper",
+      "`CLICK` on the student's exam paper window to make it active",
+      "`SCROLL` down to view the answers",
+      "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+      "`SCROLL` down to view the corresponding reference answers",
+      "`CLICK` on the LibreOffice Calc window to make it active",
+      "`CLICK` on the cell for the next student's score",
+      "`TYPING` [score for this student]",
+      "`PRESS` Enter",
+      "`CLICK` close [student exam paper window]",
+      "`DOUBLE_CLICK` on the next student's exam paper",
+      "`CLICK` on the student's exam paper window to make it active",
+      "`SCROLL` down to view the answers",
+      "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+      "`SCROLL` down to view the corresponding reference answers",
+      "`CLICK` on the LibreOffice Calc window to make it active",
+      "`CLICK` on the cell for the next student's score",
+      "`TYPING` [score for this student]",
+      "`PRESS` Enter",
+      "`CLICK` close [student exam paper window]",
+      "`DOUBLE_CLICK` on the next student's exam paper",
+      "`CLICK` on the student's exam paper window to make it active",
+      "`SCROLL` down to view the answers",
+      "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+      "`SCROLL` down to view the corresponding reference answers",
+      "`CLICK` on the LibreOffice Calc window to make it active",
+      "`CLICK` on the cell for the next student's score",
+      "`TYPING` [score for this student]",
+      "`PRESS` Enter",
+      "`CLICK` close [student exam paper window]",
+      "`DOUBLE_CLICK` on the next student's exam paper",
+      "`CLICK` on the student's exam paper window to make it active",
+      "`SCROLL` down to view the answers",
+      "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+      "`SCROLL` down to view the corresponding reference answers",
+      "`CLICK` on the LibreOffice Calc window to make it active",
+      "`CLICK` on the cell for the next student's score",
+      "`TYPING` [score for this student]",
+      "`PRESS` Enter",
+      "`CLICK` close [student exam paper window]",
+      "`DOUBLE_CLICK` on the next student's exam paper",
+      "`CLICK` on the student's exam paper window to make it active",
+      "`SCROLL` down to view the answers",
+      "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+      "`SCROLL` down to view the corresponding reference answers",
+      "`CLICK` on the LibreOffice Calc window to make it active",
+      "`CLICK` on the cell for the next student's score",
+      "`TYPING` [score for this student]",
+      "`PRESS` Enter",
+      "`CLICK` close [student exam paper window]"
+    ],
+    "grouped-action": [
+      [
+        "`CLICK` /home/user/exam/ReferenceAnswers.docx",
+        "`CLICK` on the LibreOffice Writer window to make it active",
+        "`HOTKEY` 'Ctrl+Home' to go to the beginning of the document"
+      ],
+      [
+        "`OPEN_FOLDER` /home/user/exam/"
+      ],
+      [
+        "`DOUBLE_CLICK` on the first student's exam paper",
+        "`CLICK` on the student's exam paper window to make it active",
+        "`SCROLL` down to view the answers"
+      ],
+      [
+        "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+        "`SCROLL` down to view the corresponding reference answers"
+      ],
+      [
+        "`CLICK` on the LibreOffice Calc window to make it active",
+        "`CLICK` on the cell where the first student's score should be entered",
+        "`TYPING` [score for student]",
+        "`PRESS` Enter"
+      ],
+      [
+        "`CLOSE_WINDOW` [student exam paper window]"
+      ],
+      [
+        "`DOUBLE_CLICK` on the next student's exam paper",
+        "`CLICK` on the student's exam paper window to make it active",
+        "`SCROLL` down to view the answers"
+      ],
+      [
+        "`CLICK` on the LibreOffice Writer window with the reference answers to make it active",
+        "`SCROLL` down to view the corresponding reference answers"
+      ],
+      [
+        "`CLICK` on the LibreOffice Calc window to make it active",
+        "`CLICK` on the cell for the next student's score",
+        "`TYPING` [score for student]",
+        "`PRESS` Enter"
+      ],
+      [
+        "`CLOSE_WINDOW` [student exam paper window]"
+      ],
+      [
+        "`REPEAT_UNTIL_DONE` compare and record scores for all remaining students"
+      ]
+    ]
+  }
+}

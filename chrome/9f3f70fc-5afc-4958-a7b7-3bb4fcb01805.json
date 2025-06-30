@@ -1,0 +1,120 @@
+{
+  "id": "9f3f70fc-5afc-4958-a7b7-3bb4fcb01805",
+  "snapshot": "chrome",
+  "instruction": "Browse the list of women's Nike jerseys over $60.",
+  "source": "test_task_1",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "google-chrome",
+          "--remote-debugging-port=1337"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "socat",
+          "tcp-listen:9222,fork",
+          "tcp:localhost:1337"
+        ]
+      }
+    },
+    {
+      "type": "chrome_open_tabs",
+      "parameters": {
+        "urls_to_open": [
+          "https://www.nba.com/"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Google Chrome"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "chrome"
+  ],
+  "evaluator": {
+    "func": [
+      "is_expected_url_pattern_match",
+      "check_direct_json_object"
+    ],
+    "conj": "and",
+    "result": [
+      {
+        "type": "active_tab_info"
+      },
+      {
+        "type": "active_tab_html_parse",
+        "category": "xpath",
+        "xpathObject": {
+          "/html/body/div[2]/div/div[6]/div[2]/div[2]/div/div[1]/div[4]/ul/li[2]": "money"
+        }
+      }
+    ],
+    "expected": [
+      {
+        "type": "rule",
+        "rules": {
+          "expected": [
+            "/women-jerseys/"
+          ]
+        }
+      },
+      {
+        "type": "rule",
+        "rules": {
+          "expected": {
+            "money": "over $60"
+          }
+        }
+      }
+    ]
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`MOVE_TO` 'Store' in the top navigation bar",
+      "`CLICK` 'Jerseys'",
+      "`SCROLL` down 400 units (-400)",
+      "`CLICK` the radio button next to 'Women' under gender/age",
+      "`SCROLL` down 400 units (-400)",
+      "`CLICK` the radio button next to 'Nike' under featured brands",
+      "`SCROLL` down 400 units (-400)",
+      "`CLICK` the radio button next to 'over $60' under price range"
+    ],
+    "grouped-action": [
+      [
+        "`MOVE_TO` 'Store' in the top navigation bar"
+      ],
+      [
+        "`CLICK` 'Jerseys'"
+      ],
+      [
+        "`SCROLL` down 400 units (-400)"
+      ],
+      [
+        "`CLICK` the radio button next to 'Women' under gender/age"
+      ],
+      [
+        "`SCROLL` down 400 units (-400)"
+      ],
+      [
+        "`CLICK` the radio button next to 'Nike' under featured brands"
+      ],
+      [
+        "`SCROLL` down 400 units (-400)"
+      ],
+      [
+        "`CLICK` the radio button next to 'over $60' under price range"
+      ]
+    ]
+  }
+}

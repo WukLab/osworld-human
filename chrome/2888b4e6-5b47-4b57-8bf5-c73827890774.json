@@ -1,0 +1,149 @@
+{
+  "id": "2888b4e6-5b47-4b57-8bf5-c73827890774",
+  "snapshot": "chrome",
+  "instruction": "Find a men's T-Shirt that is in large size with a stripe pattern, short sleeve and under the Sales&Discount.",
+  "source": "test_task_1",
+  "config": [
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "google-chrome",
+          "--remote-debugging-port=1337"
+        ]
+      }
+    },
+    {
+      "type": "launch",
+      "parameters": {
+        "command": [
+          "socat",
+          "tcp-listen:9222,fork",
+          "tcp:localhost:1337"
+        ]
+      }
+    },
+    {
+      "type": "chrome_open_tabs",
+      "parameters": {
+        "urls_to_open": [
+          "https://www.macys.com/"
+        ]
+      }
+    },
+    {
+      "type": "activate_window",
+      "parameters": {
+        "window_name": "Google Chrome"
+      }
+    }
+  ],
+  "trajectory": "trajectories/",
+  "related_apps": [
+    "chrome"
+  ],
+  "evaluator": {
+    "func": "exact_match",
+    "result": {
+      "type": "url_dashPart",
+      "goto_prefix": "https://www.",
+      "partIndex": -1,
+      "needDeleteId": true,
+      "returnType": "string"
+    },
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "expected": "Stripe,Men,L,Short%20Sleeve,Sales%20%26%20Discounts"
+      }
+    }
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`MOVE_TO` 'Men'",
+      "`CLICK` 'Shirts and T-shirts' under Men's clothing",
+      "`CLICK` 'All filters'",
+      "`CLICK` 'Size' dropdown on the right to expand",
+      "`CLICK` 'L",
+      "`CLICK` 'Size' dropdown on the right to minimize",
+      "`CLICK` 'Sleeve length' dropdown on the right to expand",
+      "`CLICK` the 'Short sleeve' checkbox",
+      "`CLICK` 'Sleeve length' dropdown on the right to minimize",
+      "`CLICK` 'See More Filters'",
+      "`SCROLL` down 100 units (-100)",
+      "`CLICK` 'Pattern' dropdown on the right to expand",
+      "`MOVE_TO` the space under the dropdown",
+      "`SCROLL` down 100 units (-100)",
+      "`SCROLL` down 100 units (-100)",
+      "`CLICK` the 'Stripe' checkbox",
+      "`CLICK` 'Pattern' dropdown on the right to minimize",
+      "`CLICK` 'Offers' dropdown on the right to expand",
+      "`CLICK` the 'Sales & Discounts' checkbox",
+      "`CLICK` 'Offers' dropdown on the right to minimize",
+      "`CLICK` View Items"
+    ],
+    "grouped-action": [
+      [
+        "`MOVE_TO` 'Men'"
+      ],
+      [
+        "`CLICK` 'Shirts and T-shirts' under Men's clothing"
+      ],
+      [
+        "`CLICK` 'All filters'"
+      ],
+      [
+        "`CLICK` 'Size' dropdown on the right to expand"
+      ],
+      [
+        "`CLICK` 'L"
+      ],
+      [
+        "`CLICK` 'Size' dropdown on the right to minimize"
+      ],
+      [
+        "`CLICK` 'Sleeve length' dropdown on the right to expand"
+      ],
+      [
+        "`CLICK` the 'Short sleeve' checkbox"
+      ],
+      [
+        "`CLICK` 'Sleeve length' dropdown on the right to minimize"
+      ],
+      [
+        "`CLICK` 'See More Filters'"
+      ],
+      [
+        "`SCROLL` down 100 units (-100)"
+      ],
+      [
+        "`CLICK` 'Pattern' dropdown on the right to expand"
+      ],
+      [
+        "`MOVE_TO` the space under the dropdown"
+      ],
+      [
+        "`SCROLL` down 100 units (-100)",
+        "`SCROLL` down 100 units (-100)"
+      ],
+      [
+        "`CLICK` the 'Stripe' checkbox"
+      ],
+      [
+        "`CLICK` 'Pattern' dropdown on the right to minimize"
+      ],
+      [
+        "`CLICK` 'Offers' dropdown on the right to expand"
+      ],
+      [
+        "`CLICK` the 'Sales & Discounts' checkbox"
+      ],
+      [
+        "`CLICK` 'Offers' dropdown on the right to minimize"
+      ],
+      [
+        "`CLICK` View Items"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "id": "8e116af7-7db7-4e35-a68b-b0939c066c78",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Please update my bookkeeping sheet with the recent transactions from the provided folder, detailing my expenses over the past few days.",
+  "source": "authors",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "path": "/home/user/Desktop/my_bookkeeping.xlsx",
+            "url": "https://drive.google.com/uc?id=1QOSpTZPFzFZeC0tng4Gfws544LFln836&export=download"
+          },
+          {
+            "path": "/home/user/Desktop/receipt_0.jpeg",
+            "url": "https://drive.google.com/uc?id=1b0BRc-BzXObVCUEonJfRbDsrgxZugj3U&export=download"
+          },
+          {
+            "path": "/home/user/Desktop/receipt_1.jpg",
+            "url": "https://drive.google.com/uc?id=1S-JBDqwEf7Z_JXDItK_F4BOHgScTjlyN&export=download"
+          },
+          {
+            "path": "/home/user/Desktop/receipt_2.jpg",
+            "url": "https://drive.google.com/uc?id=1Ys2abZi9_0y8sxuj2vCbC0OhjC6YdrC-&export=download"
+          },
+          {
+            "path": "/home/user/Desktop/receipt_3.pdf",
+            "url": "https://drive.google.com/uc?id=1sKvBbGDpmUkv891xTqX7w5dtEvchQahd&export=download"
+          },
+          {
+            "path": "/home/user/Desktop/receipt_4.jpg",
+            "url": "https://drive.google.com/uc?id=1kW7xH5bc2jRaKGDKHDrgSehTrPgkyzkc&export=download"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/my_bookkeeping.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/8e116af7-7db7-4e35-a68b-b0939c066c78",
+  "related_apps": [
+    "libreoffice_calc",
+    "os",
+    "image",
+    "pdf"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "my_bookkeeping.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 1.0
+        }
+      }
+    ],
+    "func": "compare_table",
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/Desktop/my_bookkeeping.xlsx",
+      "dest": "my_bookkeeping.xlsx"
+    },
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://drive.google.com/uc?id=1ygEDdVlkf2ZyqMxJ_ktqo9G_g--rc6co&export=download",
+      "dest": "my_bookkeeping_gold.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_fuzzy",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1",
+          "rules": [
+            {
+              "range": [
+                "A1:A8",
+                "B1:B8",
+                "C1:C8",
+                "D1:D8",
+                "E1:E8"
+              ],
+              "type": "exact_match"
+            }
+          ]
+        },
+        {
+          "type": "sheet_fuzzy",
+          "sheet_idx0": "RNSheet1",
+          "sheet_idx1": "ENSheet1",
+          "rules": [
+            {
+              "range": [
+                "C9:C13"
+              ],
+              "type": "exact_match",
+              "ignore_case": true
+            }
+          ]
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": 0,
+          "coordinate": "D9",
+          "props": {
+            "value": {
+              "method": "approx:0.1",
+              "ref": -186.93
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": 0,
+          "coordinate": "D10",
+          "props": {
+            "value": {
+              "method": "approx:0.1",
+              "ref": -3670
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": 0,
+          "coordinate": "D11",
+          "props": {
+            "value": {
+              "method": "approx:0.1",
+              "ref": -5.7
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": 0,
+          "coordinate": "D12",
+          "props": {
+            "value": {
+              "method": "approx:0.1",
+              "ref": -154.06
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": 0,
+          "coordinate": "D13",
+          "props": {
+            "value": {
+              "method": "approx:0.1",
+              "ref": -8.1
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": 0,
+          "coordinate": "E9",
+          "props": {
+            "value": {
+              "method": "approx:0.1",
+              "ref": 603.07
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": 0,
+          "coordinate": "E10",
+          "props": {
+            "value": {
+              "method": "approx:0.1",
+              "ref": -3066.93
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": 0,
+          "coordinate": "E11",
+          "props": {
+            "value": {
+              "method": "approx:0.1",
+              "ref": -3072.63
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": 0,
+          "coordinate": "E12",
+          "props": {
+            "value": {
+              "method": "approx:0.1",
+              "ref": -3226.69
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": 0,
+          "coordinate": "E13",
+          "props": {
+            "value": {
+              "method": "approx:0.1",
+              "ref": -3234.79
+            }
+          }
+        }
+      ]
+    }
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
+      "`TYPING` eog /home/user/Desktop/receipt_0.jpeg",
+      "`PRESS` enter",
+      "`CLICK` on 'Close' button to close the image viewer after reviewing",
+      "`TYPING` eog /home/user/Desktop/receipt_1.jpg",
+      "`PRESS` enter",
+      "`CLICK` on 'Close' button to close the image viewer after reviewing",
+      "`TYPING` eog /home/user/Desktop/receipt_2.jpg",
+      "`PRESS` enter",
+      "`CLICK` on 'Close' button to close the image viewer after reviewing",
+      "`TYPING` evince /home/user/Desktop/receipt_3.pdf",
+      "`PRESS` enter",
+      "`CLICK` on 'Close' button to close the PDF viewer after reviewing",
+      "`TYPING` eog /home/user/Desktop/receipt_4.jpg",
+      "`PRESS` enter",
+      "`CLICK` on 'Close' button to close the image viewer after reviewing",
+      "`CLICK` on an empty cell in the row where you want to start a new transaction entry (e.g., A10)",
+      "`TYPING` (Enter Date, e.g., 2025-05-18)",
+      "`PRESS` right",
+      "`TYPING` (Enter Vendor, e.g., Coffee Shop)",
+      "`PRESS` right",
+      "`TYPING` (Enter Amount, e.g., 5.50)",
+      "`PRESS` right",
+      "`TYPING` (Enter Category, e.g., Food)",
+      "`PRESS` enter",
+      "`CLICK` on the next empty row for the subsequent transaction (e.g., A11)",
+      "`TYPING` (Repeat for receipt_1.jpg)",
+      "`CLICK` on the next empty row",
+      "`TYPING` (Repeat for receipt_2.jpg)",
+      "`CLICK` on the next empty row",
+      "`TYPING` (Repeat for receipt_3.pdf)",
+      "`CLICK` on the next empty row",
+      "`TYPING` (Repeat for receipt_4.jpg)",
+      "`HOTKEY` ['control', 's']"
+    ],
+    "grouped-action": [
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
+      ],
+      [
+        "`TYPING` eog /home/user/Desktop/receipt_0.jpeg",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on 'Close' button to close the image viewer after reviewing"
+      ],
+      [
+        "`TYPING` eog /home/user/Desktop/receipt_1.jpg",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on 'Close' button to close the image viewer after reviewing"
+      ],
+      [
+        "`TYPING` eog /home/user/Desktop/receipt_2.jpg",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on 'Close' button to close the image viewer after reviewing"
+      ],
+      [
+        "`TYPING` evince /home/user/Desktop/receipt_3.pdf",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on 'Close' button to close the PDF viewer after reviewing"
+      ],
+      [
+        "`TYPING` eog /home/user/Desktop/receipt_4.jpg",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on 'Close' button to close the image viewer after reviewing"
+      ],
+      [
+        "`CLICK` on an empty cell in the row where you want to start a new transaction entry (e.g., A10)"
+      ],
+      [
+        "`TYPING` (Enter Date, e.g., 2025-05-18)"
+      ],
+      [
+        "`PRESS` right"
+      ],
+      [
+        "`TYPING` (Enter Vendor, e.g., Coffee Shop)"
+      ],
+      [
+        "`PRESS` right"
+      ],
+      [
+        "`TYPING` (Enter Amount, e.g., 5.50)"
+      ],
+      [
+        "`PRESS` right"
+      ],
+      [
+        "`TYPING` (Enter Category, e.g., Food)",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the next empty row for the subsequent transaction (e.g., A11)"
+      ],
+      [
+        "`TYPING` (Repeat for receipt_1.jpg)"
+      ],
+      [
+        "`CLICK` on the next empty row"
+      ],
+      [
+        "`TYPING` (Repeat for receipt_2.jpg)"
+      ],
+      [
+        "`CLICK` on the next empty row"
+      ],
+      [
+        "`TYPING` (Repeat for receipt_3.pdf)"
+      ],
+      [
+        "`CLICK` on the next empty row"
+      ],
+      [
+        "`TYPING` (Repeat for receipt_4.jpg)"
+      ],
+      [
+        "`HOTKEY` ['control', 's']"
+      ]
+    ]
+  }
+}

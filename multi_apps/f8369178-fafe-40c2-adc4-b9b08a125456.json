@@ -1,0 +1,109 @@
+{
+  "id": "f8369178-fafe-40c2-adc4-b9b08a125456",
+  "snapshot": "chrome",
+  "instruction": "Help me to install Orchis theme from gnome-look.org and change to it for my GNOME desktop.",
+  "source": "https://itsfoss.com/install-switch-themes-gnome-shell",
+  "config": [],
+  "trajectory": "trajectories/f8369178-fafe-40c2-adc4-b9b08a125456",
+  "related_apps": [
+    "chrome",
+    "os"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "gsettings",
+            "get",
+            "org.gnome.desktop.interface",
+            "gtk-theme"
+          ],
+          "stdout": "gsettings.out"
+        }
+      }
+    ],
+    "func": "check_list",
+    "result": {
+      "type": "cache_file",
+      "path": "gsettings.out"
+    },
+    "expected": {
+      "type": "rule",
+      "rules": {
+        "expect": [
+          "Orchis"
+        ]
+      }
+    }
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`TYPING` google-chrome https://www.gnome-look.org/p/1357889-orchis-theme/",
+      "`PRESS` enter",
+      "`CLICK` on 'Files' tab",
+      "`CLICK` on 'Download' button for the latest stable version (e.g., 'Orchis-dark.tar.xz')",
+      "`HOTKEY` 'Ctrl+Alt+T'",
+      "`TYPING` mkdir -p ~/.themes",
+      "`PRESS` enter",
+      "`TYPING` tar -xvf ~/Downloads/Orchis-dark.tar.xz -C ~/.themes/",
+      "`PRESS` enter",
+      "`TYPING` sudo apt install gnome-tweaks",
+      "`PRESS` enter",
+      "`TYPING` gnome-tweaks",
+      "`PRESS` enter",
+      "`CLICK` on 'Appearance' in the left sidebar",
+      "`CLICK` on the dropdown menu under 'Shell'",
+      "`CLICK` on 'Orchis-Dark' (or the specific Orchis theme you downloaded)",
+      "`CLICK` on the dropdown menu under 'Applications'",
+      "`CLICK` on 'Orchis-Dark' (or the specific Orchis theme you downloaded)"
+    ],
+    "grouped-action": [
+      [
+        "`TYPING` google-chrome https://www.gnome-look.org/p/1357889-orchis-theme/",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on 'Files' tab"
+      ],
+      [
+        "`CLICK` on 'Download' button for the latest stable version (e.g., 'Orchis-dark.tar.xz')"
+      ],
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'"
+      ],
+      [
+        "`TYPING` mkdir -p ~/.themes",
+        "`PRESS` enter"
+      ],
+      [
+        "`TYPING` tar -xvf ~/Downloads/Orchis-dark.tar.xz -C ~/.themes/",
+        "`PRESS` enter"
+      ],
+      [
+        "`TYPING` sudo apt install gnome-tweaks",
+        "`PRESS` enter"
+      ],
+      [
+        "`TYPING` gnome-tweaks",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on 'Appearance' in the left sidebar"
+      ],
+      [
+        "`CLICK` on the dropdown menu under 'Shell'"
+      ],
+      [
+        "`CLICK` on 'Orchis-Dark' (or the specific Orchis theme you downloaded)"
+      ],
+      [
+        "`CLICK` on the dropdown menu under 'Applications'"
+      ],
+      [
+        "`CLICK` on 'Orchis-Dark' (or the specific Orchis theme you downloaded)"
+      ]
+    ]
+  }
+}

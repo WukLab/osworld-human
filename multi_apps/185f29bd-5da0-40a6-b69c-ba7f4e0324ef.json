@@ -1,0 +1,1354 @@
+{
+  "id": "185f29bd-5da0-40a6-b69c-ba7f4e0324ef",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Transfer the data from our 'Employee Performance Evaluation Summary' Excel sheet into our standardized PDF evaluation forms. Each employee's evaluation data should be accurately filled into the designated fields of the PDF form. It's crucial that the final PDF documents retain a uniform and professional look, ready for distribution to our staff or for filing purposes. Furthermore, please ensure that each PDF file is named according to the employee's name as it appears in the Excel document. This will greatly streamline our evaluation process and enhance our efficiency in managing employee performance records. Oh, use \"√\" as mark on characters.",
+  "source": "authors",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "path": "/home/user/Desktop/Employee Performance Evaluation Summary.xlsx",
+            "url": "https://drive.google.com/uc?id=1uOzi66bzO_WUnoS4Oqsodrd7_YPLatEk&export=download"
+          },
+          {
+            "path": "/home/user/Desktop/review_template.pdf",
+            "url": "https://drive.google.com/uc?id=1YJ4RPGFUuS48tBh31gBerA16JSMw498w&export=download"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/Employee Performance Evaluation Summary.xlsx"
+      }
+    },
+    {
+      "type": "sleep",
+      "parameters": {
+        "seconds": 2
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/Desktop/review_template.pdf"
+      }
+    }
+  ],
+  "trajectory": "trajectories/185f29bd-5da0-40a6-b69c-ba7f4e0324ef",
+  "related_apps": [
+    "libreoffice_calc",
+    "os",
+    "pdf"
+  ],
+  "evaluator": {
+    "func": "compare_pdfs",
+    "result": {
+      "type": "cloud_file",
+      "path": [
+        "https://drive.google.com/uc?id=1kZM90nA1krRmV9ug5_BBe8VlrZRVLiLK&export=download",
+        "https://drive.google.com/uc?id=1zyLzYYThwyit9ciXpfNfPFlBomolOauY&export=download",
+        "https://drive.google.com/uc?id=1gMT7JBftuymajMAO5rwksORpeVq3uGmH&export=download",
+        "https://drive.google.com/uc?id=1x0DdtUSZyBifl1tGIWlWKn255WusJeR4&export=download",
+        "https://drive.google.com/uc?id=1UAcG32WO8XCXElcanjGwbSpJwFuyOkts&export=download",
+        "https://drive.google.com/uc?id=1PRgryg7Y5evKnDG2LPtAttVp9qAf5VyZ&export=download",
+        "https://drive.google.com/uc?id=1JxEDriCS2W7BQLdkIgxu_WFCRa9ib4D7&export=download"
+      ],
+      "dest": [
+        "Alex Lee_Gold.pdf",
+        "David Wilson_Gold.pdf",
+        "Emily Johnson_Gold.pdf",
+        "John Doe_Gold.pdf",
+        "Linda Green_Gold.pdf",
+        "Michael Brown_Gold.pdf",
+        "Sophia Carter_Gold.pdf"
+      ],
+      "multi": true,
+      "gives": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "expected": {
+      "type": "vm_file",
+      "path": [
+        "/home/user/Desktop/Alex Lee.pdf",
+        "/home/user/Desktop/David Wilson.pdf",
+        "/home/user/Desktop/Emily Johnson.pdf",
+        "/home/user/Desktop/John Doe.pdf",
+        "/home/user/Desktop/Linda Green.pdf",
+        "/home/user/Desktop/Michael Brown.pdf",
+        "/home/user/Desktop/Sophia Carter.pdf"
+      ],
+      "dest": [
+        "Alex Lee.pdf",
+        "David Wilson.pdf",
+        "Emily Johnson.pdf",
+        "John Doe.pdf",
+        "Linda Green.pdf",
+        "Michael Brown.pdf",
+        "Sophia Carter.pdf"
+      ],
+      "multi": true,
+      "gives": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`CLICK` on the opened window of /home/user/Desktop/Employee Performance Evaluation Summary.xlsx",
+      "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf",
+      "`CLICK` on 'EMPLOYEE NAME' field",
+      "`TYPING` John Doe",
+      "`CLICK` on 'EMPLOYEE ID' field",
+      "`TYPING` 12345",
+      "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+      "`TYPING` 2023-04-01",
+      "`CLICK` on 'POSITION HELD' field",
+      "`TYPING` Analyst",
+      "`CLICK` on 'DEPARTMENT' field",
+      "`TYPING` Finance",
+      "`CLICK` on 'DATE OF LAST REVIEW' field",
+      "`TYPING` 2022-04-01",
+      "`CLICK` on 'REVIEWER NAME' field",
+      "`TYPING` Jane Smith",
+      "`CLICK` on 'REVIEWER TITLE' field",
+      "`TYPING` Senior Manager",
+      "`CLICK` on 'DATE SUBMITTED' field",
+      "`TYPING` 2023-04-02",
+      "`CLICK` on 'Works to Full Potential' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Quality of Work' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Work Consistency' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Communication' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Independent Work' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Takes Initiative' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Group Work' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Productivity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Creativity' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Honesty' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Integrity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Coworker Relations' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Client Relations' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Technical Skills' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Dependability' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Punctuality' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Attendance' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+      "`CLICK` on 'Print to File'",
+      "`TYPING` John Doe.pdf",
+      "`CLICK` on 'Save'",
+      "`HOTKEY` 'Ctrl+W'",
+      "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf",
+      "`CLICK` on 'EMPLOYEE NAME' field",
+      "`TYPING` Emily Johnson",
+      "`CLICK` on 'EMPLOYEE ID' field",
+      "`TYPING` 67890",
+      "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+      "`TYPING` 2023-03-25",
+      "`CLICK` on 'POSITION HELD' field",
+      "`TYPING` Project Manager",
+      "`CLICK` on 'DEPARTMENT' field",
+      "`TYPING` Marketing",
+      "`CLICK` on 'DATE OF LAST REVIEW' field",
+      "`TYPING` 2022-03-20",
+      "`CLICK` on 'REVIEWER NAME' field",
+      "`TYPING` Bob Lee",
+      "`CLICK` on 'REVIEWER TITLE' field",
+      "`TYPING` Director",
+      "`CLICK` on 'DATE SUBMITTED' field",
+      "`TYPING` 2023-03-26",
+      "`CLICK` on 'Works to Full Potential' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Quality of Work' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Work Consistency' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Communication' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Independent Work' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Takes Initiative' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Group Work' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Productivity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Creativity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Honesty' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Integrity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Coworker Relations' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Client Relations' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Technical Skills' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Dependability' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Punctuality' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Attendance' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+      "`CLICK` on 'Print to File'",
+      "`TYPING` Emily Johnson.pdf",
+      "`CLICK` on 'Save'",
+      "`HOTKEY` 'Ctrl+W'",
+      "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf",
+      "`CLICK` on 'EMPLOYEE NAME' field",
+      "`TYPING` Michael Brown",
+      "`CLICK` on 'EMPLOYEE ID' field",
+      "`TYPING` 11223",
+      "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+      "`TYPING` 2023-03-15",
+      "`CLICK` on 'POSITION HELD' field",
+      "`TYPING` Software Engineer",
+      "`CLICK` on 'DEPARTMENT' field",
+      "`TYPING` IT",
+      "`CLICK` on 'DATE OF LAST REVIEW' field",
+      "`TYPING` 2022-03-10",
+      "`CLICK` on 'REVIEWER NAME' field",
+      "`TYPING` Susan Clark",
+      "`CLICK` on 'REVIEWER TITLE' field",
+      "`TYPING` CTO",
+      "`CLICK` on 'DATE SUBMITTED' field",
+      "`TYPING` 2023-03-16",
+      "`CLICK` on 'Works to Full Potential' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Quality of Work' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Work Consistency' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Communication' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Independent Work' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Takes Initiative' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Group Work' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Productivity' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Creativity' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Honesty' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Integrity' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Coworker Relations' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Client Relations' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Technical Skills' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Dependability' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Punctuality' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Attendance' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+      "`CLICK` on 'Print to File'",
+      "`TYPING` Michael Brown.pdf",
+      "`CLICK` on 'Save'",
+      "`HOTKEY` 'Ctrl+W'",
+      "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf",
+      "`CLICK` on 'EMPLOYEE NAME' field",
+      "`TYPING` Linda Green",
+      "`CLICK` on 'EMPLOYEE ID' field",
+      "`TYPING` 44556",
+      "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+      "`TYPING` 2023-04-05",
+      "`CLICK` on 'POSITION HELD' field",
+      "`TYPING` Sales Representative",
+      "`CLICK` on 'DEPARTMENT' field",
+      "`TYPING` Sales",
+      "`CLICK` on 'DATE OF LAST REVIEW' field",
+      "`TYPING` 2022-04-04",
+      "`CLICK` on 'REVIEWER NAME' field",
+      "`TYPING` Gary Davis",
+      "`CLICK` on 'REVIEWER TITLE' field",
+      "`TYPING` Sales Manager",
+      "`CLICK` on 'DATE SUBMITTED' field",
+      "`TYPING` 2023-04-06",
+      "`CLICK` on 'Works to Full Potential' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Quality of Work' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Work Consistency' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Communication' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Independent Work' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Takes Initiative' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Group Work' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Productivity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Creativity' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Honesty' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Integrity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Coworker Relations' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Client Relations' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Technical Skills' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Dependability' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Punctuality' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Attendance' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+      "`CLICK` on 'Print to File'",
+      "`TYPING` Linda Green.pdf",
+      "`CLICK` on 'Save'",
+      "`HOTKEY` 'Ctrl+W'",
+      "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf",
+      "`CLICK` on 'EMPLOYEE NAME' field",
+      "`TYPING` David Wilson",
+      "`CLICK` on 'EMPLOYEE ID' field",
+      "`TYPING` 77889",
+      "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+      "`TYPING` 2023-03-20",
+      "`CLICK` on 'POSITION HELD' field",
+      "`TYPING` Customer Support",
+      "`CLICK` on 'DEPARTMENT' field",
+      "`TYPING` Operations",
+      "`CLICK` on 'DATE OF LAST REVIEW' field",
+      "`TYPING` 2022-03-18",
+      "`CLICK` on 'REVIEWER NAME' field",
+      "`TYPING` Laura Martin",
+      "`CLICK` on 'REVIEWER TITLE' field",
+      "`TYPING` Operations Manager",
+      "`CLICK` on 'DATE SUBMITTED' field",
+      "`TYPING` 2023-03-21",
+      "`CLICK` on 'Works to Full Potential' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Quality of Work' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Work Consistency' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Communication' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Independent Work' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Takes Initiative' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Group Work' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Productivity' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Creativity' row, 'Satisfactory' column",
+      "`TYPING` √",
+      "`CLICK` on 'Honesty' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Integrity' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Coworker Relations' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Client Relations' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Technical Skills' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Dependability' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Punctuality' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Attendance' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+      "`CLICK` on 'Print to File'",
+      "`TYPING` David Wilson.pdf",
+      "`CLICK` on 'Save'",
+      "`HOTKEY` 'Ctrl+W'",
+      "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf",
+      "`CLICK` on 'EMPLOYEE NAME' field",
+      "`TYPING` Sophia Carter",
+      "`CLICK` on 'EMPLOYEE ID' field",
+      "`TYPING` 88901",
+      "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+      "`TYPING` 2023-02-28",
+      "`CLICK` on 'POSITION HELD' field",
+      "`TYPING` Content Writer",
+      "`CLICK` on 'DEPARTMENT' field",
+      "`TYPING` Content",
+      "`CLICK` on 'DATE OF LAST REVIEW' field",
+      "`TYPING` 2022-02-25",
+      "`CLICK` on 'REVIEWER NAME' field",
+      "`TYPING` Mark Thompson",
+      "`CLICK` on 'REVIEWER TITLE' field",
+      "`TYPING` Content Lead",
+      "`CLICK` on 'DATE SUBMITTED' field",
+      "`TYPING` 2023-03-01",
+      "`CLICK` on 'Works to Full Potential' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Quality of Work' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Work Consistency' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Communication' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Independent Work' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Takes Initiative' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Group Work' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Productivity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Creativity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Honesty' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Integrity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Coworker Relations' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Client Relations' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Technical Skills' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Dependability' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Punctuality' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Attendance' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+      "`CLICK` on 'Print to File'",
+      "`TYPING` Sophia Carter.pdf",
+      "`CLICK` on 'Save'",
+      "`HOTKEY` 'Ctrl+W'",
+      "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf",
+      "`CLICK` on 'EMPLOYEE NAME' field",
+      "`TYPING` Alex Lee",
+      "`CLICK` on 'EMPLOYEE ID' field",
+      "`TYPING` 99012",
+      "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+      "`TYPING` 2023-03-10",
+      "`CLICK` on 'POSITION HELD' field",
+      "`TYPING` UX Designer",
+      "`CLICK` on 'DEPARTMENT' field",
+      "`TYPING` Product",
+      "`CLICK` on 'DATE OF LAST REVIEW' field",
+      "`TYPING` 2022-03-08",
+      "`CLICK` on 'REVIEWER NAME' field",
+      "`TYPING` Karen White",
+      "`CLICK` on 'REVIEWER TITLE' field",
+      "`TYPING` Product Manager",
+      "`CLICK` on 'DATE SUBMITTED' field",
+      "`TYPING` 2023-03-11",
+      "`CLICK` on 'Works to Full Potential' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Quality of Work' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Work Consistency' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Communication' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Independent Work' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Takes Initiative' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Group Work' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Productivity' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Creativity' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Honesty' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Integrity' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Coworker Relations' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Client Relations' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Technical Skills' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Dependability' row, 'Excellent' column",
+      "`TYPING` √",
+      "`CLICK` on 'Punctuality' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Attendance' row, 'Good' column",
+      "`TYPING` √",
+      "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+      "`CLICK` on 'Print to File'",
+      "`TYPING` Alex Lee.pdf",
+      "`CLICK` on 'Save'",
+      "`HOTKEY` 'Ctrl+W'"
+    ],
+    "grouped-action": [
+      [
+        "`CLICK` on the opened window of /home/user/Desktop/Employee Performance Evaluation Summary.xlsx"
+      ],
+      [
+        "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE NAME' field",
+        "`TYPING` John Doe"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE ID' field",
+        "`TYPING` 12345"
+      ],
+      [
+        "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+        "`TYPING` 2023-04-01"
+      ],
+      [
+        "`CLICK` on 'POSITION HELD' field",
+        "`TYPING` Analyst"
+      ],
+      [
+        "`CLICK` on 'DEPARTMENT' field",
+        "`TYPING` Finance"
+      ],
+      [
+        "`CLICK` on 'DATE OF LAST REVIEW' field",
+        "`TYPING` 2022-04-01"
+      ],
+      [
+        "`CLICK` on 'REVIEWER NAME' field",
+        "`TYPING` Jane Smith"
+      ],
+      [
+        "`CLICK` on 'REVIEWER TITLE' field",
+        "`TYPING` Senior Manager"
+      ],
+      [
+        "`CLICK` on 'DATE SUBMITTED' field",
+        "`TYPING` 2023-04-02"
+      ],
+      [
+        "`CLICK` on 'Works to Full Potential' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Quality of Work' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Work Consistency' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Communication' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Independent Work' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Takes Initiative' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Group Work' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Productivity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Creativity' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Honesty' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Integrity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Coworker Relations' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Client Relations' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Technical Skills' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Dependability' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Punctuality' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Attendance' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+        "`CLICK` on 'Print to File'"
+      ],
+      [
+        "`TYPING` John Doe.pdf",
+        "`CLICK` on 'Save'"
+      ],
+      [
+        "`HOTKEY` ['control', 'w']"
+      ],
+      [
+        "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE NAME' field",
+        "`TYPING` Emily Johnson"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE ID' field",
+        "`TYPING` 67890"
+      ],
+      [
+        "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+        "`TYPING` 2023-03-25"
+      ],
+      [
+        "`CLICK` on 'POSITION HELD' field",
+        "`TYPING` Project Manager"
+      ],
+      [
+        "`CLICK` on 'DEPARTMENT' field",
+        "`TYPING` Marketing"
+      ],
+      [
+        "`CLICK` on 'DATE OF LAST REVIEW' field",
+        "`TYPING` 2022-03-20"
+      ],
+      [
+        "`CLICK` on 'REVIEWER NAME' field",
+        "`TYPING` Bob Lee"
+      ],
+      [
+        "`CLICK` on 'REVIEWER TITLE' field",
+        "`TYPING` Director"
+      ],
+      [
+        "`CLICK` on 'DATE SUBMITTED' field",
+        "`TYPING` 2023-03-26"
+      ],
+      [
+        "`CLICK` on 'Works to Full Potential' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Quality of Work' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Work Consistency' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Communication' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Independent Work' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Takes Initiative' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Group Work' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Productivity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Creativity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Honesty' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Integrity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Coworker Relations' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Client Relations' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Technical Skills' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Dependability' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Punctuality' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Attendance' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+        "`CLICK` on 'Print to File'"
+      ],
+      [
+        "`TYPING` Emily Johnson.pdf",
+        "`CLICK` on 'Save'"
+      ],
+      [
+        "`HOTKEY` ['control', 'w']"
+      ],
+      [
+        "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE NAME' field",
+        "`TYPING` Michael Brown"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE ID' field",
+        "`TYPING` 11223"
+      ],
+      [
+        "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+        "`TYPING` 2023-03-15"
+      ],
+      [
+        "`CLICK` on 'POSITION HELD' field",
+        "`TYPING` Software Engineer"
+      ],
+      [
+        "`CLICK` on 'DEPARTMENT' field",
+        "`TYPING` IT"
+      ],
+      [
+        "`CLICK` on 'DATE OF LAST REVIEW' field",
+        "`TYPING` 2022-03-10"
+      ],
+      [
+        "`CLICK` on 'REVIEWER NAME' field",
+        "`TYPING` Susan Clark"
+      ],
+      [
+        "`CLICK` on 'REVIEWER TITLE' field",
+        "`TYPING` CTO"
+      ],
+      [
+        "`CLICK` on 'DATE SUBMITTED' field",
+        "`TYPING` 2023-03-16"
+      ],
+      [
+        "`CLICK` on 'Works to Full Potential' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Quality of Work' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Work Consistency' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Communication' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Independent Work' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Takes Initiative' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Group Work' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Productivity' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Creativity' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Honesty' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Integrity' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Coworker Relations' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Client Relations' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Technical Skills' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Dependability' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Punctuality' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Attendance' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+        "`CLICK` on 'Print to File'"
+      ],
+      [
+        "`TYPING` Michael Brown.pdf",
+        "`CLICK` on 'Save'"
+      ],
+      [
+        "`HOTKEY` ['control', 'w']"
+      ],
+      [
+        "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE NAME' field",
+        "`TYPING` Linda Green"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE ID' field",
+        "`TYPING` 44556"
+      ],
+      [
+        "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+        "`TYPING` 2023-04-05"
+      ],
+      [
+        "`CLICK` on 'POSITION HELD' field",
+        "`TYPING` Sales Representative"
+      ],
+      [
+        "`CLICK` on 'DEPARTMENT' field",
+        "`TYPING` Sales"
+      ],
+      [
+        "`CLICK` on 'DATE OF LAST REVIEW' field",
+        "`TYPING` 2022-04-04"
+      ],
+      [
+        "`CLICK` on 'REVIEWER NAME' field",
+        "`TYPING` Gary Davis"
+      ],
+      [
+        "`CLICK` on 'REVIEWER TITLE' field",
+        "`TYPING` Sales Manager"
+      ],
+      [
+        "`CLICK` on 'DATE SUBMITTED' field",
+        "`TYPING` 2023-04-06"
+      ],
+      [
+        "`CLICK` on 'Works to Full Potential' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Quality of Work' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Work Consistency' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Communication' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Independent Work' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Takes Initiative' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Group Work' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Productivity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Creativity' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Honesty' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Integrity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Coworker Relations' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Client Relations' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Technical Skills' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Dependability' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Punctuality' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Attendance' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+        "`CLICK` on 'Print to File'"
+      ],
+      [
+        "`TYPING` Linda Green.pdf",
+        "`CLICK` on 'Save'"
+      ],
+      [
+        "`HOTKEY` ['control', 'w']"
+      ],
+      [
+        "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE NAME' field",
+        "`TYPING` David Wilson"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE ID' field",
+        "`TYPING` 77889"
+      ],
+      [
+        "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+        "`TYPING` 2023-03-20"
+      ],
+      [
+        "`CLICK` on 'POSITION HELD' field",
+        "`TYPING` Customer Support"
+      ],
+      [
+        "`CLICK` on 'DEPARTMENT' field",
+        "`TYPING` Operations"
+      ],
+      [
+        "`CLICK` on 'DATE OF LAST REVIEW' field",
+        "`TYPING` 2022-03-18"
+      ],
+      [
+        "`CLICK` on 'REVIEWER NAME' field",
+        "`TYPING` Laura Martin"
+      ],
+      [
+        "`CLICK` on 'REVIEWER TITLE' field",
+        "`TYPING` Operations Manager"
+      ],
+      [
+        "`CLICK` on 'DATE SUBMITTED' field",
+        "`TYPING` 2023-03-21"
+      ],
+      [
+        "`CLICK` on 'Works to Full Potential' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Quality of Work' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Work Consistency' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Communication' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Independent Work' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Takes Initiative' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Group Work' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Productivity' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Creativity' row, 'Satisfactory' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Honesty' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Integrity' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Coworker Relations' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Client Relations' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Technical Skills' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Dependability' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Punctuality' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Attendance' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+        "`CLICK` on 'Print to File'"
+      ],
+      [
+        "`TYPING` David Wilson.pdf",
+        "`CLICK` on 'Save'"
+      ],
+      [
+        "`HOTKEY` ['control', 'w']"
+      ],
+      [
+        "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE NAME' field",
+        "`TYPING` Sophia Carter"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE ID' field",
+        "`TYPING` 88901"
+      ],
+      [
+        "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+        "`TYPING` 2023-02-28"
+      ],
+      [
+        "`CLICK` on 'POSITION HELD' field",
+        "`TYPING` Content Writer"
+      ],
+      [
+        "`CLICK` on 'DEPARTMENT' field",
+        "`TYPING` Content"
+      ],
+      [
+        "`CLICK` on 'DATE OF LAST REVIEW' field",
+        "`TYPING` 2022-02-25"
+      ],
+      [
+        "`CLICK` on 'REVIEWER NAME' field",
+        "`TYPING` Mark Thompson"
+      ],
+      [
+        "`CLICK` on 'REVIEWER TITLE' field",
+        "`TYPING` Content Lead"
+      ],
+      [
+        "`CLICK` on 'DATE SUBMITTED' field",
+        "`TYPING` 2023-03-01"
+      ],
+      [
+        "`CLICK` on 'Works to Full Potential' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Quality of Work' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Work Consistency' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Communication' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Independent Work' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Takes Initiative' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Group Work' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Productivity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Creativity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Honesty' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Integrity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Coworker Relations' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Client Relations' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Technical Skills' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Dependability' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Punctuality' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Attendance' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+        "`CLICK` on 'Print to File'"
+      ],
+      [
+        "`TYPING` Sophia Carter.pdf",
+        "`CLICK` on 'Save'"
+      ],
+      [
+        "`HOTKEY` ['control', 'w']"
+      ],
+      [
+        "`CLICK` the opened window of /home/user/Desktop/9fcfca2c-ab4b-5833-935c-0b68195b643e_review_template.pdf"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE NAME' field",
+        "`TYPING` Alex Lee"
+      ],
+      [
+        "`CLICK` on 'EMPLOYEE ID' field",
+        "`TYPING` 99012"
+      ],
+      [
+        "`CLICK` on 'DATE OF CURRENT REVIEW' field",
+        "`TYPING` 2023-03-10"
+      ],
+      [
+        "`CLICK` on 'POSITION HELD' field",
+        "`TYPING` UX Designer"
+      ],
+      [
+        "`CLICK` on 'DEPARTMENT' field",
+        "`TYPING` Product"
+      ],
+      [
+        "`CLICK` on 'DATE OF LAST REVIEW' field",
+        "`TYPING` 2022-03-08"
+      ],
+      [
+        "`CLICK` on 'REVIEWER NAME' field",
+        "`TYPING` Karen White"
+      ],
+      [
+        "`CLICK` on 'REVIEWER TITLE' field",
+        "`TYPING` Product Manager"
+      ],
+      [
+        "`CLICK` on 'DATE SUBMITTED' field",
+        "`TYPING` 2023-03-11"
+      ],
+      [
+        "`CLICK` on 'Works to Full Potential' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Quality of Work' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Work Consistency' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Communication' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Independent Work' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Takes Initiative' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Group Work' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Productivity' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Creativity' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Honesty' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Integrity' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Coworker Relations' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Client Relations' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Technical Skills' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Dependability' row, 'Excellent' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Punctuality' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Attendance' row, 'Good' column",
+        "`TYPING` √"
+      ],
+      [
+        "`CLICK` on 'Print' icon or menu option (assuming print to PDF)",
+        "`CLICK` on 'Print to File'"
+      ],
+      [
+        "`TYPING` Alex Lee.pdf",
+        "`CLICK` on 'Save'"
+      ],
+      [
+        "`HOTKEY` ['control', 'w']"
+      ]
+    ]
+  }
+}

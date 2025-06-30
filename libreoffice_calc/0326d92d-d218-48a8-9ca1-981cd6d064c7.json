@@ -1,0 +1,199 @@
+{
+  "id": "0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "snapshot": "libreoffice_calc",
+  "instruction": "Calculate the total sales in an underneath row called \"Total\" and display the total of each month as bars. Then calculate the growth percentage between each pair of months in another row called \"Growth\" and show them in a line chart. Set the chart titles as the two row headers respectively.",
+  "source": "SheetCopilot@151",
+  "config": [
+    {
+      "type": "download",
+      "parameters": {
+        "files": [
+          {
+            "url": "https://drive.google.com/uc?id=1Non152JxCxXJI2jL-nVf58YlxoTQXOhw&export=download",
+            "path": "/home/user/SalesRep.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "type": "open",
+      "parameters": {
+        "path": "/home/user/SalesRep.xlsx"
+      }
+    }
+  ],
+  "trajectory": "trajectories/0326d92d-d218-48a8-9ca1-981cd6d064c7",
+  "related_apps": [
+    "libreoffice_calc"
+  ],
+  "evaluator": {
+    "postconfig": [
+      {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "SalesRep.xlsx - LibreOffice Calc",
+          "strict": true
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python",
+            "-c",
+            "import pyautogui; pyautogui.hotkey(\"ctrl\", \"s\");"
+          ]
+        }
+      },
+      {
+        "type": "sleep",
+        "parameters": {
+          "seconds": 0.5
+        }
+      }
+    ],
+    "func": "compare_table",
+    "expected": {
+      "type": "cloud_file",
+      "path": "https://drive.google.com/uc?id=196-HIvzC1QjkA8XQ6zE-UAezpg4IDDe6&export=download",
+      "dest": "2_SalesRep_gt1.xlsx"
+    },
+    "result": {
+      "type": "vm_file",
+      "path": "/home/user/SalesRep.xlsx",
+      "dest": "SalesRep.xlsx"
+    },
+    "options": {
+      "rules": [
+        {
+          "type": "sheet_data",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0"
+        },
+        {
+          "type": "chart",
+          "sheet_idx0": 0,
+          "sheet_idx1": "EI0",
+          "chart_props": [
+            "type",
+            "title"
+          ]
+        }
+      ]
+    }
+  },
+  "human-ground-truth": {
+    "single-action": [
+      "`CLICK` on cell A12",
+      "`TYPING` 'Total'",
+      "`PRESS` tab",
+      "`TYPING` '=SUM(B2:B11)'",
+      "`PRESS` enter",
+      "`CLICK` cell B12",
+      "`MOVE_TO bottom right corner of the cell B12`",
+      "`DRAG_TO` bottom right corner of the cell G12",
+      "`MOVE_TO` middle of cell A1",
+      "`DRAG_TO` middle of cell G1",
+      "`KEY_DOWN` ctrl",
+      "`CLICK` cell A12",
+      "`KEY_UP` ctrl",
+      "`KEY_DOWN` shift",
+      "`CLICK` cell G12",
+      "`KEY_UP` shift",
+      "`CLICK` chart icon",
+      "`CLICK` Bar",
+      "`CLICK` Chart elements",
+      "`CLICK` title text box",
+      "`TYPING` 'Total'",
+      "`PRESS` enter",
+      "`CLICK` cell A13",
+      "`TYPING` 'Growth'",
+      "`CLICK` cell C13",
+      "`TYPING` '=(C12-B12)/B12'",
+      "`PRESS` enter",
+      "`CLICK` cell C13",
+      "`MOVE_TO bottom right corner of the cell C13`",
+      "`DRAG_TO` bottom right corner of the cell G13",
+      "`MOVE_TO` middle of cell C1",
+      "`DRAG_TO` middle of cell G1",
+      "`KEY_DOWN` ctrl",
+      "`CLICK` cell C13",
+      "`KEY_UP` ctrl",
+      "`KEY_DOWN` shift",
+      "`CLICK` cell G13",
+      "`KEY_UP` shift",
+      "`CLICK` chart icon",
+      "`CLICK` Line",
+      "`CLICK` icon representing lines only (3rd from the right)",
+      "`CLICK` Chart elements",
+      "`CLICK` title text box",
+      "`TYPING` 'Growth'",
+      "`PRESS` enter"
+    ],
+    "grouped-action": [
+      [
+        "`CLICK` on cell A12",
+        "`TYPING` 'Total'",
+        "`PRESS` tab",
+        "`TYPING` '=SUM(B2:B11)'",
+        "`PRESS` enter",
+        "`CLICK` cell B12",
+        "`MOVE_TO bottom right corner of the cell B12`",
+        "`DRAG_TO` bottom right corner of the cell G12",
+        "`KEY_DOWN` ctrl",
+        "`CLICK` cell A1",
+        "`KEY_UP` ctrl",
+        "`KEY_DOWN` shift",
+        "`CLICK` cell G1",
+        "`KEY_UP` shift",
+        "`CLICK` chart icon"
+      ],
+      [
+        "`CLICK` Bar",
+        "`CLICK` Chart elements"
+      ],
+      [
+        "`CLICK` title text box",
+        "`TYPING` 'Total'",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` cell A13"
+      ],
+      [
+        "`TYPING` 'Growth'",
+        "`CLICK` cell C13",
+        "`TYPING` '=(C12-B12)/B12'",
+        "`PRESS` enter",
+        "`CLICK` cell C13",
+        "`MOVE_TO bottom right corner of the cell C13`",
+        "`DRAG_TO` bottom right corner of the cell G13",
+        "`KEY_DOWN` ctrl",
+        "`CLICK` cell C1",
+        "`KEY_UP` ctrl",
+        "`KEY_DOWN` shift",
+        "`CLICK` cell G1",
+        "`KEY_UP` shift",
+        "`CLICK` chart icon"
+      ],
+      [
+        "`CLICK` Line"
+      ],
+      [
+        "`CLICK` icon representing lines only (3rd from the right)",
+        "`CLICK` Chart elements"
+      ],
+      [
+        "`CLICK` title text box",
+        "`TYPING` 'Growth'",
+        "`PRESS` enter"
+      ]
+    ]
+  }
+}
