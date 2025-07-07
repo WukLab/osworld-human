@@ -219,10 +219,10 @@ def main(result_path, max_steps_scoring, is_uitars):
 
 
 if __name__ == "__main__":
-  parser = argparse.ArgumentParser(description="Extract LLMResponse from log file.")
+  parser = argparse.ArgumentParser(description="Score trajecories on OSWorld-Human")
   parser.add_argument("--result-path", type=str, help="Path to the full result directory.")
   parser.add_argument("--max-steps-scoring", type=int, default=15)
-  parser.add_argument("--uitars", action='store_true', help="Use UITARS format for human tasks.")
+  parser.add_argument("--uitars", action='store_true', help="UI-TARS trajectories have a different structure.")
   args = parser.parse_args()
 
   main(args.result_path, args.max_steps_scoring, args.uitars)
