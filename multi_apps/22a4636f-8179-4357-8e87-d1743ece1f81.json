@@ -107,13 +107,13 @@
   },
   "human-ground-truth": {
     "single-action": [
-      "`CLICK` on libreoffice window to open Meeting-Agenda.docx",
       "`CLICK` on 'File'",
       "`CLICK` on 'Export As'",
       "`CLICK` on 'Export as PDF...'",
+      "`CLICK` on 'Export'",
       "`CLICK` on 'Save'",
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` google-chrome https://drive.usercontent.google.com",
+      "`TYPING` google-chrome https://drive.google.com/drive/my-drive",
       "`PRESS` Enter",
       "`CLICK` on '+ New'",
       "`CLICK` on 'File upload'",
@@ -121,9 +121,6 @@
       "`PRESS` Enter"
     ],
     "grouped-action": [
-      [
-        "`CLICK` on libreoffice window to open Meeting-Agenda.docx"
-      ],
       [
         "`CLICK` on 'File'"
       ],
@@ -135,6 +132,9 @@
       ],
       [
         "`CLICK` on 'Save'"
+      ],
+      [
+        "`CLICK` on 'Export'"
       ],
       [
         "`HOTKEY`'Ctrl+Alt+T' open the terminal"

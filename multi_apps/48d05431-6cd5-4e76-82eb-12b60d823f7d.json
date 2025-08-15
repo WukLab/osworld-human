@@ -74,6 +74,12 @@
       "`TYPING` source ~/.bashrc",
       "`PRESS` enter",
       "`TYPING` conda install datasets",
+      "`PRESS` enter",
+      "`TYPING` a",
+      "`PRESS` enter",
+      "`TYPING` a",
+      "`PRESS` enter",
+      "`TYPING` y",
       "`PRESS` enter"
     ],
     "grouped-action": [
@@ -106,7 +112,13 @@
       [
         "`TYPING` conda install datasets",
         "`PRESS` enter"
-      ]
+      ],
+      ["`TYPING` a",
+      "`PRESS` enter"],
+      ["`TYPING` a",
+      "`PRESS` enter"],
+      ["`TYPING` y",
+      "`PRESS` enter"]
     ]
   }
 }

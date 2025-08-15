@@ -256,23 +256,37 @@
       "`TYPING` eog /home/user/Desktop/receipt_4.jpg",
       "`PRESS` enter",
       "`CLICK` on 'Close' button to close the image viewer after reviewing",
-      "`CLICK` on an empty cell in the row where you want to start a new transaction entry (e.g., A10)",
-      "`TYPING` (Enter Date, e.g., 2025-05-18)",
+      "`CLICK` on excel window",
+      "`CLICK` on next empty cell under Type column",
+      "`TYPING` 'Expense'",
       "`PRESS` right",
-      "`TYPING` (Enter Vendor, e.g., Coffee Shop)",
+      "`TYPING` '-186.93'",
       "`PRESS` right",
-      "`TYPING` (Enter Amount, e.g., 5.50)",
+      "`TYPING` '603.07'",
+      "`CLICK` on next empty cell under Type column",
+      "`TYPING` 'Expense'",
       "`PRESS` right",
-      "`TYPING` (Enter Category, e.g., Food)",
-      "`PRESS` enter",
-      "`CLICK` on the next empty row for the subsequent transaction (e.g., A11)",
-      "`TYPING` (Repeat for receipt_1.jpg)",
-      "`CLICK` on the next empty row",
-      "`TYPING` (Repeat for receipt_2.jpg)",
-      "`CLICK` on the next empty row",
-      "`TYPING` (Repeat for receipt_3.pdf)",
-      "`CLICK` on the next empty row",
-      "`TYPING` (Repeat for receipt_4.jpg)",
+      "`TYPING` '-3670'",
+      "`PRESS` right",
+      "`TYPING` '-3066.93'",
+      "`CLICK` on next empty cell under Type column",
+      "`TYPING` 'Expense'",
+      "`PRESS` right",
+      "`TYPING` '-5.7'",
+      "`PRESS` right",
+      "`TYPING` '-3072.63'",
+      "`CLICK` on next empty cell under Type column",
+      "`TYPING` 'Expense'",
+      "`PRESS` right",
+      "`TYPING` '-154.06'",
+      "`PRESS` right",
+      "`TYPING` '-3226.69'",
+      "`CLICK` on next empty cell under Type column",
+      "`TYPING` 'Expense'",
+      "`PRESS` right",
+      "`TYPING` '-8.1'",
+      "`PRESS` right",
+      "`TYPING` '-3234.79'",
       "`HOTKEY` ['control', 's']"
     ],
     "grouped-action": [
@@ -315,53 +329,97 @@
         "`CLICK` on 'Close' button to close the image viewer after reviewing"
       ],
       [
-        "`CLICK` on an empty cell in the row where you want to start a new transaction entry (e.g., A10)"
+        "`CLICK` on excel window"
       ],
       [
-        "`TYPING` (Enter Date, e.g., 2025-05-18)"
+        "`CLICK` on next empty cell under Type column"
       ],
       [
-        "`PRESS` right"
-      ],
-      [
-        "`TYPING` (Enter Vendor, e.g., Coffee Shop)"
+        "`TYPING` 'Expense'"
       ],
       [
         "`PRESS` right"
       ],
       [
-        "`TYPING` (Enter Amount, e.g., 5.50)"
+        "`TYPING` '-186.93'"
       ],
       [
         "`PRESS` right"
       ],
       [
-        "`TYPING` (Enter Category, e.g., Food)",
-        "`PRESS` enter"
+        "`TYPING` '603.07'"
       ],
       [
-        "`CLICK` on the next empty row for the subsequent transaction (e.g., A11)"
+        "`CLICK` on next empty cell under Type column"
       ],
       [
-        "`TYPING` (Repeat for receipt_1.jpg)"
+        "`TYPING` 'Expense'"
       ],
       [
-        "`CLICK` on the next empty row"
+        "`PRESS` right"
       ],
       [
-        "`TYPING` (Repeat for receipt_2.jpg)"
+        "`TYPING` '-3670'"
       ],
       [
-        "`CLICK` on the next empty row"
+        "`PRESS` right"
       ],
       [
-        "`TYPING` (Repeat for receipt_3.pdf)"
+        "`TYPING` '-3066.93'"
       ],
       [
-        "`CLICK` on the next empty row"
+        "`CLICK` on next empty cell under Type column"
       ],
       [
-        "`TYPING` (Repeat for receipt_4.jpg)"
+        "`TYPING` 'Expense'"
+      ],
+      [
+        "`PRESS` right"
+      ],
+      [
+        "`TYPING` '-5.7'"
+      ],
+      [
+        "`PRESS` right"
+      ],
+      [
+        "`TYPING` '-3072.63'"
+      ],
+      [
+        "`CLICK` on next empty cell under Type column"
+      ],
+      [
+        "`TYPING` 'Expense'"
+      ],
+      [
+        "`PRESS` right"
+      ],
+      [
+        "`TYPING` '-154.06'"
+      ],
+      [
+        "`PRESS` right"
+      ],
+      [
+        "`TYPING` '-3226.69'"
+      ],
+      [
+        "`CLICK` on next empty cell under Type column"
+      ],
+      [
+        "`TYPING` 'Expense'"
+      ],
+      [
+        "`PRESS` right"
+      ],
+      [
+        "`TYPING` '-8.1'"
+      ],
+      [
+        "`PRESS` right"
+      ],
+      [
+        "`TYPING` '-3234.79'"
       ],
       [
         "`HOTKEY` ['control', 's']"

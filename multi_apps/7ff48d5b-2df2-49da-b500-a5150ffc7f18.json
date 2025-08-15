@@ -101,64 +101,223 @@
   },
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` google-chrome",
-      "`PRESS` enter",
-      "`TYPING` 深圳福田区24小时自助签注机地址",
-      "`PRESS` enter",
-      "`TYPING` 深圳公安出入境",
-      "`CLICK` on '深圳公安' (Shenzhen Public Security) official website or WeChat official account link if found in search results, looking for '出入境业务' (Exit-Entry Business) or '智能签注设备' (Intelligent Endorsement Equipment)",
-      "`SCROLL` 0, 500",
-      "`TYPING` (Assuming you've found a map or list on the website/WeChat that shows locations.)",
+      "`CLICK` google-chrome",
+      "`TYPING` 深圳公安",
+      "`CLICK` on '深圳公安' (Shenzhen Public Security) official website, looking for '出入境业务' (Exit-Entry Business)",
+      "`CLICK` on '更多'",
+      "`CLICK` on '出入境业务'",
+      "`CLICK` on '智能签注设备' (Intelligent Endorsement Equipment)",
+      "`CLICK` on '福田区'",
       "`CLICK` on the address of the first 24-hour self-service check-in machine in Futian District to highlight it",
       "`HOTKEY` ['control', 'c']",
-      "`TYPING` libreoffice --writer",
-      "`PRESS` enter",
-      "`HOTKEY` ['control', 'v']",
-      "`PRESS` enter",
-      "`CLICK` on the address of the second 24-hour self-service check-in machine in Futian District (switch back to Chrome window if needed, then copy)",
       "`HOTKEY` ['alt', 'tab']",
       "`HOTKEY` ['control', 'v']",
       "`PRESS` enter",
-      "`CLICK` on the address of the third 24-hour self-service check-in machine in Futian District (switch back to Chrome window if needed, then copy)",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
       "`HOTKEY` ['alt', 'tab']",
       "`HOTKEY` ['control', 'v']",
       "`PRESS` enter",
-      "`CLICK` on the address of the fourth 24-hour self-service check-in machine in Futian District (switch back to Chrome window if needed, then copy)",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
       "`HOTKEY` ['alt', 'tab']",
       "`HOTKEY` ['control', 'v']",
       "`PRESS` enter",
-      "`CLICK` on the address of the fifth 24-hour self-service check-in machine in Futian District (switch back to Chrome window if needed, then copy)",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
       "`HOTKEY` ['alt', 'tab']",
       "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
+      "`HOTKEY` ['alt', 'tab']",
+      "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District",
+      "`HOTKEY` ['control', 'c']",
+      "`HOTKEY` ['alt', 'tab']",
+      "`HOTKEY` ['control', 'v']",
+      "`PRESS` enter",
       "`HOTKEY` ['control', 's']",
       "`TYPING` /home/user/Documents/macau_visa_machines.odt",
       "`CLICK` on 'Save'"
     ],
     "grouped-action": [
       [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
+        "`CLICK` google-chrome"
       ],
       [
-        "`TYPING` google-chrome"
-      ],
-      [
+        "`TYPING` 深圳公安",
         "`PRESS` enter"
       ],
       [
-        "`TYPING` 深圳福田区24小时自助签注机地址"
+        "`CLICK` on '深圳公安' (Shenzhen Public Security) official website"
       ],
       [
-        "`PRESS` enter"
+        "`CLICK` on '更多'"
       ],
       [
-        "`CLICK` on '深圳公安' (Shenzhen Public Security) official website or WeChat official account link if found in search results, looking for '出入境业务' (Exit-Entry Business) or '智能签注设备' (Intelligent Endorsement Equipment)"
+        "`CLICK` on '出入境业务'"
       ],
       [
-        "`SCROLL` 0, 500"
+        "`CLICK` on '智能签注设备' (Intelligent Endorsement Equipment)"
       ],
       [
-        "`TYPING` (Assuming you've found a map or list on the website/WeChat that shows locations.)"
+        "`CLICK` on '福田区'"
       ],
       [
         "`CLICK` on the address of the first 24-hour self-service check-in machine in Futian District to highlight it"
@@ -167,61 +326,417 @@
         "`HOTKEY` ['control', 'c']"
       ],
       [
-        "`TYPING` libreoffice --writer"
+        "`HOTKEY` ['alt', 'tab']"
       ],
       [
+        "`HOTKEY` ['control', 'v']",
         "`PRESS` enter"
-      ],
-      [
-        "`HOTKEY` ['control', 'v']"
-      ],
-      [
-        "`PRESS` enter"
-      ],
-      [
-        "`CLICK` on the address of the second 24-hour self-service check-in machine in Futian District"
       ],
       [
         "`HOTKEY` ['alt', 'tab']"
       ],
       [
-        "`HOTKEY` ['control', 'v']"
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
       ],
       [
-        "`PRESS` enter"
-      ],
-      [
-        "`CLICK` on the address of the third 24-hour self-service check-in machine in Futian District"
+        "`HOTKEY` ['control', 'c']"
       ],
       [
         "`HOTKEY` ['alt', 'tab']"
       ],
       [
-        "`HOTKEY` ['control', 'v']"
-      ],
-      [
+        "`HOTKEY` ['control', 'v']",
         "`PRESS` enter"
       ],
       [
-        "`CLICK` on the address of the fourth 24-hour self-service check-in machine in Futian District"
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
       ],
       [
         "`HOTKEY` ['alt', 'tab']"
       ],
       [
-        "`HOTKEY` ['control', 'v']"
-      ],
-      [
+        "`HOTKEY` ['control', 'v']",
         "`PRESS` enter"
       ],
       [
-        "`CLICK` on the address of the fifth 24-hour self-service check-in machine in Futian District"
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
       ],
       [
         "`HOTKEY` ['alt', 'tab']"
       ],
       [
-        "`HOTKEY` ['control', 'v']"
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
+      ],
+      [
+        "`CLICK` on the address of the next 24-hour self-service check-in machine in Futian District"
+      ],
+      [
+        "`HOTKEY` ['control', 'c']"
+      ],
+      [
+        "`HOTKEY` ['alt', 'tab']"
+      ],
+      [
+        "`HOTKEY` ['control', 'v']",
+        "`PRESS` enter"
       ],
       [
         "`HOTKEY` ['control', 's']"

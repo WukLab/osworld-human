@@ -95,18 +95,12 @@
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on opened vlc window for the video",
+      "`CLICK` on Stop button on the bottom",
+      "`CLICK` on the 00:08 position of the progress bar",
       "`CLICK` on 'Video' in the menu bar",
       "`CLICK` on 'Take Snapshot'",
-      "`CLICK` on 'Tools' in the menu bar",
-      "`CLICK` on 'Preferences'",
-      "`CLICK` on 'All' under 'Show settings'",
-      "`SCROLL` 0, 400",
-      "`CLICK` on 'Video'",
-      "`CLICK` on 'Filters'",
-      "`CLICK` on 'Scene filter'",
-      "`TYPING` /home/user/Desktop/snapshot.png",
-      "`CLICK` on 'Save'",
       "`CLICK` change to the opnened window of pptx in LibreOffice Impress",
+      "`CLICK` on the second slide",
       "`CLICK` on 'Slide' in the menu bar",
       "`CLICK` on 'Page Properties'",
       "`CLICK` on 'Background' tab",
@@ -114,12 +108,18 @@
       "`CLICK` on 'Add/Import'",
       "`TYPING` /home/user/Desktop/snapshot.png",
       "`CLICK` on 'Open'",
-      "`CLICK` on 'Stretched' radio button",
+      "`CLICK` on 'Open'",
       "`CLICK` on 'OK'"
     ],
     "grouped-action": [
       [
         "`CLICK` on opened vlc window for the video"
+      ],
+      [
+        "`CLICK` on Stop button on the bottom"
+      ],
+      [
+        "`CLICK` on the 00:08 position of the progress bar"
       ],
       [
         "`CLICK` on 'Video' in the menu bar"
@@ -128,32 +128,10 @@
         "`CLICK` on 'Take Snapshot'"
       ],
       [
-        "`CLICK` on 'Tools' in the menu bar"
-      ],
-      [
-        "`CLICK` on 'Preferences'"
-      ],
-      [
-        "`CLICK` on 'All' under 'Show settings'"
-      ],
-      [
-        "`SCROLL` 0, 400"
-      ],
-      [
-        "`CLICK` on 'Video'"
-      ],
-      [
-        "`CLICK` on 'Filters'"
-      ],
-      [
-        "`CLICK` on 'Scene filter'"
-      ],
-      [
-        "`TYPING` /home/user/Desktop/snapshot.png",
-        "`CLICK` on 'Save'"
-      ],
-      [
         "`CLICK` change to the opnened window of pptx in LibreOffice Impress"
+      ],
+      [
+        "`CLICK` on the second slide"
       ],
       [
         "`CLICK` on 'Slide' in the menu bar"
@@ -171,11 +149,10 @@
         "`CLICK` on 'Add/Import'"
       ],
       [
-        "`TYPING` /home/user/Desktop/snapshot.png",
-        "`CLICK` on 'Open'"
+        "`TYPING` /home/user/Pictures/vlcsnap-2025-07-19-16h05m37s487.png"
       ],
       [
-        "`CLICK` on 'Stretched' radio button"
+        "`CLICK` on 'Open'"
       ],
       [
         "`CLICK` on 'OK'"

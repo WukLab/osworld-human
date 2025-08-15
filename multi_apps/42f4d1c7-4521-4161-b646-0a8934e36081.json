@@ -42,7 +42,7 @@
           "--list-extensions",
           "|",
           "grep",
-          "mattn.lisp"
+          "mattn.Lisp"
         ]
       },
       {
@@ -56,7 +56,7 @@
         "type": "rule",
         "rules": {
           "type": "contain",
-          "expected": "mattn.lisp"
+          "expected": "mattn.Lisp"
         }
       },
       {
@@ -72,21 +72,23 @@
     "single-action": [
       "`CLICK` on 'Extensions' icon in the Activity Bar",
       "`TYPING` lisp",
-      "`CLICK` on 'Install' button for a suitable Lisp extension (e.g., 'Common Lisp' by 'Matt L' or similar)",
+      "`CLICK` on 'Install' button for a suitable Lisp extension",
       "`CLICK` on 'File'",
       "`CLICK` on 'New File'",
-      "`CLICK` on 'Select a language'",
-      "`TYPING` lisp",
-      "`CLICK` on 'Lisp'",
+      "`CLICK` on input box",
+      "`TYPING` resize-image-example.scm",
+      "`CLICK` on create",
+      "`TYPING` /home/user/.config/GIMP/2.10/scripts/resize-image-example.scm",
+      "`PRESS` enter",
       "`TYPING` (define (script-fu-resize-image-example filename width height)",
       "`PRESS` enter",
-      "`TYPING`   (let* ((image (car (gimp-file-load filename filename)))",
+      "`TYPING`   (let* ((image (car (gimp-file-load RUN-NONINTERACTIVE filename filename)))",
       "`PRESS` enter",
       "`TYPING`          (drawable (car (gimp-image-active-drawable image))))",
       "`PRESS` enter",
       "`TYPING`     (gimp-image-scale image width height)",
       "`PRESS` enter",
-      "`TYPING`     (gimp-file-save RUN-NONINTERACTIVE image drawable (string-append (car (file-dirname filename)) \"/resized.png\") \"resized.png\")",
+      "`TYPING`     (gimp-file-save RUN-NONINTERACTIVE image drawable \"/home/user/Desktop/resized.png\" \"/home/user/Desktop/resized.png\")",
       "`PRESS` enter",
       "`TYPING`     (gimp-image-delete image)))",
       "`PRESS` enter",
@@ -98,9 +100,11 @@
       "`PRESS` enter",
       "`TYPING`                       \"Your Name\"",
       "`PRESS` enter",
+      "`TYPING`                       \"Copyright\"",
+      "`PRESS` enter",
       "`TYPING`                       \"2025\"",
       "`PRESS` enter",
-      "`TYPING`                       \"<Image>/Filters/Script-Fu/Examples\"",
+      "`TYPING`                       \"\"",
       "`PRESS` enter",
       "`TYPING`                       '((filename STRING \"Input image path\" \"/home/user/Desktop/character.png\")",
       "`PRESS` enter",
@@ -108,19 +112,20 @@
       "`PRESS` enter",
       "`TYPING`                         (height INTEGER \"New height\" 128))))",
       "`PRESS` enter",
-      "`HOTKEY` ['control', 's']",
-      "`TYPING` /home/user/.config/GIMP/2.10/scripts/resize-image.scm",
+      "`TYPING`                         (script-fu-menu-register \"script-fu-resize-image-example\" \"<Image>/Filters/Example\")",
       "`PRESS` enter",
-      "`TYPING` gimp",
+      "`HOTKEY` ['control', 's']",
+      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
+      "`TYPING` gimp /home/user/Desktop/character.png",
       "`PRESS` enter",
       "`CLICK` on 'Filters' in the menu bar",
       "`CLICK` on 'Script-Fu'",
       "`CLICK` on 'Refresh Scripts'",
       "`CLICK` on 'Filters'",
       "`CLICK` on 'Script-Fu'",
-      "`CLICK` on 'Examples'",
-      "`CLICK` on 'Resize Image Example'",
-      "`CLICK` on 'Ok'"
+      "`CLICK` on 'Console'",
+      "`TYPING` on '(script-fu-resize-image-example \"/home/user/Desktop/character.png\" 128 128)'",
+      "`PRESS` enter"
     ],
     "grouped-action": [
       [
@@ -143,20 +148,24 @@
         "`CLICK` on 'New File'"
       ],
       [
-        "`CLICK` on 'Select a language'"
+        "`CLICK` on input box"
       ],
       [
-        "`TYPING` lisp"
+        "`TYPING` resize-image-example.scm"
       ],
       [
-        "`CLICK` on 'Lisp'"
+        "`CLICK` on create"
+      ],
+      [
+        "`TYPING` /home/user/.config/GIMP/2.10/scripts/resize-image-example.scm",
+        "`PRESS` enter"
       ],
       [
         "`TYPING` (define (script-fu-resize-image-example filename width height)",
         "`PRESS` enter"
       ],
       [
-        "`TYPING`   (let* ((image (car (gimp-file-load filename filename)))",
+        "`TYPING`   (let* ((image (car (gimp-file-load RUN-NONINTERACTIVE filename filename)))",
         "`PRESS` enter"
       ],
       [
@@ -168,7 +177,7 @@
         "`PRESS` enter"
       ],
       [
-        "`TYPING`     (gimp-file-save RUN-NONINTERACTIVE image drawable (string-append (car (file-dirname filename)) \"/resized.png\") \"resized.png\")",
+        "`TYPING`     (gimp-file-save RUN-NONINTERACTIVE image drawable \"/home/user/Desktop/resized.png\" \"/home/user/Desktop/resized.png\")",
         "`PRESS` enter"
       ],
       [
@@ -192,11 +201,15 @@
         "`PRESS` enter"
       ],
       [
+        "`TYPING`                       \"Copyright\"",
+        "`PRESS` enter"
+      ],
+      [
         "`TYPING`                       \"2025\"",
         "`PRESS` enter"
       ],
       [
-        "`TYPING`                       \"<Image>/Filters/Script-Fu/Examples\"",
+        "`TYPING`                       \"\"",
         "`PRESS` enter"
       ],
       [
@@ -212,14 +225,17 @@
         "`PRESS` enter"
       ],
       [
-        "`HOTKEY` ['control', 's']"
-      ],
-      [
-        "`TYPING` /home/user/.config/GIMP/2.10/scripts/resize-image.scm",
+        "`TYPING`                         (script-fu-menu-register \"script-fu-resize-image-example\" \"<Image>/Filters/Example\")",
         "`PRESS` enter"
       ],
       [
-        "`TYPING` gimp",
+        "`HOTKEY` ['control', 's']"
+      ],
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
+      ],
+      [
+        "`TYPING` gimp /home/user/Desktop/character.png",
         "`PRESS` enter"
       ],
       [
@@ -238,13 +254,11 @@
         "`CLICK` on 'Script-Fu'"
       ],
       [
-        "`CLICK` on 'Examples'"
+        "`CLICK` on 'Console'"
       ],
       [
-        "`CLICK` on 'Resize Image Example'"
-      ],
-      [
-        "`CLICK` on 'Ok'"
+        "`TYPING` on '(script-fu-resize-image-example \"/home/user/Desktop/character.png\" 128 128)'",
+        "`PRESS` enter"
       ]
     ]
   }

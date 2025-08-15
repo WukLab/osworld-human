@@ -164,12 +164,14 @@
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY` 'Ctrl+Alt+T'",
-      "`TYPING` cd ~/OSWorld",
+      "`TYPING` cd /home/user/Documents/Projects/OSWorld",
       "`PRESS` enter",
-      "`TYPING` dolphin ~/OSWorld",
+      "`TYPING` nautilus /home/user/Documents/Projects/OSWorld",
       "`PRESS` enter",
+      "`HOTKEY` 'Ctrl+Alt+T'",
       "`TYPING` google-chrome https://github.com/",
       "`PRESS` enter",
+      "`HOTKEY` 'Ctrl+Alt+T'",
       "`TYPING` google-chrome https://docs.python.org/3/",
       "`PRESS` enter"
     ],
@@ -178,17 +180,19 @@
         "`HOTKEY` 'Ctrl+Alt+T'"
       ],
       [
-        "`TYPING` cd ~/OSWorld",
+        "`TYPING` cd /home/user/Documents/Projects/OSWorld",
         "`PRESS` enter"
       ],
       [
-        "`TYPING` dolphin ~/OSWorld",
+        "`TYPING` nautilus /home/user/Documents/Projects/OSWorld",
         "`PRESS` enter"
       ],
+      ["`HOTKEY` 'Ctrl+Alt+T'"],
       [
         "`TYPING` google-chrome https://github.com/",
         "`PRESS` enter"
       ],
+      ["`HOTKEY` 'Ctrl+Alt+T'"],
       [
         "`TYPING` google-chrome https://docs.python.org/3/",
         "`PRESS` enter"

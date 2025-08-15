@@ -47,7 +47,7 @@
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` libreoffice --writer /home/user/essay.docx",
+      "`TYPING` libreoffice --writer /home/user/Recruitment_and_retention_of_health_professionals_across_Europe.docx",
       "`PRESS` enter",
       "`CLICK` on 'File' in the menu bar",
       "`CLICK` on 'Export As'",
@@ -64,7 +64,7 @@
         "`HOTKEY`'Ctrl+Alt+T' open the terminal"
       ],
       [
-        "`TYPING` libreoffice --writer /home/user/essay.docx",
+        "`TYPING` libreoffice --writer /home/user/Recruitment_and_retention_of_health_professionals_across_Europe.docx",
         "`PRESS` enter"
       ],
       [

@@ -1,0 +1,5 @@
+setup_task.py
+cp.py
+totest/*
+*.env
+*.bat

@@ -50,7 +50,6 @@
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",
       "`TYPING` gimp",
       "`RRESS` Enter",
-      "`CLICK` on 'GNU Image Manipulation Program'",
       "`HOTKEY` 'Ctrl+O'",
       "`TYPING` /home/user/Desktop/ChMkKV8wsR6IBfEtABYfc0Tgu9cAAA1lQHO_78AFh-L733.jpg",
       "`CLICK` on 'Open'",
@@ -65,9 +64,7 @@
       "`HOTKEY` 'Ctrl+E'",
       "`CLICK` on 'Select File Type (By Extension)'",
       "`CLICK` on 'JPEG image'",
-      "`CLICK` on 'Select File Type (By Extension)'",
-      "`SCROLL` 0, -200",
-      "`CLICK` on 'PNG image'",
+      "`CLICK` on input box",
       "`TYPING` pic.png",
       "`CLICK` on 'Export'",
       "`CLICK` on 'Export'"
@@ -79,9 +76,6 @@
       [
         "`TYPING` gimp",
         "`RRESS` Enter"
-      ],
-      [
-        "`CLICK` on 'GNU Image Manipulation Program'"
       ],
       [
         "`HOTKEY` ['control', 'o']"
@@ -115,22 +109,13 @@
         "`PRESS` delete"
       ],
       [
-        "`HOTKEY` ['control', 'e']"
-      ],
-      [
         "`CLICK` on 'Select File Type (By Extension)'"
       ],
       [
         "`CLICK` on 'JPEG image'"
       ],
       [
-        "`CLICK` on 'Select File Type (By Extension)'"
-      ],
-      [
-        "`SCROLL` 0, -200"
-      ],
-      [
-        "`CLICK` on 'PNG image'"
+        "`CLICK` on input box"
       ],
       [
         "`TYPING` pic.png"

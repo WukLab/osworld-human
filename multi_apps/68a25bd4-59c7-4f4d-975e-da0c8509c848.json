@@ -84,14 +84,13 @@
   },
   "human-ground-truth": {
     "single-action": [
-      "`CLICK` on window of 'rsc-ebook-collection-2023.xlsx'",
+      "`CLICK` on window of chrome",
       "`TYPING` https://arxiv.org/abs/1810.04805",
       "`PRESS` Enter",
       "`CLICK` on 'PDF'",
-      "`TYPING` paper01.pdf",
-      "`CLICK` on 'Path'",
-      "`TYPING` /home/user",
-      "`CLICK` on 'Save'",
+      "`CLICK` on 'download'",
+      "`TYPING` '/home/user/paper01.pdf'",
+      "`PRESS` Enter",
       "`HOTKEY` 'Ctrl+T'",
       "`TYPING` \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\" Google Scholar cited by",
       "`PRESS` Enter",
@@ -146,7 +145,7 @@
     ],
     "grouped-action": [
       [
-        "`CLICK` on window of 'rsc-ebook-collection-2023.xlsx'"
+        "`CLICK` on window of chrome"
       ],
       [
         "`TYPING` https://arxiv.org/abs/1810.04805",
@@ -156,14 +155,11 @@
         "`CLICK` on 'PDF'"
       ],
       [
-        "`TYPING` paper01.pdf"
+        "`CLICK` on 'download'"
       ],
       [
-        "`CLICK` on 'Path'"
-      ],
-      [
-        "`TYPING` /home/user",
-        "`CLICK` on 'Save'"
+      "`TYPING` '/home/user/paper01.pdf'",
+      "`PRESS` Enter"
       ],
       [
         "`HOTKEY` 'Ctrl+T'"

@@ -81,14 +81,20 @@
   },
   "human-ground-truth": {
     "single-action": [
+      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
+      "`TYPING` 'vlc /home/user/video.mp4'",
+      "`RRESS` Enter",
       "`CLICK` on 'Subtitle' in the menu bar of VLC",
       "`CLICK` on 'Sub Track'",
       "`CLICK` on 'Disable'",
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` ffmpeg -i \"/home/user/Videos/video.mp4\" -map 0:s:0 \"/home/user/Videos/subtitles.srt\"",
+      "`TYPING` ffmpeg -i '/home/user/video.mp4' -map 0:s:0 '/home/user/Desktop/subtitles.srt'",
       "`PRESS` enter"
     ],
     "grouped-action": [
+      ["`HOTKEY`'Ctrl+Alt+T' open the terminal"],
+      ["`TYPING` 'vlc /home/user/video.mp4'",
+      "`RRESS` Enter"],
       [
         "`CLICK` on 'Subtitle' in the menu bar of VLC"
       ],
@@ -102,7 +108,7 @@
         "`HOTKEY`'Ctrl+Alt+T' open the terminal"
       ],
       [
-        "`TYPING` ffmpeg -i \"/home/user/Videos/video.mp4\" -map 0:s:0 \"/home/user/Videos/subtitles.srt\"",
+        "`TYPING` ffmpeg -i '/home/user/video.mp4' -map 0:s:0 '/home/user/Desktop/subtitles.srt'",
         "`PRESS` enter"
       ]
     ]

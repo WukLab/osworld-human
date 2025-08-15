@@ -161,7 +161,9 @@
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",
       "`TYPING` pip install txt2epub",
       "`PRESS` enter",
-      "`TYPING` txt2epub convert -i '/home/user/Documents/Novels/Pass Through' -o 'Pass Through.epub' -t 'Pass Through'",
+      "`TYPING` cat /home/user/Documents/Novels/Pass Through/Chapter0.txt /home/user/Documents/Novels/Pass Through/Chapter1.txt /home/user/Documents/Novels/Pass Through/Chapter2.txt /home/user/Documents/Novels/Pass Through/Chapter3.txt /home/user/Documents/Novels/Pass Through/Chapter4.txt > '/home/user/Documents/Novels/Pass Through/Pass Through.txt'",
+      "`PRESS` enter",
+      "`TYPING` txt2epub convert -i '/home/Documents/Novels/Pass Through/Pass Through.txt' -o '/home/user/Documents/Novels/Pass Through/Pass Through.epub' -t 'Pass Through'",
       "`PRESS` enter"
     ],
     "grouped-action": [
@@ -173,7 +175,11 @@
         "`PRESS` enter"
       ],
       [
-        "`TYPING` txt2epub convert -i '/home/user/Documents/Novels/Pass Through' -o 'Pass Through.epub' -t 'Pass Through'",
+        "`TYPING` cat /home/user/Documents/Novels/Pass Through/Chapter0.txt /home/user/Documents/Novels/Pass Through/Chapter1.txt /home/user/Documents/Novels/Pass Through/Chapter2.txt /home/user/Documents/Novels/Pass Through/Chapter3.txt /home/user/Documents/Novels/Pass Through/Chapter4.txt > '/home/user/Documents/Novels/Pass Through/Pass Through.txt'",
+        "`PRESS` enter"
+      ],
+      [
+        "`TYPING` txt2epub convert -i '/home/Documents/Novels/Pass Through/Pass Through.txt' -o '/home/user/Documents/Novels/Pass Through/Pass Through.epub' -t 'Pass Through'",
         "`PRESS` enter"
       ]
     ]
