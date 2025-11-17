@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1OtN8poSktw5s9w7y28wr5JmXszMOpn2q",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/5bc63fb9-276a-4439-a7c1-9dc76401737f/LLM%20results.json",
             "path": "/home/user/Desktop/llm_answers.json"
           }
         ]
@@ -55,7 +55,7 @@
     "func": "compare_docx_files_and_ignore_new_lines",
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.google.com/uc?export=download&id=1gmg5mC7qfmPvspC-ICOIJJ3aRjuSvP8u",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/5bc63fb9-276a-4439-a7c1-9dc76401737f/gemini_results_Gold.docx",
       "dest": "gemini_results_Gold.docx"
     },
     "result": {
@@ -67,6 +67,9 @@
       "ignore_blanks": false
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY` Ctrl+f",
@@ -79,7 +82,8 @@
       "`HOTKEY` Ctrl+V",
       "`PRESS` Enter",
       "`PRESS` Enter",
-      "`SCROLL` back to the JSON file to locate the next Gemini response",
+      "`CLICK` back to the JSON file",
+      "`CLICK` to locate the next Gemini response",
       "`MOUSE_DOWN` to select the next Gemini response (value only)",
       "`MOUSE_UP`",
       "`HOTKEY` Ctrl+C",
@@ -87,18 +91,8 @@
       "`HOTKEY` Ctrl+V",
       "`PRESS` Enter",
       "`PRESS` Enter",
-      "`CLICK` on the opened json file window",
-      "`HOTKEY` Ctrl+f",
-      "`TYPING` 'Gemini' to find all Gemini's responses through the file to locate",
-      "`MOUSE_DOWN` to select the first Gemini response (value only)",
-      "`DRAG_TO` to select the first Gemini response (value only)",
-      "`MOUSE_UP`",
-      "`HOTKEY` Ctrl+C",
-      "`CLICK` on the new LibreOffice Writer window",
-      "`HOTKEY` Ctrl+V",
-      "`PRESS` Enter",
-      "`PRESS` Enter",
-      "`SCROLL` back to the JSON file to locate the next Gemini response",
+      "`CLICK` back to the JSON file",
+      "`CLICK` to locate the next Gemini response",
       "`MOUSE_DOWN` to select the next Gemini response (value only)",
       "`MOUSE_UP`",
       "`HOTKEY` Ctrl+C",
@@ -106,18 +100,8 @@
       "`HOTKEY` Ctrl+V",
       "`PRESS` Enter",
       "`PRESS` Enter",
-      "`CLICK` on the opened json file window",
-      "`HOTKEY` Ctrl+f",
-      "`TYPING` 'Gemini' to find all Gemini's responses through the file to locate",
-      "`MOUSE_DOWN` to select the first Gemini response (value only)",
-      "`DRAG_TO` to select the first Gemini response (value only)",
-      "`MOUSE_UP`",
-      "`HOTKEY` Ctrl+C",
-      "`CLICK` on the new LibreOffice Writer window",
-      "`HOTKEY` Ctrl+V",
-      "`PRESS` Enter",
-      "`PRESS` Enter",
-      "`SCROLL` back to the JSON file to locate the next Gemini response",
+      "`CLICK` back to the JSON file",
+      "`CLICK` to locate the next Gemini response",
       "`MOUSE_DOWN` to select the next Gemini response (value only)",
       "`MOUSE_UP`",
       "`HOTKEY` Ctrl+C",
@@ -125,18 +109,8 @@
       "`HOTKEY` Ctrl+V",
       "`PRESS` Enter",
       "`PRESS` Enter",
-      "`CLICK` on the opened json file window",
-      "`HOTKEY` Ctrl+f",
-      "`TYPING` 'Gemini' to find all Gemini's responses through the file to locate",
-      "`MOUSE_DOWN` to select the first Gemini response (value only)",
-      "`DRAG_TO` to select the first Gemini response (value only)",
-      "`MOUSE_UP`",
-      "`HOTKEY` Ctrl+C",
-      "`CLICK` on the new LibreOffice Writer window",
-      "`HOTKEY` Ctrl+V",
-      "`PRESS` Enter",
-      "`PRESS` Enter",
-      "`SCROLL` back to the JSON file to locate the next Gemini response",
+      "`CLICK` back to the JSON file",
+      "`CLICK` to locate the next Gemini response",
       "`MOUSE_DOWN` to select the next Gemini response (value only)",
       "`MOUSE_UP`",
       "`HOTKEY` Ctrl+C",
@@ -144,37 +118,8 @@
       "`HOTKEY` Ctrl+V",
       "`PRESS` Enter",
       "`PRESS` Enter",
-      "`CLICK` on the opened json file window",
-      "`HOTKEY` Ctrl+f",
-      "`TYPING` 'Gemini' to find all Gemini's responses through the file to locate",
-      "`MOUSE_DOWN` to select the first Gemini response (value only)",
-      "`DRAG_TO` to select the first Gemini response (value only)",
-      "`MOUSE_UP`",
-      "`HOTKEY` Ctrl+C",
-      "`CLICK` on the new LibreOffice Writer window",
-      "`HOTKEY` Ctrl+V",
-      "`PRESS` Enter",
-      "`PRESS` Enter",
-      "`SCROLL` back to the JSON file to locate the next Gemini response",
-      "`MOUSE_DOWN` to select the next Gemini response (value only)",
-      "`MOUSE_UP`",
-      "`HOTKEY` Ctrl+C",
-      "`CLICK` on the LibreOffice Writer window",
-      "`HOTKEY` Ctrl+V",
-      "`PRESS` Enter",
-      "`PRESS` Enter",
-      "`CLICK` on the opened json file window",
-      "`HOTKEY` Ctrl+f",
-      "`TYPING` 'Gemini' to find all Gemini's responses through the file to locate",
-      "`MOUSE_DOWN` to select the first Gemini response (value only)",
-      "`DRAG_TO` to select the first Gemini response (value only)",
-      "`MOUSE_UP`",
-      "`HOTKEY` Ctrl+C",
-      "`CLICK` on the new LibreOffice Writer window",
-      "`HOTKEY` Ctrl+V",
-      "`PRESS` Enter",
-      "`PRESS` Enter",
-      "`SCROLL` back to the JSON file to locate the next Gemini response",
+      "`CLICK` back to the JSON file",
+      "`CLICK` to locate the next Gemini response",
       "`MOUSE_DOWN` to select the next Gemini response (value only)",
       "`MOUSE_UP`",
       "`HOTKEY` Ctrl+C",
@@ -189,7 +134,7 @@
       "`CLICK` on 'Character'",
       "`CLICK` on the 'Font Effects' tab",
       "`CLICK` on the 'Highlighting' dropdown",
-      "`CLICK` on a highlight color (e.g., Yellow)",
+      "`CLICK` on a highlight color (Yellow)",
       "`CLICK` on 'OK'",
       "`CLICK` on 'Replace All'",
       "`CLICK` on 'Close'",
@@ -222,11 +167,14 @@
         "`PRESS` Enter"
       ],
       [
-        "`SCROLL` back to the JSON file to locate the next Gemini response"
+        "`CLICK` back to the JSON file"
       ],
       [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
+        "`CLICK` to locate the next Gemini response"
+      ],
+      [
+        "`MOUSE_DOWN` to select the 2nd Gemini response (value only)",
+        "`DRAG_TO` to select the 2nd Gemini response (value only)",
         "`MOUSE_UP`"
       ],
       [
@@ -241,36 +189,14 @@
         "`PRESS` Enter"
       ],
       [
-        "`CLICK` on the opened json file window"
+        "`CLICK` back to the JSON file"
       ],
       [
-        "`HOTKEY` Ctrl+f"
+        "`CLICK` to locate the next Gemini response"
       ],
       [
-        "`TYPING` 'Gemini' to find all Gemini's responses through the file to locate"
-      ],
-      [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
-        "`MOUSE_UP`"
-      ],
-      [
-        "`HOTKEY` Ctrl+C"
-      ],
-      [
-        "`CLICK` on the new LibreOffice Writer window"
-      ],
-      [
-        "`HOTKEY` Ctrl+V",
-        "`PRESS` Enter",
-        "`PRESS` Enter"
-      ],
-      [
-        "`SCROLL` back to the JSON file to locate the next Gemini response"
-      ],
-      [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
+        "`MOUSE_DOWN` to select the 2nd Gemini response (value only)",
+        "`DRAG_TO` to select the 2nd Gemini response (value only)",
         "`MOUSE_UP`"
       ],
       [
@@ -285,36 +211,14 @@
         "`PRESS` Enter"
       ],
       [
-        "`CLICK` on the opened json file window"
+        "`CLICK` back to the JSON file"
       ],
       [
-        "`HOTKEY` Ctrl+f"
+        "`CLICK` to locate the next Gemini response"
       ],
       [
-        "`TYPING` 'Gemini' to find all Gemini's responses through the file to locate"
-      ],
-      [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
-        "`MOUSE_UP`"
-      ],
-      [
-        "`HOTKEY` Ctrl+C"
-      ],
-      [
-        "`CLICK` on the new LibreOffice Writer window"
-      ],
-      [
-        "`HOTKEY` Ctrl+V",
-        "`PRESS` Enter",
-        "`PRESS` Enter"
-      ],
-      [
-        "`SCROLL` back to the JSON file to locate the next Gemini response"
-      ],
-      [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
+        "`MOUSE_DOWN` to select the 2nd Gemini response (value only)",
+        "`DRAG_TO` to select the 2nd Gemini response (value only)",
         "`MOUSE_UP`"
       ],
       [
@@ -329,36 +233,14 @@
         "`PRESS` Enter"
       ],
       [
-        "`CLICK` on the opened json file window"
+        "`CLICK` back to the JSON file"
       ],
       [
-        "`HOTKEY` Ctrl+f"
+        "`CLICK` to locate the next Gemini response"
       ],
       [
-        "`TYPING` 'Gemini' to find all Gemini's responses through the file to locate"
-      ],
-      [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
-        "`MOUSE_UP`"
-      ],
-      [
-        "`HOTKEY` Ctrl+C"
-      ],
-      [
-        "`CLICK` on the new LibreOffice Writer window"
-      ],
-      [
-        "`HOTKEY` Ctrl+V",
-        "`PRESS` Enter",
-        "`PRESS` Enter"
-      ],
-      [
-        "`SCROLL` back to the JSON file to locate the next Gemini response"
-      ],
-      [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
+        "`MOUSE_DOWN` to select the 2nd Gemini response (value only)",
+        "`DRAG_TO` to select the 2nd Gemini response (value only)",
         "`MOUSE_UP`"
       ],
       [
@@ -373,80 +255,14 @@
         "`PRESS` Enter"
       ],
       [
-        "`CLICK` on the opened json file window"
+        "`CLICK` back to the JSON file"
       ],
       [
-        "`HOTKEY` Ctrl+f"
+        "`CLICK` to locate the next Gemini response"
       ],
       [
-        "`TYPING` 'Gemini' to find all Gemini's responses through the file to locate"
-      ],
-      [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
-        "`MOUSE_UP`"
-      ],
-      [
-        "`HOTKEY` Ctrl+C"
-      ],
-      [
-        "`CLICK` on the new LibreOffice Writer window"
-      ],
-      [
-        "`HOTKEY` Ctrl+V",
-        "`PRESS` Enter",
-        "`PRESS` Enter"
-      ],
-      [
-        "`SCROLL` back to the JSON file to locate the next Gemini response"
-      ],
-      [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
-        "`MOUSE_UP`"
-      ],
-      [
-        "`HOTKEY` Ctrl+C"
-      ],
-      [
-        "`CLICK` on the LibreOffice Writer window"
-      ],
-      [
-        "`HOTKEY` Ctrl+V",
-        "`PRESS` Enter",
-        "`PRESS` Enter"
-      ],
-      [
-        "`CLICK` on the opened json file window"
-      ],
-      [
-        "`HOTKEY` Ctrl+f"
-      ],
-      [
-        "`TYPING` 'Gemini' to find all Gemini's responses through the file to locate"
-      ],
-      [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
-        "`MOUSE_UP`"
-      ],
-      [
-        "`HOTKEY` Ctrl+C"
-      ],
-      [
-        "`CLICK` on the new LibreOffice Writer window"
-      ],
-      [
-        "`HOTKEY` Ctrl+V",
-        "`PRESS` Enter",
-        "`PRESS` Enter"
-      ],
-      [
-        "`SCROLL` back to the JSON file to locate the next Gemini response"
-      ],
-      [
-        "`MOUSE_DOWN` to select the first Gemini response (value only)",
-        "`DRAG_TO` to select the first Gemini response (value only)",
+        "`MOUSE_DOWN` to select the 2nd Gemini response (value only)",
+        "`DRAG_TO` to select the 2nd Gemini response (value only)",
         "`MOUSE_UP`"
       ],
       [
@@ -482,7 +298,7 @@
         "`CLICK` on the 'Highlighting' dropdown"
       ],
       [
-        "`CLICK` on a highlight color (e.g., Yellow)"
+        "`CLICK` on a highlight color (Yellow)"
       ],
       [
         "`CLICK` on 'OK'"

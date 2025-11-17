@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1epTcblcYh8j_wFtA-aiXPIF2Oo1IVw8A&export=download",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/51f5801c-18b3-4f25-b0c3-02f85507a078/Dickinson_Slides.pptx",
             "path": "/home/user/Desktop/Dickinson_Slides.pptx"
           }
         ]
@@ -36,13 +36,16 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1vUvaQLJUtFgbZi7lSzl0y0TS_WecFczm&export=download",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/51f5801c-18b3-4f25-b0c3-02f85507a078/notes_gold.docx",
       "dest": "notes_gold.docx"
     },
     "options": {
       "ignore_blanks": true
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on 'File'",

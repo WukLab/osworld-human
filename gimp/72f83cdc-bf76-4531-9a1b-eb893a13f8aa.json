@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1bS4xGh8bhQVSuRCwFscYZO_xzymAJgM8",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/72f83cdc-bf76-4531-9a1b-eb893a13f8aa/berry.jpeg",
             "path": "/home/user/Desktop/berry.png"
           }
         ]
@@ -32,12 +32,18 @@
   "evaluator": {
     "postconfig": [
       {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "GNU Image Manipulation Program"
+        }
+      },
+      {
         "type": "execute",
         "parameters": {
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);"
+            "import time; import pyautogui; time.sleep(1);pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);"
           ]
         }
       },
@@ -53,7 +59,7 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.write(\"berry_mirror\");pyautogui.press([\"enter\"]);"
+            "import time; import pyautogui; time.sleep(1);pyautogui.write(\"berry_mirror\");time.sleep(1);pyautogui.press([\"enter\"]);"
           ]
         }
       },
@@ -92,6 +98,9 @@
       "dest": "berry_mirror.png"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`RIGHT_CLICK` on the image",

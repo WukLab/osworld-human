@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1fe-MuG57hf12cEi4qI4dEI3OYJOHYoY2",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/a74b607e-6bb5-4ea8-8a7c-5d97c7bbcd2a/Hello%20Extension.zip",
             "path": "/home/user/Desktop/helloExtension.zip"
           }
         ]
@@ -18,7 +18,7 @@
     {
       "type": "execute",
       "parameters": {
-        "command": "echo password | sudo -S apt-get update -y && echo password | sudo -S apt-get install unzip -y && unzip /home/user/Desktop/helloExtension.zip -d /home/user/Desktop/ && rm /home/user/Desktop/helloExtension.zip",
+        "command": "echo {CLIENT_PASSWORD} | sudo -S apt-get update -y && echo {CLIENT_PASSWORD} | sudo -S apt-get install unzip -y && unzip /home/user/Desktop/helloExtension.zip -d /home/user/Desktop/ && rm /home/user/Desktop/helloExtension.zip",
         "shell": true
       }
     },
@@ -59,69 +59,72 @@
       }
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` the three-dot menu in the top right corner of Chrome",
-      "`HOVER` over 'More tools'",
       "`CLICK` 'Extensions'",
-      "`CLICK` the 'Developer mode' toggle in the top right corner",
+      "`CLICK` over 'Manage extensions'",
+      "`CLICK` the 'Developer mode' toggle switch",
       "`CLICK` 'Load unpacked'",
+      "`CLICK` the 'Home' directory in the left sidebar",
       "`CLICK` the 'Desktop' directory",
       "`CLICK` the extension folder",
-      "`CLICK` 'Select Folder'",
-      "`RIGHT_CLICK` the extension ID on the extensions page",
-      "`CLICK` 'copy' to copy the extension ID on the extensions page",
-      "`CLICK` upright corner to close the extensions page",
-      "`RIGHT_CLICK` the Chrome shortcut",
-      "`CLICK` 'Properties'",
-      "`CLICK` the text in the 'Target' field",
-      "`TYPING` --load-extension=\"C:\\Users\\YourUsername\\Desktop\\YourExtensionFolder\" --disable-extensions-except=your_extension_id",
-      "`DOUBLE_CLICK` 'your_extension_id' to choose it as target",
-      "`HOTKEY` 'Ctrl+V' to paste 'your_extension_id' with the noted extension ID",
-      "`CLICK` 'Apply'",
-      "`CLICK` 'OK'"
+      "`CLICK` 'Open' to confirm selection",
+      "`RIGHT_CLICK` the extension card on the extensions page",
+      "`CLICK` 'Copy ID' to copy the extension ID",
+      "`CLICK` the 'X' in the top right to close the extensions page",
+      "`RIGHT_CLICK` the Chrome application launcher",
+      "`CLICK` 'Properties' or 'Edit Application'",
+      "`CLICK` the text in the 'Command' field",
+      "`TYPING` --load-extension=\"/home/user/Desktop/helloExtension\" --disable-extensions-except=your_extension_id",
+      "`DOUBLE_CLICK` the 'your_extension_id' text in the command field",
+      "`HOTKEY` 'Ctrl+V' to paste the copied extension ID",
+      "`CLICK` 'Save' or 'OK'"
     ],
     "grouped-action": [
       [
         "`CLICK` the three-dot menu in the top right corner of Chrome"
       ],
       [
-        "`HOVER` over 'More tools'",
-        "`CLICK` 'Extensions'"
+        "`CLICK` 'Extensions'",
+        "`CLICK` over 'Manage extensions'"
       ],
       [
-        "`CLICK` the 'Developer mode' toggle in the top right corner"
+        "`CLICK` the 'Developer mode' toggle switch"
       ],
       [
         "`CLICK` 'Load unpacked'"
       ],
       [
+        "`CLICK` the 'Home' directory in the left sidebar",
         "`CLICK` the 'Desktop' directory",
         "`CLICK` the extension folder",
-        "`CLICK` 'Select Folder'"
+        "`CLICK` 'Open' to confirm selection"
       ],
       [
-        "`RIGHT_CLICK` the extension ID on the extensions page",
-        "`CLICK` 'copy' to copy the extension ID on the extensions page"
+        "`RIGHT_CLICK` the extension card on the extensions page",
+        "`CLICK` 'Copy ID' to copy the extension ID"
       ],
       [
-        "`CLICK` upright corner to close the extensions page"
+        "`CLICK` the 'X' in the top right to close the extensions page"
       ],
       [
-        "`RIGHT_CLICK` the Chrome shortcut",
-        "`CLICK` 'Properties'"
+        "`RIGHT_CLICK` the Chrome application launcher",
+        "`CLICK` 'Properties' or 'Edit Application'"
       ],
       [
-        "`CLICK` the text in the 'Target' field"
+        "`CLICK` the text in the 'Command' field"
       ],
       [
-        "`TYPING` --load-extension=\"C:\\Users\\YourUsername\\Desktop\\YourExtensionFolder\" --disable-extensions-except=your_extension_id",
-        "`DOUBLE_CLICK` 'your_extension_id' to choose it as target",
-        "`HOTKEY` 'Ctrl+V' to paste 'your_extension_id' with the noted extension ID"
+        "`TYPING` --load-extension=\"/home/user/Desktop/helloExtension\" --disable-extensions-except=your_extension_id",
+        "`DOUBLE_CLICK` the 'your_extension_id' text in the command field",
+        "`HOTKEY` 'Ctrl+V' to paste the copied extension ID"
       ],
       [
-        "`CLICK` 'Apply'",
-        "`CLICK` 'OK'"
+        "`CLICK` 'Save' or 'OK'"
       ]
     ]
   }

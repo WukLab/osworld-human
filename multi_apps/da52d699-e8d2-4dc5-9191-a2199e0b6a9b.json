@@ -9,11 +9,11 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1JGZNCShtmpu7A8Z8lkjc8hdFEAMXZVvh&export=download&authuser=0&confirm=t&uuid=67063da6-2a72-4ed2-92b2-ade508439ce4&at=APZUnTUgS17YjX-D0oSvALwnPosB:1709368886960",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/da52d699-e8d2-4dc5-9191-a2199e0b6a9b/2023_validation_Book_Reading_Rate.xlsx",
             "path": "/home/user/Desktop/2023_validation_Book_Reading_Rate.xlsx"
           },
           {
-            "url": "https://drive.usercontent.google.com/download?id=1iySmK8zvTzgmERH7KQuESP05NBsMunhV&export=download&authuser=0&confirm=t&uuid=130f6cee-0f9a-4f2e-a84d-89a3b302f350&at=APZUnTXugQOTOApe1_zxUbafo2Sp:1709369519349",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/da52d699-e8d2-4dc5-9191-a2199e0b6a9b/book_list_result.docx",
             "path": "/home/user/Desktop/book_list_result.docx"
           }
         ]
@@ -61,7 +61,7 @@
     ],
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1rpvOlHZO0AqC85od8pJtx8YcDPljcejN&export=download&authuser=0&confirm=t&uuid=24a3a5e3-a188-4a41-ad01-a4709dc1c0b6&at=APZUnTWx56rr8-iTuXkfV5poOK-I:1709369145446",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/da52d699-e8d2-4dc5-9191-a2199e0b6a9b/book_list_result_Gold.docx",
       "dest": "book_list_result_Gold.docx"
     },
     "result": {
@@ -70,9 +70,12 @@
       "dest": "book_list_result.docx"
     }
   },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`DOUBLE_CLICK` ~/Desktop/[Your_Books_Read_Spreadsheet_Name].xlsx",
+      "`DOUBLE_CLICK` ~/Desktop/2023_validation_Book_Reading_Rate.xlsx",
       "`SCROLL` through the spreadsheet to identify book titles and their respective word counts/page counts (information needed to use howlongtoread.com)",
       "`CLICK` on the Chrome icon (or open Chrome if not already open)",
       "`TYPING` howlongtoread.com",
@@ -153,14 +156,13 @@
       "`CLICK` on the search button on howlongtoread.com",
       "`SCROLL` down to find the 'words per minute' or 'words per hour' data, and mentally convert to 'words per day' or note for comparison.",
       "`CLICK` to close [Chrome browser]",
-      "`DOUBLE_CLICK` ~/Desktop/book_list_result.docx",
+      "`DOUBLE_CLICK` libreoffice-writer to open the window of ~/Desktop/book_list_result.docx",
       "`TYPING` [Title of the book with the slowest reading pace]",
-      "`CLICK` 'File' menu",
-      "`CLICK` 'Save'"
+      "`HOTKEY` 'Ctrl+S' to save the document"
     ],
     "grouped-action": [
       [
-        "`DOUBLE_CLICK` ~/Desktop/[Your_Books_Read_Spreadsheet_Name].xlsx"
+        "`DOUBLE_CLICK` ~/Desktop/2023_validation_Book_Reading_Rate.xlsx"
       ],
       [
         "`SCROLL` through the spreadsheet to identify book titles and their respective word counts/page counts (information needed to use howlongtoread.com)"
@@ -200,20 +202,176 @@
         "`SCROLL` down to find the 'words per minute' or 'words per hour' data, and mentally convert to 'words per day' or note for comparison."
       ],
       [
-        "`REPEAT_UNTIL_DONE` for all books in the spreadsheet, comparing and keeping track of the book with the slowest reading pace (words per day)."
+        "`CLICK` back to ~/Desktop/[Your_Books_Read_Spreadsheet_Name].xlsx"
+      ],
+      [
+        "`SCROLL` through the spreadsheet to identify book titles and their respective word counts/page counts (information needed to use howlongtoread.com)"
+      ],
+      [
+        "`CLICK` on the Chrome icon (or open Chrome if not already open)"
+      ],
+      [
+        "`TYPING` howlongtoread.com",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` [Next Book Title from Spreadsheet]",
+        "`CLICK` on the search button on howlongtoread.com"
+      ],
+      [
+        "`SCROLL` down to find the 'words per minute' or 'words per hour' data, and mentally convert to 'words per day' or note for comparison."
+      ],
+      [
+        "`CLICK` back to ~/Desktop/[Your_Books_Read_Spreadsheet_Name].xlsx"
+      ],
+      [
+        "`SCROLL` through the spreadsheet to identify book titles and their respective word counts/page counts (information needed to use howlongtoread.com)"
+      ],
+      [
+        "`CLICK` on the Chrome icon (or open Chrome if not already open)"
+      ],
+      [
+        "`TYPING` howlongtoread.com",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` [Next Book Title from Spreadsheet]",
+        "`CLICK` on the search button on howlongtoread.com"
+      ],
+      [
+        "`SCROLL` down to find the 'words per minute' or 'words per hour' data, and mentally convert to 'words per day' or note for comparison."
+      ],
+      [
+        "`CLICK` back to ~/Desktop/[Your_Books_Read_Spreadsheet_Name].xlsx"
+      ],
+      [
+        "`SCROLL` through the spreadsheet to identify book titles and their respective word counts/page counts (information needed to use howlongtoread.com)"
+      ],
+      [
+        "`CLICK` on the Chrome icon (or open Chrome if not already open)"
+      ],
+      [
+        "`TYPING` howlongtoread.com",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` [Next Book Title from Spreadsheet]",
+        "`CLICK` on the search button on howlongtoread.com"
+      ],
+      [
+        "`SCROLL` down to find the 'words per minute' or 'words per hour' data, and mentally convert to 'words per day' or note for comparison."
+      ],
+      [
+        "`CLICK` back to ~/Desktop/[Your_Books_Read_Spreadsheet_Name].xlsx"
+      ],
+      [
+        "`SCROLL` through the spreadsheet to identify book titles and their respective word counts/page counts (information needed to use howlongtoread.com)"
+      ],
+      [
+        "`CLICK` on the Chrome icon (or open Chrome if not already open)"
+      ],
+      [
+        "`TYPING` howlongtoread.com",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` [Next Book Title from Spreadsheet]",
+        "`CLICK` on the search button on howlongtoread.com"
+      ],
+      [
+        "`SCROLL` down to find the 'words per minute' or 'words per hour' data, and mentally convert to 'words per day' or note for comparison."
+      ],
+      [
+        "`CLICK` back to ~/Desktop/[Your_Books_Read_Spreadsheet_Name].xlsx"
+      ],
+      [
+        "`SCROLL` through the spreadsheet to identify book titles and their respective word counts/page counts (information needed to use howlongtoread.com)"
+      ],
+      [
+        "`CLICK` on the Chrome icon (or open Chrome if not already open)"
+      ],
+      [
+        "`TYPING` howlongtoread.com",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` [Next Book Title from Spreadsheet]",
+        "`CLICK` on the search button on howlongtoread.com"
+      ],
+      [
+        "`SCROLL` down to find the 'words per minute' or 'words per hour' data, and mentally convert to 'words per day' or note for comparison."
+      ],
+      [
+        "`CLICK` back to ~/Desktop/[Your_Books_Read_Spreadsheet_Name].xlsx"
+      ],
+      [
+        "`SCROLL` through the spreadsheet to identify book titles and their respective word counts/page counts (information needed to use howlongtoread.com)"
+      ],
+      [
+        "`CLICK` on the Chrome icon (or open Chrome if not already open)"
+      ],
+      [
+        "`TYPING` howlongtoread.com",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` [Next Book Title from Spreadsheet]",
+        "`CLICK` on the search button on howlongtoread.com"
+      ],
+      [
+        "`SCROLL` down to find the 'words per minute' or 'words per hour' data, and mentally convert to 'words per day' or note for comparison."
+      ],
+      [
+        "`CLICK` back to ~/Desktop/[Your_Books_Read_Spreadsheet_Name].xlsx"
+      ],
+      [
+        "`SCROLL` through the spreadsheet to identify book titles and their respective word counts/page counts (information needed to use howlongtoread.com)"
+      ],
+      [
+        "`CLICK` on the Chrome icon (or open Chrome if not already open)"
+      ],
+      [
+        "`TYPING` howlongtoread.com",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` [Next Book Title from Spreadsheet]",
+        "`CLICK` on the search button on howlongtoread.com"
+      ],
+      [
+        "`SCROLL` down to find the 'words per minute' or 'words per hour' data, and mentally convert to 'words per day' or note for comparison."
+      ],
+      [
+        "`CLICK` back to ~/Desktop/[Your_Books_Read_Spreadsheet_Name].xlsx"
+      ],
+      [
+        "`SCROLL` through the spreadsheet to identify book titles and their respective word counts/page counts (information needed to use howlongtoread.com)"
+      ],
+      [
+        "`CLICK` on the Chrome icon (or open Chrome if not already open)"
+      ],
+      [
+        "`TYPING` howlongtoread.com",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` [Next Book Title from Spreadsheet]",
+        "`CLICK` on the search button on howlongtoread.com"
+      ],
+      [
+        "`SCROLL` down to find the 'words per minute' or 'words per hour' data, and mentally convert to 'words per day' or note for comparison."
       ],
       [
         "`CLICK` to close [Chrome browser]"
       ],
       [
-        "`DOUBLE_CLICK` ~/Desktop/book_list_result.docx"
+        "`DOUBLE_CLICK`libreoffice-writer to open the window of ~/Desktop/book_list_result.docx"
       ],
       [
         "`TYPING` [Title of the book with the slowest reading pace]"
       ],
       [
-        "`CLICK` 'File' menu",
-        "`CLICK` 'Save'"
+        "`HOTKEY` 'Ctrl+S' to save the document"
       ]
     ]
   }

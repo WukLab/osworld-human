@@ -1,7 +1,7 @@
 {
   "id": "00fa164e-2612-4439-992e-157d019a8436",
   "snapshot": "libreoffice_writer",
-  "instruction": "I need to include the experiment results from \"~/Documents/awesome-desktop/expe-results.xlsx\" into the currently writing report. Specifically, extract the results of LLM-based models and insert a table into the \"Main Results\" section of my report.",
+  "instruction": "I need to include the experiment results from \"~/Documents/awesome-desktop/expe-results.xlsx\" into the currently writing report. Specifically, extract the results of GPT-4 and insert a table into the \"Main Results\" section of my report.",
   "source": "authors",
   "config": [
     {
@@ -20,11 +20,11 @@
         "files": [
           {
             "path": "/home/user/Documents/awesome-desktop/awe_desk_env.docx",
-            "url": "https://drive.google.com/uc?id=1oXro9_S7nZs_h_AZq5TJWEBofbrZM3oG&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/00fa164e-2612-4439-992e-157d019a8436/awe_desk_env.docx"
           },
           {
             "path": "/home/user/Documents/awesome-desktop/expe-results.xlsx",
-            "url": "https://drive.google.com/uc?id=1DwOikfnAumkZfvVcjIncgKZMITY3ruku&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/00fa164e-2612-4439-992e-157d019a8436/results.xlsx"
           }
         ]
       }
@@ -82,19 +82,20 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.google.com/uc?id=1hMZKSF74qBUvBDAu_zF8vHm6MKu96VBN&export=download",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/00fa164e-2612-4439-992e-157d019a8436/awe_desk_env_gt.docx",
       "dest": "awe_desk_env_gt.docx"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",
       "`TYPING` libreoffice --calc ~/Documents/awesome-desktop/expe-results.xlsx",
       "`PRESS` Enter",
-      "`WAIT`",
-      "`SCROLL` to locate the results for LLM-based models",
-      "`MOUSE_DOWN` and drag to select the results for LLM-based models",
-      "`DRAG_TO` select the results for LLM-based models",
+      "`MOUSE_DOWN` on 'A2' and drag to select the results for Gpt-4",
+      "`DRAG_TO` select the results for Gpt-4",
       "`MOUSE_UP`",
       "`HOTKEY` Ctrl+C",
       "`CLICK` on the LibreOffice Writer window containing the report",
@@ -111,14 +112,8 @@
         "`PRESS` Enter"
       ],
       [
-        "`WAIT`"
-      ],
-      [
-        "`SCROLL` to locate the results for LLM-based models"
-      ],
-      [
-        "`MOUSE_DOWN` and drag to select the results for LLM-based models",
-        "`DRAG_TO` select the results for LLM-based models",
+        "`MOUSE_DOWN` on 'A2' and drag to select the results for Gpt-4",
+        "`DRAG_TO` select the results for Gpt-4",
         "`MOUSE_UP`"
       ],
       [

@@ -38,8 +38,12 @@
       }
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
+      "`HOTKEY` 'Ctrl+Alt+T'",
       "`TYPING` google-chrome https://www.gnome-look.org/p/1357889-orchis-theme/",
       "`PRESS` enter",
       "`CLICK` on 'Files' tab",
@@ -60,6 +64,9 @@
       "`CLICK` on 'Orchis-Dark' (or the specific Orchis theme you downloaded)"
     ],
     "grouped-action": [
+      [
+        "`HOTKEY` 'Ctrl+Alt+T'"
+      ],
       [
         "`TYPING` google-chrome https://www.gnome-look.org/p/1357889-orchis-theme/",
         "`PRESS` enter"

@@ -61,23 +61,23 @@
         "files": [
           {
             "path": "/home/user/Desktop/wwf/lpr_living_planet_report_2016.pdf",
-            "url": "https://drive.google.com/uc?id=19NCdw_MVP6nH5nC6okYYe8U1mJABfTRK&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/0c825995-5b70-4526-b663-113f4c999dd2/lpr_living_planet_report_2016.pdf"
           },
           {
             "path": "/home/user/Desktop/wwf/279c656a32_ENGLISH_FULL.pdf",
-            "url": "https://drive.google.com/uc?id=1ckH1NetfImQ9EyONTO-ZFWA8m8VIUFvD&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/0c825995-5b70-4526-b663-113f4c999dd2/279c656a32_ENGLISH_FULL.pdf"
           },
           {
             "path": "/home/user/Desktop/wwf/7g37j96psg_WWF_AR2021_spreads.pdf",
-            "url": "https://drive.google.com/uc?id=1cxLTzmqDKMomOyvho29lvFvhRnb0Y8__&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/0c825995-5b70-4526-b663-113f4c999dd2/7g37j96psg_WWF_AR2021_spreads.pdf"
           },
           {
             "path": "/home/user/Desktop/GE Guidebook.pdf",
-            "url": "https://drive.google.com/uc?id=1KzC_R3eI3Rmgwz5bkcI8Ohv7ebOrU-Is&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/0c825995-5b70-4526-b663-113f4c999dd2/GE%20Guidebook.pdf"
           },
           {
             "path": "/home/user/Desktop/assessing_and_reporting_water_quality(q&a).pdf",
-            "url": "https://drive.google.com/uc?id=1LFojf3Weflv3fVdrZrgTY1iUaRdbT9kG&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/0c825995-5b70-4526-b663-113f4c999dd2/assessing_and_reporting_water_quality%28q%26a%29.pdf"
           }
         ]
       }
@@ -102,30 +102,30 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.google.com/uc?id=1A2ti9JncAfIa6ks7FTJWHtYlZo-68FtM&export=download",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/0c825995-5b70-4526-b663-113f4c999dd2/environment_policy_report%20%28draft%29_gold.docx",
       "dest": "environment_policy_report (draft)_gold.docx"
     },
     "options": {
       "content_only": true
     }
   },
+  "proxy": false,
+  "fixed_ip": true,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` libreoffice --writer",
-      "`PRESS` Enter",
+      "`DOUBLE_CLICK` libreoffice_writter",
       "`CLICK` on 'File'",
       "`CLICK` on 'Open'",
       "`TYPING` /home/user/Desktop/GE Guidebook.pdf",
       "`PRESS` Enter",
-      "`WAIT`",
       "`SCROLL` until the 'Introduction' section is visible",
       "`MOUSE_DOWN` right before the 'Introduction' section",
       "`DRAG_TO` right after the 'Introduction' section",
       "`MOUSE_UP`",
       "`HOTKEY` Ctrl+C",
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` google-chrome https://drive.google.com/drive/homee",
+      "`TYPING` google-chrome https://drive.google.com/drive/home",
       "`PRESS` Enter",
       "`CLICK` on 'New'",
       "`CLICK` on 'New Folder'",
@@ -141,11 +141,7 @@
     ],
     "grouped-action": [
       [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
-      ],
-      [
-        "`TYPING` libreoffice --writer",
-        "`PRESS` Enter"
+        "`DOUBLE_CLICK` libreoffice_writter"
       ],
       [
         "`CLICK` on 'File'"
@@ -156,9 +152,6 @@
       [
         "`TYPING` /home/user/Desktop/GE Guidebook.pdf",
         "`PRESS` Enter"
-      ],
-      [
-        "`WAIT`"
       ],
       [
         "`SCROLL` until the 'Introduction' section is visible"
@@ -175,7 +168,7 @@
         "`HOTKEY`'Ctrl+Alt+T' open the terminal"
       ],
       [
-        "`TYPING` google-chrome https://drive.google.com/drive/homee",
+        "`TYPING` google-chrome https://drive.google.com/drive/home",
         "`PRESS` Enter"
       ],
       [

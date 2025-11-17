@@ -16,7 +16,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1iaqtXHZs2sA11nmoLHPK9VXGO0_6xq2l",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/716a6079-22da-47f1-ba73-c9d58f986a38/Secret%20document.docx",
             "path": "/home/user/Data3/List3/secret.docx"
           }
         ]
@@ -25,7 +25,7 @@
     {
       "type": "command",
       "parameters": {
-        "command": "echo password | sudo -S apt install xsel && xsel -bc",
+        "command": "echo {CLIENT_PASSWORD} | sudo -S apt install xsel && xsel -bc",
         "shell": "true"
       }
     }
@@ -49,12 +49,15 @@
       }
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",
       "`TYPING` find / -name secret.docx 2>/dev/null",
       "`PRESS` Enter",
-      "`CLICK` and drag to select the full path displayed in the terminal",
+      "`DOUBLE_CLICK` to select the full path displayed in the terminal",
       "`HOTKEY`'Ctrl+Shift+C' copy the selected path to the clipboard"
     ],
     "grouped-action": [
@@ -66,7 +69,7 @@
         "`PRESS` Enter"
       ],
       [
-        "`CLICK` and drag to select the full path displayed in the terminal"
+        "`DOUBLE_CLICK` to select the full path displayed in the terminal"
       ],
       [
         "`HOTKEY`'Ctrl+Shift+C' copy the selected path to the clipboard"

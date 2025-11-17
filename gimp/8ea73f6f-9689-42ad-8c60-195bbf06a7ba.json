@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=14r8Y0Cq8yTtQ5kfqhwWij5ow3LWApy2n",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/8ea73f6f-9689-42ad-8c60-195bbf06a7ba/low_resolution.jpeg",
             "path": "/home/user/Desktop/low_resolution.jpeg"
           }
         ]
@@ -32,6 +32,9 @@
   "evaluator": {
     "func": "infeasible"
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`FAIL`"

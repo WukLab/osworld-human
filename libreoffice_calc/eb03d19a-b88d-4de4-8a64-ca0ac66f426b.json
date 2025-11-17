@@ -1,7 +1,7 @@
 {
   "id": "eb03d19a-b88d-4de4-8a64-ca0ac66f426b",
   "snapshot": "libreoffice_calc",
-  "instruction": "Transpose the table and paste it starting from B8",
+  "instruction": "Apply matrix transposition to the table in B2:F5 and paste the transposed table at B8 (i.e., the top-left cell of the transposed table should be at B8)",
   "source": "https://www.youtube.com/shorts/t9JLUaT55UQ",
   "config": [
     {
@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1Zl6ZUkbiV9sISjJRfracd8-xKrW2G3yv&export=download&authuser=0&confirm=t&uuid=6799cca6-62d2-4cfa-b28a-b8da486b5d01&at=APZUnTVy7-CQMjvuFyu7ZMxztfT6:1705563660974",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/eb03d19a-b88d-4de4-8a64-ca0ac66f426b/Students_Class_Subject_Marks.xlsx",
             "path": "/home/user/Students_Class_Subject_Marks.xlsx"
           }
         ]
@@ -61,7 +61,7 @@
     "func": "compare_table",
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1GwqF52n6cvmQ-ivhmfNCep9mZboQ706-&export=download&authuser=0&confirm=t&uuid=4c750a20-73b8-4072-a4bf-3a4aa77b314a&at=APZUnTXYm-3NVdfneACqfDLYCWko:1705563733494",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/eb03d19a-b88d-4de4-8a64-ca0ac66f426b/Students_Class_Subject_Marks_gold.xlsx",
       "dest": "Students_Class_Subject_Marks_gold.xlsx"
     },
     "result": {
@@ -79,6 +79,9 @@
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`MOVE_TO` B2",

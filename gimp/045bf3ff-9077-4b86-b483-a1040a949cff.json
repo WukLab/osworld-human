@@ -1,7 +1,7 @@
 {
   "id": "045bf3ff-9077-4b86-b483-a1040a949cff",
   "snapshot": "gimp",
-  "instruction": "Could you turn my image into CYMK mode?",
+  "instruction": "Could you turn my image into CYMK mode within GIMP ?",
   "source": "https://www.makeuseof.com/tag/can-photoshop-gimp-cant/",
   "config": [
     {
@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1YnUq4q9rv7pr1MZPdaD2mVFZRrsgISmn",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/045bf3ff-9077-4b86-b483-a1040a949cff/gate.jpeg",
             "path": "/home/user/Desktop/gate.jpeg"
           }
         ]
@@ -32,6 +32,9 @@
   "evaluator": {
     "func": "infeasible"
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`FAIL`"

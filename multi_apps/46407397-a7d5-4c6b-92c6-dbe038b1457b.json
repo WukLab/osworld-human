@@ -59,7 +59,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=18jdi0OanMtAQenm4ODTivsxTSzdj4HUV&export=download&authuser=0&confirm=t&uuid=e858d3cc-4535-4419-a651-8856ac517d19&at=APZUnTW7g4ygfrkKTPBWCO13twRj:1706611460571",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/46407397-a7d5-4c6b-92c6-dbe038b1457b/thunderbird.profile.tar.gz",
             "path": "/home/user/thunderbird-profile.tar.gz"
           }
         ]
@@ -121,9 +121,9 @@
     "expected": {
       "type": "cloud_file",
       "path": [
-        "https://drive.usercontent.google.com/download?id=19J5tzWjx9hdo-n0MC3upzAntVMa8WUgk&export=download&authuser=0&confirm=t&uuid=be790579-8db9-4bd2-a757-beb27af386af&at=APZUnTVM2PjNDXhlwFZ6WAFdNVsD:1706497547717",
-        "https://drive.usercontent.google.com/download?id=1S04RpR5dk80LylIYGvA4e3sAUBd6wdlQ&export=download&authuser=0&confirm=t&uuid=b302de03-04f7-455c-ab0c-b3cbbeb6929a&at=APZUnTVD8zMZGO1_GWaFUm1cNXul:1706497555463",
-        "https://drive.usercontent.google.com/download?id=11NRLh93RTzEd0Cy-cYwMyNJSFG7-vP9c&export=download&authuser=0&confirm=t&uuid=02500115-dea3-481a-af4f-a723d9a62169&at=APZUnTW9-gENlsyfdIPA4PTA0emh:1706497560874"
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/46407397-a7d5-4c6b-92c6-dbe038b1457b/1.png",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/46407397-a7d5-4c6b-92c6-dbe038b1457b/2.png",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/46407397-a7d5-4c6b-92c6-dbe038b1457b/3.png"
       ],
       "dest": [
         "1_gold.png",
@@ -138,6 +138,9 @@
       ]
     }
   },
+  "proxy": true,
+  "fixed_ip": true,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on 'Notes' folder in Thunderbird",

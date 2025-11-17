@@ -1,7 +1,7 @@
 {
   "id": "26660ad1-6ebb-4f59-8cba-a8432dfe8d38",
   "snapshot": "multiapps",
-  "instruction": "I want to test the quality of the network environment my laptop is currently in. Please measure my network situation through speedtest.net, export the measurement results, and save them to ~/Test/Speed (if the dir does not exist, create it).",
+  "instruction": "I want to test the quality of the network environment my laptop is currently in. Please measure my network situation through speedtest.net, copy the results in speedtest.net/results, and save them to ~/Test/Speed/results.txt (if the dir does not exist, create it). Each metric occupies one line, with the metric name and its value separated by a single space.",
   "source": "https://www.speedtest.net/",
   "config": [
     {
@@ -54,45 +54,49 @@
     "browser"
   ],
   "evaluator": {
-    "func": "compare_time_in_speedtest_results",
+    "func": "file_contains",
     "result": {
       "type": "vm_file",
-      "path": "/home/user/Test/Speed/Speedtest Results Export-.csv",
-      "dest": "Speedtest Results Export-.csv",
-      "time_suffix": true
+      "path": "/home/user/Test/Speed/results.txt",
+      "dest": "results.txt"
     },
     "expected": {
-      "type": "time_diff_range",
-      "diff_range_in_minutes": "60"
+      "type": "rule",
+      "rules": {
+        "expected": [
+          "Ping",
+          "Download",
+          "Upload"
+        ]
+      }
     }
   },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` google-chrome https://www.speedtest.net/",
-      "`PRESS` Enter",
-      "`WAIT`",
       "`CLICK` on 'GO'",
       "`WAIT`",
       "`CLICK` on 'Results'",
-      "`MOVE_TO` on the 'Share' icon button",
-      "`CLICK` on 'Copy Link'",
+      "`MOVE_TO` before the results",
+      "`MOUSE_DOWN`",
+      "`DRAG_TO` after the results to select all results",
+      "`MOUSE_UP`",
+      "`HOTKEY` 'Ctrl+C' to copy",
+      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
       "`TYPING` mkdir -p ~/Test/Speed",
       "`PRESS` Enter",
-      "`TYPING` xclip -selection clipboard -o > ~/Test/Speed/speedtest_result.url",
-      "`PRESS` Enter"
+      "`TYPING` xclip -selection clipboard -o > ~/Test/Speed/speedtest_result.txt",
+      "`PRESS` Enter",
+      "`DOUBLECLICK` nautilus",
+      "`TYPING` ~/Test/Speed",
+      "`PRESS` Enter",
+      "`DOUBLECLICK` on 'result.txt' file",
+      "`TYPING` to format the file: each metric occupies one line, with the metric name and its value separated by a single space.",
+      "`HOTKEY` 'Ctrl+S' to save the file"
     ],
     "grouped-action": [
-      [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
-      ],
-      [
-        "`TYPING` google-chrome https://www.speedtest.net/",
-        "`PRESS` Enter"
-      ],
-      [
-        "`WAIT`"
-      ],
       [
         "`CLICK` on 'GO'"
       ],
@@ -103,18 +107,44 @@
         "`CLICK` on 'Results'"
       ],
       [
-        "`MOVE_TO` on the 'Share' icon button"
+        "`MOVE_TO` before the results"
       ],
       [
-        "`CLICK` on 'Copy Link'"
+        "`MOUSE_DOWN`"
+      ],
+      [
+        "`DRAG_TO` after the results to select all results"
+      ],
+      [
+        "`MOUSE_UP`"
+      ],
+      [
+        "`HOTKEY` 'Ctrl+C' to copy"
+      ],
+      [
+        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
       ],
       [
         "`TYPING` mkdir -p ~/Test/Speed",
         "`PRESS` Enter"
       ],
       [
-        "`TYPING` xclip -selection clipboard -o > ~/Test/Speed/speedtest_result.url",
+        "`TYPING` xclip -selection clipboard -o > ~/Test/Speed/speedtest_result.txt",
         "`PRESS` Enter"
+      ],
+      [
+        "`DOUBLECLICK` nautilus",
+        "`TYPING` ~/Test/Speed",
+        "`PRESS` Enter"
+      ],
+      [
+        "`DOUBLECLICK` on 'result.txt' file"
+      ],
+      [
+        "`TYPING` to format the file: each metric occupies one line, with the metric name and its value separated by a single space."
+      ],
+      [
+        "`HOTKEY` 'Ctrl+S' to save the file"
       ]
     ]
   }

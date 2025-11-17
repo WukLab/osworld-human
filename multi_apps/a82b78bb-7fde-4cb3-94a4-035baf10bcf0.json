@@ -1,7 +1,7 @@
 {
   "id": "a82b78bb-7fde-4cb3-94a4-035baf10bcf0",
   "snapshot": "libreoffice_calc",
-  "instruction": "I'm really enjoying this paper. Could you please locate the personal webpages of the initial author and the last three authors? Please include them in a browser bookmark folder titled 'Liked Authors.'",
+  "instruction": "I'm really enjoying this paper. Could you please locate the personal webpages of the initial author and the last three authors? Please include them in a browser bookmark folder titled 'Liked Authors' under the 'Bookmarks bar'.",
   "source": "authors",
   "config": [
     {
@@ -34,7 +34,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1IlJ8kU5MlR6OqJHchsSUJzLCmcrG-8N7&export=download&authuser=0&confirm=t&uuid=d2a1810f-edea-4bfd-9d79-e668b9f11876&at=APZUnTVv_eqtC86YzkEU8_jIhC9W:1709522229162",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/a82b78bb-7fde-4cb3-94a4-035baf10bcf0/2206.08853.pdf",
             "path": "/home/user/Desktop/2206.08853.pdf"
           }
         ]
@@ -58,7 +58,7 @@
         "command": [
           "python",
           "-c",
-          "import pyautogui; import time; pyautogui.hotkey('f11'); time.sleep(0.5); pyautogui.click(960, 540); time.sleep(0.5); pyautogui.scroll(-20)"
+          "import pyautogui; import time; pyautogui.hotkey('f11'); time.sleep(0.5); pyautogui.click({SCREEN_WIDTH_HALF}, {SCREEN_HEIGHT_HALF}); time.sleep(0.5); pyautogui.scroll(-20)"
         ]
       }
     }
@@ -83,32 +83,38 @@
         "urls": [
           [
             "https://jimfan.me/",
-            "https://research.nvidia.com/person/linxi-jim-fan"
+            "https://research.nvidia.com/person/linxi-jim-fan",
+            "https://www.linkedin.com/in/drjimfan/"
           ],
           [
             "https://research.nvidia.com/person/de-an-huang",
-            "https://ai.stanford.edu/~dahuang/"
+            "https://ai.stanford.edu/~dahuang/",
+            "https://www.linkedin.com/in/de-an-huang-38242a69"
           ],
           [
             "https://yukezhu.me/",
             "https://www.cs.utexas.edu/people/faculty-researchers/yuke-zhu",
             "https://experts.utexas.edu/yuke_zhu",
-            "https://research.nvidia.com/person/yuke-zhu"
+            "https://research.nvidia.com/person/yuke-zhu",
+            "https://www.linkedin.com/in/yukez/"
           ],
           [
+            "https://tensorlab.cms.caltech.edu/users/anima/",
             "http://tensorlab.cms.caltech.edu/users/anima/",
-            "https://www.eas.caltech.edu/people/anima"
+            "https://www.eas.caltech.edu/people/anima",
+            "https://en.wikipedia.org/wiki/Anima_Anandkumar",
+            "https://www.linkedin.com/in/anima-anandkumar/"
           ]
         ]
       }
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` google-chrome /home/user/Desktop/2206.08853.pdf",
-      "`PRESS` Enter",
-      "`CLICK` 'address bar'",
+      "`CLICK` add a new tab in Chrome",
       "`TYPING` find the initial author",
       "`CLICK` 'search button'",
       "`CLICK` 'link to initial author's personal page'",
@@ -117,35 +123,28 @@
       "`TYPING` Liked Authors",
       "`PRESS` Enter",
       "`CLICK` 'Done'",
-      "`CLICK` 'address bar'",
-      "`TYPING` find the next author",
-      "`CLICK` 'link to second author's personal page'",
-      "`CLICK` 'bookmark button'",
-      "`CLICK` 'Liked Authors folder'",
-      "`CLICK` 'Done'",
-      "`CLICK` 'address bar'",
-      "`TYPING` find the next author",
-      "`CLICK` 'link to third author's personal page'",
-      "`CLICK` 'bookmark button'",
-      "`CLICK` 'Liked Authors folder'",
-      "`CLICK` 'Done'",
-      "`CLICK` 'address bar'",
-      "`TYPING` find the next author",
+      "`CLICK` 'add a new tab in Chrome'",
+      "`TYPING` find the last author",
       "`CLICK` 'link to last author's personal page'",
+      "`CLICK` 'bookmark button'",
+      "`CLICK` 'Liked Authors folder'",
+      "`CLICK` 'Done'",
+      "`CLICK` 'add a new tab in Chrome'",
+      "`TYPING` find the 2nd last author",
+      "`CLICK` 'link to 2nd last author's personal page'",
+      "`CLICK` 'bookmark button'",
+      "`CLICK` 'Liked Authors folder'",
+      "`CLICK` 'Done'",
+      "`CLICK` 'add a new tab in Chrome'",
+      "`TYPING` find the 3rd last author",
+      "`CLICK` 'link to 3rd last author's personal page'",
       "`CLICK` 'bookmark button'",
       "`CLICK` 'Liked Authors folder'",
       "`CLICK` 'Done'"
     ],
     "grouped-action": [
       [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
-      ],
-      [
-        "`TYPING` google-chrome /home/user/Desktop/2206.08853.pdf",
-        "`PRESS` Enter"
-      ],
-      [
-        "`CLICK` 'address bar'"
+        "`CLICK` 'add a new tab in Chrome'"
       ],
       [
         "`TYPING` find the initial author",
@@ -160,31 +159,31 @@
         "`CLICK` 'Done'"
       ],
       [
-        "`CLICK` 'address bar'",
-        "`TYPING` find the next author"
-      ],
-      [
-        "`CLICK` 'link to second author's personal page'",
-        "`CLICK` 'bookmark button'",
-        "`CLICK` 'Liked Authors folder'",
-        "`CLICK` 'Done'"
-      ],
-      [
-        "`CLICK` 'address bar'",
-        "`TYPING` find the next author"
-      ],
-      [
-        "`CLICK` 'link to third author's personal page'",
-        "`CLICK` 'bookmark button'",
-        "`CLICK` 'Liked Authors folder'",
-        "`CLICK` 'Done'"
-      ],
-      [
-        "`CLICK` 'address bar'",
-        "`TYPING` find the next author"
+        "`CLICK` 'add a new tab in Chrome'",
+        "`TYPING` find the last author"
       ],
       [
         "`CLICK` 'link to last author's personal page'",
+        "`CLICK` 'bookmark button'",
+        "`CLICK` 'Liked Authors folder'",
+        "`CLICK` 'Done'"
+      ],
+      [
+        "`CLICK` 'add a new tab in Chrome'",
+        "`TYPING` find the 2nd last author"
+      ],
+      [
+        "`CLICK` 'link to 2nd last author's personal page'",
+        "`CLICK` 'bookmark button'",
+        "`CLICK` 'Liked Authors folder'",
+        "`CLICK` 'Done'"
+      ],
+      [
+        "`CLICK` 'add a new tab in Chrome'",
+        "`TYPING` find the 3rd last author"
+      ],
+      [
+        "`CLICK` 'link to 3rd last author's personal page'",
         "`CLICK` 'bookmark button'",
         "`CLICK` 'Liked Authors folder'",
         "`CLICK` 'Done'"

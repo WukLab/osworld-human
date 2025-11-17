@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1Wkepf_vic9o7CZFiosZ4jZT_Hy2WbRPZ&export=download&authuser=0&confirm=t&uuid=bc2ce901-a6bb-433f-bcce-cbe42d813f18&at=APZUnTVQcGTcXjwqenmtSH6IMFkM:1703858853235",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1334ca3e-f9e3-4db8-9ca7-b4c653be7d17/Zoom_Out_Oversized_Cells.xlsx",
             "path": "/home/user/Zoom_Out_Oversized_Cells.xlsx"
           }
         ]
@@ -66,7 +66,7 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1sX_roln3dNbXat0umlAIwZrW2eBmLkLE&export=download&authuser=0&confirm=t&uuid=a8f92992-86bd-43f4-92ce-9e4d99dca980&at=APZUnTUDPJVW_y6QeI9vlxlHAS0Q:1705851308643",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1334ca3e-f9e3-4db8-9ca7-b4c653be7d17/Zoom_Out_Oversized_Cells_gold.xlsx",
       "dest": "Zoom_Out_Oversized_Cells_gold.xlsx"
     },
     "options": {
@@ -85,6 +85,9 @@
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on the left-hand side of the zoom slider at the bottom right corner of the screen"

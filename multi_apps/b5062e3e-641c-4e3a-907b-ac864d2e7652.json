@@ -76,7 +76,7 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.google.com/uc?id=1fttbvfHuoQfsQUk3fVXkJsCu231jhnQj&export=download",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/b5062e3e-641c-4e3a-907b-ac864d2e7652/authors-ground_truth.xlsx",
       "dest": "authors-gt.xlsx"
     },
     "options": {
@@ -115,6 +115,9 @@
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY` 'Ctrl+Alt+T' open the terminal",
@@ -129,58 +132,53 @@
       "`CLICK` natulis opened folder.",
       "`DOUBLE_CLICK` on the first PDF paper",
       "`SCROLL` down to find the first author's name, email, and affiliation",
-      "`HOTKEY` 'Ctrl+C",
       "`CLICK` on the LibreOffice Calc window",
       "`CLICK` on cell A2",
-      "`HOTKEY` 'Ctrl+V",
+      "`TYPING` name of the author",
       "`CLICK` on cell B2",
-      "`HOTKEY` 'Ctrl+V",
+      "`TYPING` email of the author",
       "`CLICK` on cell C2",
-      "`HOTKEY` 'Ctrl+V",
-      "`CLICK`  close[current PDF viewer window]",
+      "`TYPING` affiliation of the author",
+      "`CLICK` natulis opened folder.",
       "`DOUBLE_CLICK` on the next PDF paper",
-      "`SCROLL` down to find the first author's name, email, and affiliation",
-      "`HOTKEY` 'Ctrl+C",
+      "`SCROLL` down to find the next author's name, email, and affiliation",
       "`CLICK` on the LibreOffice Calc window",
-      "`CLICK` on the next available row (e.g., A3)",
-      "`HOTKEY` 'Ctrl+V",
-      "`CLICK` on the next column (e.g., B3)",
-      "`HOTKEY` 'Ctrl+V",
-      "`CLICK` on the next column (e.g., C3)",
-      "`HOTKEY` 'Ctrl+V",
-      "`CLICK` close [current PDF viewer window]",
+      "`CLICK` on cell A2",
+      "`TYPING` name of the author",
+      "`CLICK` on cell B2",
+      "`TYPING` email of the author",
+      "`CLICK` on cell C2",
+      "`TYPING` affiliation of the author",
+      "`CLICK` natulis opened folder.",
       "`DOUBLE_CLICK` on the next PDF paper",
-      "`SCROLL` down to find the first author's name, email, and affiliation",
-      "`HOTKEY` 'Ctrl+C",
+      "`SCROLL` down to find the next author's name, email, and affiliation",
       "`CLICK` on the LibreOffice Calc window",
-      "`CLICK` on the next available row (e.g., A3)",
-      "`HOTKEY` 'Ctrl+V",
-      "`CLICK` on the next column (e.g., B3)",
-      "`HOTKEY` 'Ctrl+V",
-      "`CLICK` on the next column (e.g., C3)",
-      "`HOTKEY` 'Ctrl+V",
-      "`CLICK` close [current PDF viewer window]",
+      "`CLICK` on cell A2",
+      "`TYPING` name of the author",
+      "`CLICK` on cell B2",
+      "`TYPING` email of the author",
+      "`CLICK` on cell C2",
+      "`TYPING` affiliation of the author",
+      "`CLICK` natulis opened folder.",
       "`DOUBLE_CLICK` on the next PDF paper",
-      "`SCROLL` down to find the first author's name, email, and affiliation",
-      "`HOTKEY` 'Ctrl+C",
+      "`SCROLL` down to find the next author's name, email, and affiliation",
       "`CLICK` on the LibreOffice Calc window",
-      "`CLICK` on the next available row (e.g., A3)",
-      "`HOTKEY` 'Ctrl+V",
-      "`CLICK` on the next column (e.g., B3)",
-      "`HOTKEY` 'Ctrl+V",
-      "`CLICK` on the next column (e.g., C3)",
-      "`HOTKEY` 'Ctrl+V",
-      "`CLICK` close [current PDF viewer window]",
+      "`CLICK` on cell A2",
+      "`TYPING` name of the author",
+      "`CLICK` on cell B2",
+      "`TYPING` email of the author",
+      "`CLICK` on cell C2",
+      "`TYPING` affiliation of the author",
+      "`MOUSE_DOWN` name column",
       "`DRAG_TO` select all cells containing author data (e.g., A1 to C[last row])",
+      "`MOUSE_UP`",
       "`CLICK` 'Data' menu",
       "`CLICK` 'Sort'",
       "`CLICK` 'Sort Criteria' tab (if not already selected)",
       "`CLICK` 'Column 1' dropdown and select 'Name' (or 'Column A')",
       "`CLICK` 'OK'",
-      "`CLICK` 'File' menu",
-      "`CLICK` 'Save As...'",
+      "`HOTKEY` 'Ctrl+S'",
       "`TYPING` authors.xlsx",
-      "`PRESS` Enter",
       "`CLICK` 'Save'"
     ],
     "grouped-action": [
@@ -213,101 +211,80 @@
         "`SCROLL` down to find the first author's name, email, and affiliation"
       ],
       [
-        "`HOTKEY` 'Ctrl+C"
+        "`CLICK` on the LibreOffice Calc window"
       ],
       [
-        "`CLICK` on the LibreOffice Calc window",
         "`CLICK` on cell A2",
-        "`HOTKEY` 'Ctrl+V"
-      ],
-      [
+        "`TYPING` name of the author",
         "`CLICK` on cell B2",
-        "`HOTKEY` 'Ctrl+V"
-      ],
-      [
+        "`TYPING` email of the author",
         "`CLICK` on cell C2",
-        "`HOTKEY` 'Ctrl+V"
+        "`TYPING` affiliation of the author"
       ],
       [
-        "`CLICK`  close [current PDF viewer window]"
-      ],
-      [
-        "`DOUBLE_CLICK` on the next PDF paper"
-      ],
-      [
-        "`SCROLL` down to find the first author's name, email, and affiliation"
-      ],
-      [
-        "`HOTKEY` 'Ctrl+C"
-      ],
-      [
-        "`CLICK` on the LibreOffice Calc window",
-        "`CLICK` on the next available row (e.g., A3)",
-        "`HOTKEY` 'Ctrl+V"
-      ],
-      [
-        "`CLICK` on the next column (e.g., B3)",
-        "`HOTKEY` 'Ctrl+V"
-      ],
-      [
-        "`CLICK` on the next column (e.g., C3)",
-        "`HOTKEY` 'Ctrl+V"
-      ],
-      [
-        "`CLICK`  close [current PDF viewer window]"
+        "`CLICK` natulis opened folder."
       ],
       [
         "`DOUBLE_CLICK` on the next PDF paper"
       ],
       [
-        "`SCROLL` down to find the first author's name, email, and affiliation"
+        "`SCROLL` down to find the next author's name, email, and affiliation"
       ],
       [
-        "`HOTKEY` 'Ctrl+C"
+        "`CLICK` on the LibreOffice Calc window"
       ],
       [
-        "`CLICK` on the LibreOffice Calc window",
-        "`CLICK` on the next available row (e.g., A3)",
-        "`HOTKEY` 'Ctrl+V"
+        "`CLICK` on cell A2",
+        "`TYPING` name of the author",
+        "`CLICK` on cell B2",
+        "`TYPING` email of the author",
+        "`CLICK` on cell C2",
+        "`TYPING` affiliation of the author"
       ],
       [
-        "`CLICK` on the next column (e.g., B3)",
-        "`HOTKEY` 'Ctrl+V"
-      ],
-      [
-        "`CLICK` on the next column (e.g., C3)",
-        "`HOTKEY` 'Ctrl+V"
-      ],
-      [
-        "`CLICK`  close [current PDF viewer window]"
+        "`CLICK` natulis opened folder."
       ],
       [
         "`DOUBLE_CLICK` on the next PDF paper"
       ],
       [
-        "`SCROLL` down to find the first author's name, email, and affiliation"
+        "`SCROLL` down to find the next author's name, email, and affiliation"
       ],
       [
-        "`HOTKEY` 'Ctrl+C"
+        "`CLICK` on the LibreOffice Calc window"
       ],
       [
-        "`CLICK` on the LibreOffice Calc window",
-        "`CLICK` on the next available row (e.g., A3)",
-        "`HOTKEY` 'Ctrl+V"
+        "`CLICK` on cell A2",
+        "`TYPING` name of the author",
+        "`CLICK` on cell B2",
+        "`TYPING` email of the author",
+        "`CLICK` on cell C2",
+        "`TYPING` affiliation of the author"
       ],
       [
-        "`CLICK` on the next column (e.g., B3)",
-        "`HOTKEY` 'Ctrl+V"
+        "`CLICK` natulis opened folder."
       ],
       [
-        "`CLICK` on the next column (e.g., C3)",
-        "`HOTKEY` 'Ctrl+V"
+        "`DOUBLE_CLICK` on the next PDF paper"
       ],
       [
-        "`CLICK`  close [current PDF viewer window]"
+        "`SCROLL` down to find the next author's name, email, and affiliation"
       ],
       [
-        "`DRAG_TO` select all cells containing author data (e.g., A1 to C[last row])"
+        "`CLICK` on the LibreOffice Calc window"
+      ],
+      [
+        "`CLICK` on cell A2",
+        "`TYPING` name of the author",
+        "`CLICK` on cell B2",
+        "`TYPING` email of the author",
+        "`CLICK` on cell C2",
+        "`TYPING` affiliation of the author"
+      ],
+      [
+        "`MOUSE_DOWN` name column",
+        "`DRAG_TO` select all cells containing author data (e.g., A1 to C[last row])",
+        "`MOUSE_UP`"
       ],
       [
         "`CLICK` 'Data' menu",
@@ -319,12 +296,10 @@
         "`CLICK` 'OK'"
       ],
       [
-        "`CLICK` 'File' menu",
-        "`CLICK` 'Save As...'"
+        "`HOTKEY` 'Ctrl+S'"
       ],
       [
         "`TYPING` authors.xlsx",
-        "`PRESS` Enter",
         "`CLICK` 'Save'"
       ]
     ]

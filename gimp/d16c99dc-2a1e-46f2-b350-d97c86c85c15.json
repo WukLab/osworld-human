@@ -1,7 +1,7 @@
 {
   "id": "d16c99dc-2a1e-46f2-b350-d97c86c85c15",
   "snapshot": "gimp",
-  "instruction": "Could you assist me with resizing just one layer of an image? I need to adjust the height to 512 pixels while maintaining the original aspect ratio?",
+  "instruction": "Could you assist me with resizing the dog layer of an image? I need to adjust the height to 512 pixels while maintaining the original aspect ratio?",
   "source": "https://stackoverflow.com/questions/75185543/use-gimp-to-resize-image-in-one-layer-only",
   "config": [
     {
@@ -9,11 +9,11 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=14ZEnUNHrIVDvcyF6A6EFgma6LcgPWj1X",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/d16c99dc-2a1e-46f2-b350-d97c86c85c15/dog_with_background.png",
             "path": "/home/user/Desktop/dog_with_background.png"
           },
           {
-            "url": "https://drive.google.com/uc?export=download&id=1wq2sjBX8X-SGIEj1GKLGAuQ8BNVYqa0-",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/d16c99dc-2a1e-46f2-b350-d97c86c85c15/dog_with_background_two_layers.xcf",
             "path": "/home/user/Desktop/dog_with_background_two_layers.xcf"
           }
         ]
@@ -36,12 +36,18 @@
   "evaluator": {
     "postconfig": [
       {
+        "type": "activate_window",
+        "parameters": {
+          "window_name": "GNU Image Manipulation Program"
+        }
+      },
+      {
         "type": "execute",
         "parameters": {
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);"
+            "import time; import pyautogui; time.sleep(1);pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);time.sleep(1);"
           ]
         }
       },
@@ -57,7 +63,7 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.write(\"resized\");pyautogui.press([\"enter\"]);"
+            "import time; import pyautogui; pyautogui.write(\"resized\");time.sleep(1);pyautogui.press([\"enter\"]);"
           ]
         }
       },
@@ -88,24 +94,26 @@
       "check_image_size",
       "check_structure_sim_resized"
     ],
+    "conj": "and",
     "expected": [
       {
         "type": "rule",
         "rules": {
-          "height": 512
+          "height": 512,
+          "ignore_transparent": true
         }
       },
       {
         "type": "vm_file",
-        "path": "/home/user/Desktop/resized.png",
-        "dest": "resized.png"
+        "path": "/home/user/Desktop/dog_with_background.png",
+        "dest": "dog_with_background.png"
       }
     ],
     "result": [
       {
         "type": "vm_file",
-        "path": "/home/user/Desktop/dog_with_background.png",
-        "dest": "dog_with_background.png"
+        "path": "/home/user/Desktop/resized.png",
+        "dest": "resized.png"
       },
       {
         "type": "vm_file",
@@ -114,14 +122,21 @@
       }
     ]
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
+      "`CLICK` to choose the 'dog' layer in the 'Layers' panel",
       "`HOTKEY` 'shift-S'",
       "`CLICK` the chain icon between the width and height fields in the 'Scale' dialog to maintain aspect ratio",
       "`TYPING` '512' in the 'Height' field",
       "`CLICK` 'Scale'"
     ],
     "grouped-action": [
+      [
+        "`CLICK` to choose the 'dog' layer in the 'Layers' panel"
+      ],
       [
         "`HOTKEY` 'shift-S'"
       ],

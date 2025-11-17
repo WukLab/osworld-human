@@ -66,6 +66,9 @@
       }
     }
   },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` 'Cars for sale' tab at the top on the navigation bar",

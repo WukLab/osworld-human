@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1v5DgViUgAL771kBWy-qBddVGyjGmgFhK",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/67890eb6-6ce5-4c00-9e3d-fb4972699b06/best_awards_acl.xlsx",
             "path": "/home/user/Desktop/best_awards_acl.xlsx"
           }
         ]
@@ -94,7 +94,7 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=17ORdOPl3sZGk3s4Wm0vESgImKZjdZBqX&export=download&authuser=0&confirm=t",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/67890eb6-6ce5-4c00-9e3d-fb4972699b06/gold_best_awards_acl.xlsx",
       "dest": "gold_best_awards_acl.xlsx"
     },
     "options": {
@@ -107,163 +107,45 @@
       ]
     }
   },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` Chrome https://aclanthology.org",
-      "`PRESS` Enter",
-      "`WAIT` for ACL Anthology site to load",
-      "`CLICK` Search bar on the page",
-      "`TYPING` best long paper award ACL 2019",
-      "`PRESS` Enter",
-      "`WAIT` for results",
-      "`CLICK` the ACL 2019 best long paper link",
-      "`MOVE_TO` before the title, year, authors, and official PDF URL",
-      "`DRAG_TO` after the title, year, authors, and official PDF URL",
-      "`HOTKEY` 'Ctrl+C'",
-      "`HOTKEY`'Ctrl+Alt+T' open a new terminal (or reuse)",
-      "`TYPING` libreoffice --calc ~/Desktop/best_awards_acl.xlsx",
-      "`PRESS` Enter",
-      "`CLICK` the first column",
-      "`HOTKEY` 'Ctrl+V`'fill the rows with extracted data sorted by year descending",
-      "`CLICK` back to the chrome tab",
-      "`TYPING` Chrome https://aclanthology.org",
-      "`WAIT` for ACL Anthology site to load",
-      "`CLICK` Search bar on the page",
-      "`TYPING` best long paper award ACL 2020",
-      "`PRESS` Enter",
-      "`WAIT` for results",
-      "`CLICK` the ACL 2020 best long paper link",
-      "`MOVE_TO` before the title, year, authors, and official PDF URL",
-      "`DRAG_TO` after the title, year, authors, and official PDF URL",
-      "`HOTKEY` 'Ctrl+C'",
-      "`HOTKEY`'Ctrl+Alt+T' open a new terminal (or reuse)",
-      "`TYPING` libreoffice --calc ~/Desktop/best_awards_acl.xlsx",
-      "`PRESS` Enter",
-      "`CLICK` the first column",
-      "`HOTKEY` 'Ctrl+V`'fill the rows with extracted data sorted by year descending",
-      "`CLICK` back to the chrome tab",
-      "`TYPING` Chrome https://aclanthology.org",
-      "`WAIT` for ACL Anthology site to load",
+      "`CLICK` on chrome to open the window",
       "`CLICK` Search bar on the page",
       "`TYPING` best long paper award ACL 2021",
       "`PRESS` Enter",
-      "`WAIT` for results",
       "`CLICK` the ACL 2021 best long paper link",
-      "`MOVE_TO` before the title, year, authors, and official PDF URL",
-      "`DRAG_TO` after the title, year, authors, and official PDF URL",
-      "`HOTKEY` 'Ctrl+C'",
-      "`HOTKEY`'Ctrl+Alt+T' open a new terminal (or reuse)",
-      "`TYPING` libreoffice --calc ~/Desktop/best_awards_acl.xlsx",
-      "`PRESS` Enter",
+      "`SCROLL` to check the title, year, authors, and official PDF URL",
+      "`CLICK` back to libreoffice-calc window",
       "`CLICK` the first column",
-      "`HOTKEY` 'Ctrl+V`'fill the rows with extracted data sorted by year descending",
+      "`TYPING` fill the rows with extracted data sorted by year descending",
       "`CLICK` back to the chrome tab",
       "`TYPING` Chrome https://aclanthology.org",
-      "`WAIT` for ACL Anthology site to load",
       "`CLICK` Search bar on the page",
-      "`TYPING` best long paper award ACL 2022",
+      "`TYPING` best long paper award ACL 2020",
       "`PRESS` Enter",
-      "`WAIT` for results",
-      "`CLICK` the ACL 2022 best long paper link",
-      "`MOVE_TO` before the title, year, authors, and official PDF URL",
-      "`DRAG_TO` after the title, year, authors, and official PDF URL",
-      "`HOTKEY` 'Ctrl+C'",
-      "`HOTKEY`'Ctrl+Alt+T' open a new terminal (or reuse)",
-      "`TYPING` libreoffice --calc ~/Desktop/best_awards_acl.xlsx",
-      "`PRESS` Enter",
+      "`CLICK` the ACL 2020 best long paper link",
+      "`SCROLL` to check the title, year, authors, and official PDF URL",
+      "`CLICK` back to libreoffice-calc window",
       "`CLICK` the first column",
-      "`HOTKEY` 'Ctrl+V`'fill the rows with extracted data sorted by year descending",
-      "`SAVE` the file"
+      "`TYPING` 'fill the rows with extracted data sorted by year descending",
+      "`CLICK` back to the chrome tab",
+      "`TYPING` Chrome https://aclanthology.org",
+      "`CLICK` Search bar on the page",
+      "`TYPING` best long paper award ACL 2019",
+      "`PRESS` Enter",
+      "`CLICK` the ACL 2019 best long paper link",
+      "`SCROLL` to check the title, year, authors, and official PDF URL",
+      "`CLICK` back to libreoffice-calc window",
+      "`CLICK` the first column",
+      "`TYPING` fill the rows with extracted data sorted by year descending",
+      "`HOTKEY` 'Ctrl+S`'save the file"
     ],
     "grouped-action": [
       [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
-      ],
-      [
-        "`TYPING` google-chrome https://aclanthology.org",
-        "`PRESS` Enter"
-      ],
-      [
-        "`WAIT` for ACL Anthology site to load"
-      ],
-      [
-        "`CLICK` Search bar on the page"
-      ],
-      [
-        "`TYPING` best long paper award ACL 2019",
-        "`PRESS` Enter"
-      ],
-      [
-        "`WAIT` for results"
-      ],
-      [
-        "`CLICK` the ACL 2019 best long paper link"
-      ],
-      [
-        "`MOVE_TO` before the title, year, authors, and official PDF URL",
-        "`DRAG_TO` after the title, year, authors, and official PDF URL",
-        "`HOTKEY` 'Ctrl+C'"
-      ],
-      [
-        "`HOTKEY`'Ctrl+Alt+T' open a new terminal"
-      ],
-      [
-        "`TYPING` libreoffice --calc ~/Desktop/best_awards_acl.xlsx",
-        "`PRESS` Enter"
-      ],
-      [
-        "`CLICK` the first column"
-      ],
-      [
-        "`HOTKEY` 'Ctrl+V`'fill the rows with extracted data sorted by year descending"
-      ],
-      [
-        "`CLICK` back to the chrome tab"
-      ],
-      [
-        "`TYPING` https://aclanthology.org",
-        "`PRESS` Enter"
-      ],
-      [
-        "`WAIT` for ACL Anthology site to load"
-      ],
-      [
-        "`CLICK` Search bar on the page"
-      ],
-      [
-        "`TYPING` best long paper award ACL 2020",
-        "`PRESS` Enter"
-      ],
-      [
-        "`WAIT` for results"
-      ],
-      [
-        "`CLICK` the ACL 2020 best long paper link"
-      ],
-      [
-        "`MOVE_TO` before the title, year, authors, and official PDF URL",
-        "`DRAG_TO` after the title, year, authors, and official PDF URL",
-        "`HOTKEY` 'Ctrl+C'"
-      ],
-      [
-        "`CLICK` back to the terminal with LibreOffice Calc open"
-      ],
-      [
-        "`CLICK` the first column"
-      ],
-      [
-        "`HOTKEY` 'Ctrl+V`'fill the rows with extracted data sorted by year descending"
-      ],
-      [
-        "`CLICK` back to the chrome tab"
-      ],
-      [
-        "`TYPING` https://aclanthology.org",
-        "`PRESS` Enter"
-      ],
-      [
-        "`WAIT` for ACL Anthology site to load"
+        "`CLICK` on chrome to open the window"
       ],
       [
         "`CLICK` Search bar on the page"
@@ -273,24 +155,19 @@
         "`PRESS` Enter"
       ],
       [
-        "`WAIT` for results"
-      ],
-      [
         "`CLICK` the ACL 2021 best long paper link"
       ],
       [
-        "`MOVE_TO` before the title, year, authors, and official PDF URL",
-        "`DRAG_TO` after the title, year, authors, and official PDF URL",
-        "`HOTKEY` 'Ctrl+C'"
+        "`SCROLL` to check the title, year, authors, and official PDF URL"
       ],
       [
-        "`CLICK` back to the terminal with LibreOffice Calc open"
+        "`CLICK` back to libreoffice-calc window"
       ],
       [
         "`CLICK` the first column"
       ],
       [
-        "`HOTKEY` 'Ctrl+V`'fill the rows with extracted data sorted by year descending"
+        "`TYPING` 'fill the rows with extracted data sorted by year descending"
       ],
       [
         "`CLICK` back to the chrome tab"
@@ -300,38 +177,58 @@
         "`PRESS` Enter"
       ],
       [
-        "`WAIT` for ACL Anthology site to load"
-      ],
-      [
         "`CLICK` Search bar on the page"
       ],
       [
-        "`TYPING` best long paper award ACL 2022",
+        "`TYPING` best long paper award ACL 2020",
         "`PRESS` Enter"
       ],
       [
-        "`WAIT` for results"
+        "`CLICK` the ACL 2020 best long paper link"
       ],
       [
-        "`CLICK` the ACL 2022 best long paper link"
+        "`SCROLL` to check the title, year, authors, and official PDF URL"
       ],
       [
-        "`MOVE_TO` before the title, year, authors, and official PDF URL",
-        "`DRAG_TO` after the title, year, authors, and official PDF URL",
-        "`HOTKEY` 'Ctrl+C'"
-      ],
-      [
-        "`CLICK` back to the terminal with LibreOffice Calc open"
+        "`CLICK` back to libreoffice-calc window"
       ],
       [
         "`CLICK` the first column"
       ],
       [
-        "`HOTKEY` 'Ctrl+V`'fill the rows with extracted data sorted by year descending"
+        "`TYPING` 'fill the rows with extracted data sorted by year descending"
       ],
       [
-        "`CLICK` 'File' menu",
-        "`CLICK` 'Save'"
+        "`CLICK` back to the chrome tab"
+      ],
+      [
+        "`TYPING` https://aclanthology.org",
+        "`PRESS` Enter"
+      ],
+      [
+        "`CLICK` Search bar on the page"
+      ],
+      [
+        "`TYPING` best long paper award ACL 2019",
+        "`PRESS` Enter"
+      ],
+      [
+        "`CLICK` the ACL 2019 best long paper link"
+      ],
+      [
+        "`SCROLL` to check the title, year, authors, and official PDF URL"
+      ],
+      [
+        "`CLICK` back to libreoffice-calc window"
+      ],
+      [
+        "`CLICK` the first column"
+      ],
+      [
+        "`TYPING` 'fill the rows with extracted data sorted by year descending"
+      ],
+      [
+        "`HOTKEY` 'Ctrl+S`'save the file"
       ]
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "id": "e1fc0df3-c8b9-4ee7-864c-d0b590d3aa56",
+ "id": "e1fc0df3-c8b9-4ee7-864c-d0b590d3aa56",
   "snapshot": "libreoffice_writer",
   "instruction": "Install LanguageTool extension for my LibreOffice",
   "source": "authors",
@@ -79,11 +79,12 @@
       }
     ]
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY` 'Ctrl+Alt+T' open the terminal",
-      "`TYPING` libreoffice",
-      "`PRESS` Enter",
+      "`CLICK` open libreoffice writer",
       "`CLICK` 'Tools' menu",
       "`CLICK` 'Extension Manager...'",
       "`CLICK` 'Get more extensions online...'",
@@ -104,11 +105,7 @@
     ],
     "grouped-action": [
       [
-        "`HOTKEY` 'Ctrl+Alt+T' open the terminal"
-      ],
-      [
-        "`TYPING` libreoffice",
-        "`PRESS` Enter"
+        "`CLICK` open libreoffice writer"
       ],
       [
         "`CLICK` 'Tools' menu",

@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1iaPADtkbDGbupuwNQiG-L9Topt_VJl8g&export=download&authuser=0&confirm=t",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/5df7b33a-9f77-4101-823e-02f863e1c1ae/raw_book.zip",
             "path": "/home/user/Desktop/book.zip"
           }
         ]
@@ -67,70 +67,66 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1oH9UAbJe4EmPxwDX4kQPVyKqGF2y2pQh&export=download&authuser=0&confirm=t",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/5df7b33a-9f77-4101-823e-02f863e1c1ae/book.zip",
       "dest": "gold_book.zip"
     },
     "options": {
       "file_type": "pdf"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on 'File'",
       "`CLICK` on 'Print'",
       "`CLICK` on the 'Print to File' checkbox",
       "`CLICK` on the 'Pages' radio button",
-      "`TYPING` 1-17",
-      "`TYPING` /home/user/Desktop/book/chapter1.pdf",
-      "`CLICK` on 'Print'",
-      "`CLICK` on 'File'",
-      "`CLICK` on 'Print'",
-      "`CLICK` on the 'Print to File' checkbox",
-      "`CLICK` on the 'Pages' radio button",
       "`TYPING` 18-28",
-      "`TYPING` /home/user/Desktop/book/chapter2.pdf",
+      "`TYPING` /home/user/Desktop/book/2. Graph isomorphism.pdf",
       "`CLICK` on 'Print'",
       "`CLICK` on 'File'",
       "`CLICK` on 'Print'",
       "`CLICK` on the 'Print to File' checkbox",
       "`CLICK` on the 'Pages' radio button",
       "`TYPING` 29-43",
-      "`TYPING` /home/user/Desktop/book/chapter3.pdf",
+      "`TYPING` /home/user/Desktop/book/3. Graph polynomials.pdf",
       "`CLICK` on 'Print'",
       "`CLICK` on 'File'",
       "`CLICK` on 'Print'",
       "`CLICK` on the 'Print to File' checkbox",
       "`CLICK` on the 'Pages' radio button",
       "`TYPING` 44-53",
-      "`TYPING` /home/user/Desktop/book/chapter4.pdf",
+      "`TYPING` /home/user/Desktop/book/4. Covers and Interlacing families.pdf",
       "`CLICK` on 'Print'",
       "`CLICK` on 'File'",
       "`CLICK` on 'Print'",
       "`CLICK` on the 'Print to File' checkbox",
       "`CLICK` on the 'Pages' radio button",
       "`TYPING` 56-65",
-      "`TYPING` /home/user/Desktop/book/chapter5.pdf",
+      "`TYPING` /home/user/Desktop/book/5. Eigenvalues and the structure of graphs.pdf",
       "`CLICK` on 'Print'",
       "`CLICK` on 'File'",
       "`CLICK` on 'Print'",
       "`CLICK` on the 'Print to File' checkbox",
       "`CLICK` on the 'Pages' radio button",
       "`TYPING` 66-77",
-      "`TYPING` /home/user/Desktop/book/chapter6.pdf",
+      "`TYPING` /home/user/Desktop/book/6. Optimization for cliques and colourings.pdf",
       "`CLICK` on 'Print'",
       "`CLICK` on 'File'",
       "`CLICK` on 'Print'",
       "`CLICK` on the 'Print to File' checkbox",
       "`CLICK` on the 'Pages' radio button",
       "`TYPING` 79-85",
-      "`TYPING` /home/user/Desktop/book/chapter7.pdf",
+      "`TYPING` /home/user/Desktop/book/7. Theta.pdf",
       "`CLICK` on 'Print'",
       "`CLICK` on 'File'",
       "`CLICK` on 'Print'",
       "`CLICK` on the 'Print to File' checkbox",
       "`CLICK` on the 'Pages' radio button",
       "`TYPING` 87-100",
-      "`TYPING` /home/user/Desktop/book/chapter8.pdf",
+      "`TYPING` /home/user/Desktop/book/8. The Laplacian matrix.pdf",
       "`CLICK` on 'Print'"
     ],
     "grouped-action": [
@@ -147,31 +143,10 @@
         "`CLICK` on the 'Pages' radio button"
       ],
       [
-        "`TYPING` 1-17"
-      ],
-      [
-        "`TYPING` /home/user/Desktop/book/chapter1.pdf"
-      ],
-      [
-        "`CLICK` on 'Print'"
-      ],
-      [
-        "`CLICK` on 'File'"
-      ],
-      [
-        "`CLICK` on 'Print'"
-      ],
-      [
-        "`CLICK` on the 'Print to File' checkbox"
-      ],
-      [
-        "`CLICK` on the 'Pages' radio button"
-      ],
-      [
         "`TYPING` 18-28"
       ],
       [
-        "`TYPING` /home/user/Desktop/book/chapter2.pdf"
+        "`TYPING` /home/user/Desktop/book/2. Graph isomorphism.pdf"
       ],
       [
         "`CLICK` on 'Print'"
@@ -192,7 +167,7 @@
         "`TYPING` 29-43"
       ],
       [
-        "`TYPING` /home/user/Desktop/book/chapter3.pdf"
+        "`TYPING` /home/user/Desktop/book/3. Graph polynomials.pdf"
       ],
       [
         "`CLICK` on 'Print'"
@@ -213,7 +188,7 @@
         "`TYPING` 44-53"
       ],
       [
-        "`TYPING` /home/user/Desktop/book/chapter4.pdf"
+        "`TYPING` /home/user/Desktop/book/4. Covers and Interlacing families.pdf"
       ],
       [
         "`CLICK` on 'Print'"
@@ -234,7 +209,7 @@
         "`TYPING` 56-65"
       ],
       [
-        "`TYPING` /home/user/Desktop/book/chapter5.pdf"
+        "`TYPING` /home/user/Desktop/book/5. Eigenvalues and the structure of graphs.pdf"
       ],
       [
         "`CLICK` on 'Print'"
@@ -255,7 +230,7 @@
         "`TYPING` 66-77"
       ],
       [
-        "`TYPING` /home/user/Desktop/book/chapter6.pdf"
+        "`TYPING` /home/user/Desktop/book/6. Optimization for cliques and colourings.pdf"
       ],
       [
         "`CLICK` on 'Print'"
@@ -276,7 +251,7 @@
         "`TYPING` 79-85"
       ],
       [
-        "`TYPING` /home/user/Desktop/book/chapter7.pdf"
+        "`TYPING` /home/user/Desktop/book/7. Theta.pdf"
       ],
       [
         "`CLICK` on 'Print'"
@@ -297,7 +272,7 @@
         "`TYPING` 87-100"
       ],
       [
-        "`TYPING` /home/user/Desktop/book/chapter8.pdf"
+        "`TYPING` /home/user/Desktop/book/8. The Laplacian matrix.pdf"
       ],
       [
         "`CLICK` on 'Print'"

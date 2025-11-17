@@ -17,7 +17,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1krQ_vN3QiboMttWrjDY-YROCWZq6cBtb&export=download",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/2fe4b718-3bd7-46ec-bdce-b184f5653624/src.mp4",
             "path": "/home/user/Desktop/src.mp4"
           }
         ]
@@ -46,10 +46,13 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1kDq8pakgdZvKh8CFpR5368stf14gwFCp&export=download",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/2fe4b718-3bd7-46ec-bdce-b184f5653624/src_clip.gif",
       "dest": "src_clip_gold.gif"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`DOUBLE_CLICK` src.mp4",

@@ -151,32 +151,42 @@
       },
       {
         "type": "cloud_file",
-        "path": "https://drive.google.com/uc?id=1t5Llhn6seDUXVs-eILu6CjwFEQL9Z5Qm&export=download",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/74d5859f-ed66-4d3e-aa0e-93d7a592ce41/file_1t5Llhn6seDUXVs-eILu6CjwFEQL9Z5Qm.bin",
         "dest": "background_script.js"
       },
       {
         "type": "cloud_file",
-        "path": "https://drive.google.com/uc?id=19fMAsWd6q4ElLdOceJ-otHbxRJA_pc_U&export=download",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/74d5859f-ed66-4d3e-aa0e-93d7a592ce41/index.html",
         "dest": "index.html"
       },
       {
         "type": "cloud_file",
-        "path": "https://drive.google.com/uc?id=1fwfiRPjdug8uh6z23RFO1JtlGH_L_Hl_&export=download",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/74d5859f-ed66-4d3e-aa0e-93d7a592ce41/style.css",
         "dest": "style.css"
       },
       {
         "type": "cloud_file",
-        "path": "https://drive.google.com/uc?id=14YYnhCfRtHQNk8M4fBPaUQeteoFMGBsA&export=download",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/74d5859f-ed66-4d3e-aa0e-93d7a592ce41/file_14YYnhCfRtHQNk8M4fBPaUQeteoFMGBsA.bin",
         "dest": "script.js"
       }
     ]
   },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`CLICK` on nautilus window",
-      "`CLICK` on 'Background Script' checkbox",
-      "`CLICK` on 'Browser Action' checkbox",
-      "`CLICK` on 'Download as Zip'",
+      "`CLICK` on 'Create' button",
+      "`TYPING` \"happy-extension\"",
+      "`CLICK` on 'Next' button",
+      "`TYPING` \"0.0.1\"",
+      "`CLICK` on 'Yes' button",
+      "`CLICK` on 'Yes' button",
+      "`CLICK` on 'Yes' button",
+      "`CLICK` on 'Yes' button",
+      "`CLICK` on 'Yes' button",
+      "`TYPING` \"happy-extension v0.0.1\"",
+      "`CLICK` on 'Save' button",
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",
       "`TYPING` unzip ~/Downloads/happy-extension.zip -d ~/Projects/",
       "`PRESS` enter",
@@ -185,16 +195,35 @@
     ],
     "grouped-action": [
       [
-        "`CLICK` on nautilus window"
+        "`CLICK` on 'Create' button"
       ],
       [
-        "`CLICK` on 'Background Script' checkbox"
+        "`TYPING` on \"happy-extension\""
       ],
       [
-        "`CLICK` on 'Browser Action' checkbox"
+        "`CLICK` on 'Next' button"
       ],
       [
-        "`CLICK` on 'Download as Zip'"
+        "`TYPING` on \"0.0.1\""
+      ],
+      [
+        "`CLICK` on 'Yes' button"
+      ],
+      [
+        "`CLICK` on 'Yes' button"
+      ],
+      [
+        "`CLICK` on 'Yes' button"
+      ],
+      [
+        "`CLICK` on 'Yes' button"
+      ],
+      [
+        "`CLICK` on 'Yes' button"
+      ],
+      [
+        "`TYPING` on \"happy-extension v0.0.1\"",
+        "`CLICK` on 'Save' button"
       ],
       [
         "`HOTKEY`'Ctrl+Alt+T' open the terminal"

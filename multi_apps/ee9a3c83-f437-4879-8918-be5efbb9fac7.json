@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1V6e4KB6Sabp6nAHkq5Seun0qbjwEfdaF&export=download",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/ee9a3c83-f437-4879-8918-be5efbb9fac7/file_example_ODS_5000.ods",
             "path": "/home/user/Desktop/file_example_ODS_5000.ods"
           }
         ]
@@ -87,11 +87,14 @@
       },
       {
         "type": "cloud_file",
-        "path": "https://drive.usercontent.google.com/download?id=1L8cJjHYDtZymQp4-QdNZ9i6jzZzsXJm1&export=download",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/ee9a3c83-f437-4879-8918-be5efbb9fac7/file_example_ODS_5000.csv",
         "dest": "file_example_ODS_5000_gold.csv"
       }
     ]
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",

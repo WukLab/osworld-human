@@ -1,0 +1,340 @@
+{
+    "id": "3e3fc409-bff3-4905-bf16-c968eee3f807",
+    "snapshot": "chrome",
+    "instruction": "I'm a huge movie fan and have kept a record of all the movies I've watched. I'm curious to find out if there are any films released before 2024 from the IMDB Top 30 list that I haven't seen yet. Help me create another sheet 'unseen_movies' in the opened Excel. This sheet should share the same headers and sort the results according to IMDB rankings from high to low.",
+    "source": "authors",
+    "config": [
+        {
+            "type": "launch",
+            "parameters": {
+                "command": [
+                    "google-chrome",
+                    "--remote-debugging-port=1337"
+                ]
+            }
+        },
+        {
+            "type": "launch",
+            "parameters": {
+                "command": [
+                    "socat",
+                    "tcp-listen:9222,fork",
+                    "tcp:localhost:1337"
+                ]
+            }
+        },
+        {
+            "type": "chrome_open_tabs",
+            "parameters": {
+                "urls_to_open": [
+                    "https://www.imdb.com"
+                ]
+            }
+        },
+        {
+            "type": "download",
+            "parameters": {
+                "files": [
+                    {
+                        "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/3e3fc409-bff3-4905-bf16-c968eee3f807/movies.xlsx",
+                        "path": "/home/user/Desktop/movies.xlsx"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "launch",
+            "parameters": {
+                "command": [
+                    "libreoffice",
+                    "--calc",
+                    "/home/user/Desktop/movies.xlsx"
+                ]
+            }
+        }
+    ],
+    "trajectory": "trajectories/",
+    "related_apps": [
+        "libreoffice_calc",
+        "chrome"
+    ],
+    "evaluator": {
+        "func": "compare_table",
+        "result": {
+            "type": "vm_file",
+            "path": "/home/user/Desktop/movies.xlsx",
+            "dest": "movies.xlsx"
+        },
+        "expected": {
+            "type": "cloud_file",
+            "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/3e3fc409-bff3-4905-bf16-c968eee3f807/gold_movies.xlsx",
+            "dest": "gold_movies.xlsx"
+        },
+        "options": {
+            "rules": [
+                {
+                    "type": "sheet_data",
+                    "sheet_idx0": "RNunseen_movies",
+                    "sheet_idx1": "ENunseen_movies"
+                }
+            ]
+        }
+    },
+    "proxy": true,
+    "fixed_ip": false,
+    "possibility_of_env_change": "low",
+    "human-ground-truth": {
+        "single-action": [
+            "`CLICK` on 'Add Sheet' button",
+            "`RIGHT_CLICK` on 'Sheet 2' tab",
+            "`CLICK` on 'Rename Sheet'",
+            "`TYPING` unseen_movies",
+            "`PRESS` Enter",
+            "`CLICK` on 'seen_movies' sheet tab",
+            "`CLICK` on cell A1",
+            "`HOTKEY` Shift+ArrowRight",
+            "`HOTKEY` Shift+ArrowRight",
+            "`HOTKEY` Shift+ArrowRight",
+            "`HOTKEY` Ctrl+C",
+            "`CLICK` on 'unseen_movies' sheet tab",
+            "`CLICK` on cell A1",
+            "`HOTKEY` Ctrl+V",
+            "`HOTKEY` Alt+Tab",
+            "`CLICK` on 'Menu' button",
+            "`CLICK` on 'Top 250 Movies' link",
+            "`HOTKEY` Alt+Tab",
+            "`CLICK` on cell A2",
+            "`TYPING` The Dark Knight",
+            "`PRESS` Tab",
+            "`TYPING` 2008",
+            "`PRESS` Tab",
+            "`TYPING` 9.0",
+            "`PRESS` Tab",
+            "`TYPING` When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+            "`PRESS` Enter",
+            "`TYPING` 12 Angry Men",
+            "`PRESS` Tab",
+            "`TYPING` 1957",
+            "`PRESS` Tab",
+            "`TYPING` 9.0",
+            "`PRESS` Tab",
+            "`TYPING` The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.",
+            "`PRESS` Enter",
+            "`TYPING` The Good, the Bad and the Ugly",
+            "`PRESS` Tab",
+            "`TYPING` 1966",
+            "`PRESS` Tab",
+            "`TYPING` 8.8",
+            "`PRESS` Tab",
+            "`TYPING` A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+            "`PRESS` Enter",
+            "`TYPING` The Matrix",
+            "`PRESS` Tab",
+            "`TYPING` 1999",
+            "`PRESS` Tab",
+            "`TYPING` 8.7",
+            "`PRESS` Tab",
+            "`TYPING` When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+            "`PRESS` Enter",
+            "`TYPING` One Flew Over the Cuckoo's Nest",
+            "`PRESS` Tab",
+            "`TYPING` 1975",
+            "`PRESS` Tab",
+            "`TYPING` 8.7",
+            "`PRESS` Tab",
+            "`TYPING` In the Fall of 1963, a Korean War veteran and criminal pleads insanity and is admitted to a mental institution, where he rallies up the scared patients against the tyrannical nurse.",
+            "`PRESS` Enter",
+            "`TYPING` Se7en",
+            "`PRESS` Tab",
+            "`TYPING` 1995",
+            "`PRESS` Tab",
+            "`TYPING` 8.6",
+            "`PRESS` Tab",
+            "`TYPING` Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+            "`PRESS` Enter",
+            "`TYPING` Interstellar",
+            "`PRESS` Tab",
+            "`TYPING` 2014",
+            "`PRESS` Tab",
+            "`TYPING` 8.7",
+            "`PRESS` Tab",
+            "`TYPING` When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+            "`PRESS` Enter",
+            "`TYPING` City of God",
+            "`PRESS` Tab",
+            "`TYPING` 2002",
+            "`PRESS` Tab",
+            "`TYPING` 8.6",
+            "`PRESS` Tab",
+            "`TYPING` In the slums of Rio, two kids' paths diverge as one struggles to become a photographer and the other a kingpin.",
+            "`PRESS` Enter",
+            "`TYPING` The Green Mile",
+            "`PRESS` Tab",
+            "`TYPING` 1999",
+            "`PRESS` Tab",
+            "`TYPING` 8.6",
+            "`PRESS` Tab",
+            "`TYPING` A tale set on death row, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the lead guard, Paul Edgecombe, recognizes John's gift, he tries to help stave off the condemned man's execution.",
+            "`PRESS` Enter",
+            "`TYPING` Star Wars: Episode IV - A New Hope",
+            "`PRESS` Tab",
+            "`TYPING` 1977",
+            "`PRESS` Tab",
+            "`TYPING` 8.6",
+            "`PRESS` Tab",
+            "`TYPING` Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
+            "`PRESS` Enter",
+            "`HOTKEY` Ctrl+S"
+        ],
+        "grouped-action": [
+            [
+                "`CLICK` on 'Add Sheet' button"
+            ],
+            [
+                "`RIGHT_CLICK` on 'Sheet 2' tab"
+            ],
+            [
+                "`CLICK` on 'Rename Sheet'"
+            ],
+            [
+                "`TYPING` unseen_movies",
+                "`PRESS` Enter"
+            ],
+            [
+                "`CLICK` on 'seen_movies' sheet tab"
+            ],
+            [
+                "`CLICK` on cell A1",
+                "`HOTKEY` Shift+ArrowRight",
+                "`HOTKEY` Shift+ArrowRight",
+                "`HOTKEY` Shift+ArrowRight",
+                "`HOTKEY` Ctrl+C"
+            ],
+            [
+                "`CLICK` on 'unseen_movies' sheet tab"
+            ],
+            [
+                "`CLICK` on cell A1",
+                "`HOTKEY` Ctrl+V"
+            ],
+            [
+                "`HOTKEY` Alt+Tab"
+            ],
+            [
+                "`CLICK` on 'Menu' button"
+            ],
+            [
+                "`CLICK` on 'Top 250 Movies' link"
+            ],
+            [
+                "`HOTKEY` Alt+Tab"
+            ],
+            [
+                "`CLICK` on cell A2"
+            ],
+            [
+                "`TYPING` The Dark Knight",
+                "`PRESS` Tab",
+                "`TYPING` 2008",
+                "`PRESS` Tab",
+                "`TYPING` 9.0",
+                "`PRESS` Tab",
+                "`TYPING` When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+                "`PRESS` Enter"
+            ],
+            [
+                "`TYPING` 12 Angry Men",
+                "`PRESS` Tab",
+                "`TYPING` 1957",
+                "`PRESS` Tab",
+                "`TYPING` 9.0",
+                "`PRESS` Tab",
+                "`TYPING` The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.",
+                "`PRESS` Enter"
+            ],
+            [
+                "`TYPING` The Good, the Bad and the Ugly",
+                "`PRESS` Tab",
+                "`TYPING` 1966",
+                "`PRESS` Tab",
+                "`TYPING` 8.8",
+                "`PRESS` Tab",
+                "`TYPING` A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+                "`PRESS` Enter"
+            ],
+            [
+                "`TYPING` The Matrix",
+                "`PRESS` Tab",
+                "`TYPING` 1999",
+                "`PRESS` Tab",
+                "`TYPING` 8.7",
+                "`PRESS` Tab",
+                "`TYPING` When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+                "`PRESS` Enter"
+            ],
+            [
+                "`TYPING` One Flew Over the Cuckoo's Nest",
+                "`PRESS` Tab",
+                "`TYPING` 1975",
+                "`PRESS` Tab",
+                "`TYPING` 8.7",
+                "`PRESS` Tab",
+                "`TYPING` In the Fall of 1963, a Korean War veteran and criminal pleads insanity and is admitted to a mental institution, where he rallies up the scared patients against the tyrannical nurse.",
+                "`PRESS` Enter"
+            ],
+            [
+                "`TYPING` Se7en",
+                "`PRESS` Tab",
+                "`TYPING` 1995",
+                "`PRESS` Tab",
+                "`TYPING` 8.6",
+                "`PRESS` Tab",
+                "`TYPING` Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+                "`PRESS` Enter"
+            ],
+            [
+                "`TYPING` Interstellar",
+                "`PRESS` Tab",
+                "`TYPING` 2014",
+                "`PRESS` Tab",
+                "`TYPING` 8.7",
+                "`PRESS` Tab",
+                "`TYPING` When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+                "`PRESS` Enter"
+            ],
+            [
+                "`TYPING` City of God",
+                "`PRESS` Tab",
+                "`TYPING` 2002",
+                "`PRESS` Tab",
+                "`TYPING` 8.6",
+                "`PRESS` Tab",
+                "`TYPING` In the slums of Rio, two kids' paths diverge as one struggles to become a photographer and the other a kingpin.",
+                "`PRESS` Enter"
+            ],
+            [
+                "`TYPING` The Green Mile",
+                "`PRESS` Tab",
+                "`TYPING` 1999",
+                "`PRESS` Tab",
+                "`TYPING` 8.6",
+                "`PRESS` Tab",
+                "`TYPING` A tale set on death row, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the lead guard, Paul Edgecombe, recognizes John's gift, he tries to help stave off the condemned man's execution.",
+                "`PRESS` Enter"
+            ],
+            [
+                "`TYPING` Star Wars: Episode IV - A New Hope",
+                "`PRESS` Tab",
+                "`TYPING` 1977",
+                "`PRESS` Tab",
+                "`TYPING` 8.6",
+                "`PRESS` Tab",
+                "`TYPING` Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
+                "`PRESS` Enter"
+            ],
+            [
+                "`HOTKEY` Ctrl+S"
+            ]
+        ]
+    }
+}

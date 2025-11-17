@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1A9nNj3hWBB0Bnr2Cf7zHs3WFiTKdEeNt&export=download&authuser=0&confirm=t&uuid=7c0f29fd-1f1a-4d48-b717-5c677373e615&at=APZUnTX9YQH_-UbVyFRLblwZ3rAn:1706530787330",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_impress/21760ecb-8f62-40d2-8d85-0cee5725cb72/Ch4%20Video%20Effect.pptx",
             "path": "/home/user/Desktop/Ch4 Video Effect.pptx"
           }
         ]
@@ -33,7 +33,7 @@
         "command": [
           "python",
           "-c",
-          "import pyautogui; import time;  time.sleep(4); pyautogui.doubleClick(x=960, y=540); time.sleep(0.5);pyautogui.mouseDown(); pyautogui.mouseUp(); time.sleep(0.5);"
+          "import pyautogui; import time;  time.sleep(4); pyautogui.doubleClick(x={SCREEN_WIDTH_HALF}, y={SCREEN_HEIGHT_HALF}); time.sleep(0.5);pyautogui.mouseDown(); pyautogui.mouseUp(); time.sleep(0.5);"
         ]
       }
     }
@@ -63,14 +63,14 @@
           "command": [
             "python",
             "-c",
-            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(0.5);"
+            "import pyautogui; import time; pyautogui.hotkey('ctrl', 's'); time.sleep(4.5);"
           ]
         }
       },
       {
         "type": "sleep",
         "parameters": {
-          "seconds": 0.5
+          "seconds": 4.5
         }
       }
     ],
@@ -88,6 +88,9 @@
       "dest": "Ch4 Video Effect.pptx"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` the slide transitions pane",

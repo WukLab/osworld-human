@@ -11,22 +11,15 @@
   "evaluator": {
     "func": "infeasible"
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`CLICK` 'Edit' in the menu",
-      "`CLICK` 'Preferences'",
-      "`CLICK` the 'Theme' option",
       "`FAIL`"
     ],
     "grouped-action": [
       [
-        "`CLICK` 'Edit' in the menu"
-      ],
-      [
-        "`CLICK` 'Preferences'"
-      ],
-      [
-        "`CLICK` the 'Theme' option",
         "`FAIL`"
       ]
     ]

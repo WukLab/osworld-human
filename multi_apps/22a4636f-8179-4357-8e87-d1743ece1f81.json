@@ -66,7 +66,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1mIPe4P5b5WPoYI1zegSXjZ1Fhjjvr5Zk&export=download&authuser=0&confirm=t",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/22a4636f-8179-4357-8e87-d1743ece1f81/Meeting-Agenda.docx",
             "path": "/home/user/Desktop/Meeting-Agenda.docx"
           }
         ]
@@ -101,10 +101,13 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1vY9GCxczkuom8bOU6SVHe9pTYgGIm1_M&export=download&authuser=0&confirm=t",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/22a4636f-8179-4357-8e87-d1743ece1f81/gold-Meeting-Agenda.pdf",
       "dest": "gold-Meeting-Agenda.pdf"
     }
   },
+  "proxy": true,
+  "fixed_ip": true,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on 'File'",

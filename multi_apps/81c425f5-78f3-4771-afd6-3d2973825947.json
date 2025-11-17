@@ -10,7 +10,7 @@
         "files": [
           {
             "path": "/home/user/Desktop/OSP_Envelope_Price-List_2023_5000.xlsx",
-            "url": "https://drive.usercontent.google.com/download?id=1tXhQ1aG0JMbp3Yz643QRCmJBCHKE_trr&export=download&authuser=0&confirm=t&uuid=b4441d6c-48ce-4d49-a8cb-9239e8e20d1a&at=APZUnTU-Ba8Vx0N8e1nuomP_-4mm:1709556978086"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/81c425f5-78f3-4771-afd6-3d2973825947/OSP_Envelope_Price-List_2023_5000.xlsx"
           }
         ]
       }
@@ -62,10 +62,13 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1KbdlQC0qSAYewG8QnZgParnSwv3s3dub&export=download&authuser=0&confirm=t&uuid=15dcc25c-8168-425e-96e1-fd27e0d6904b&at=APZUnTVho4ZrREHf9DC4rKwdIi3R:1709557117932",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/81c425f5-78f3-4771-afd6-3d2973825947/price.docx",
       "dest": "price_Gold.docx"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK`'LibreOffice Calc' icon open window",

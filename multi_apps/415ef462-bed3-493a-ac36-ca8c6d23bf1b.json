@@ -1,7 +1,7 @@
 {
   "id": "415ef462-bed3-493a-ac36-ca8c6d23bf1b",
   "snapshot": "thunderbird",
-  "instruction": "There's an e-mail containing the AWS invoice for December saved in local \"Bills\" folder. Extract the invoice PDF to the my receipts folder. Follow the file name pattern of the old files and update a record in my tally book.",
+  "instruction": "There's an e-mail containing the AWS invoice for December saved in local \"Bills\" folder. Extract the invoice PDF to the my receipts folder. Follow the file name pattern of the old files and append a record at the end of my tally book.",
   "source": "authors",
   "config": [
     {
@@ -21,34 +21,34 @@
         "files": [
           {
             "path": "/home/user/Documents/Finance/receipts/aws-invoice-2308.pdf",
-            "url": "https://drive.google.com/uc?id=1azRFXf4A7fvW0S7r9upHvleMEi-92hHM&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/415ef462-bed3-493a-ac36-ca8c6d23bf1b/invoice0123456789-2308.pdf"
           },
           {
             "path": "/home/user/Documents/Finance/receipts/aws-invoice-2309.pdf",
-            "url": "https://drive.google.com/uc?id=1x-lpHm8U4U7uRPZ74-9wq9KzW2R55ln1&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/415ef462-bed3-493a-ac36-ca8c6d23bf1b/invoice0123456789-2309.pdf"
           },
           {
             "path": "/home/user/Documents/Finance/receipts/aws-invoice-2310.pdf",
-            "url": "https://drive.google.com/uc?id=1pcrgV9G6NO4ekMEQBiupwXtq6mmke7b_&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/415ef462-bed3-493a-ac36-ca8c6d23bf1b/invoice0123456789-2310.pdf"
           },
           {
             "path": "/home/user/Documents/Finance/receipts/aws-invoice-2311.pdf",
-            "url": "https://drive.google.com/uc?id=1JzbCK_nIY8X_3QZjnkzTtb-cRoq9zNT-&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/415ef462-bed3-493a-ac36-ca8c6d23bf1b/invoice0123456789-2311.pdf"
           },
           {
             "path": "/home/user/Documents/Finance/receipts/X-receipt-2312.pdf",
-            "url": "https://drive.google.com/uc?id=1QzWjNzvNosG_yQr7VVonvYb3cUYF5f3u&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/415ef462-bed3-493a-ac36-ca8c6d23bf1b/Receipt-0123-4567.pdf"
           },
           {
             "path": "/home/user/Documents/Finance/tally_book.xlsx",
-            "url": "https://drive.google.com/uc?id=13yuLhBPmouoWR-DybfgaIbWUOxbY_jhL&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/415ef462-bed3-493a-ac36-ca8c6d23bf1b/tally_book.xlsx"
           },
           {
             "path": "/home/user/.projects.tar.xz",
-            "url": "https://drive.google.com/uc?id=1oJcxpjqF474Wm16i1aZc8DlCEfAvc4t_&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/415ef462-bed3-493a-ac36-ca8c6d23bf1b/projects.tar.xz"
           },
           {
-            "url": "https://drive.usercontent.google.com/download?id=1EHLRWzBCOsyERkSMUnTF2pnsR0n6ZvtR&export=download&authuser=0&confirm=t&uuid=de09bd5e-bef8-499a-b599-c642af190e10&at=APZUnTXqOsQkxl0zMSX6R1Sgp_v3:1704362491712",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/415ef462-bed3-493a-ac36-ca8c6d23bf1b/thunderbird-profile.tar.gz",
             "path": "/home/user/thunderbird-profile.tar.gz"
           }
         ]
@@ -141,7 +141,7 @@
           "files": [
             {
               "path": "/home/user/.aws-invoice-2312.pdf",
-              "url": "https://drive.google.com/uc?id=1RqbulzKG_HeYb1GZmLABOzlohlFg02UU&export=download"
+              "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/415ef462-bed3-493a-ac36-ca8c6d23bf1b/invoice0123456789-2312.pdf"
             }
           ]
         }
@@ -176,7 +176,7 @@
     "expected": [
       {
         "type": "cloud_file",
-        "path": "https://drive.google.com/uc?id=1x8m-korGI1PhJm8PAQVTlWYKneK4WKvn&export=download",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/415ef462-bed3-493a-ac36-ca8c6d23bf1b/tally_book_gt.xlsx",
         "dest": "tally_book_gt.xlsx"
       },
       {
@@ -201,6 +201,9 @@
       {}
     ]
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK`'Thunderbird' open window",
@@ -213,13 +216,12 @@
       "`CLICK`'my receipts' folder",
       "`CLICK`'Save' button in the file save dialog",
       "`CLICK`'LibreOffice Calc' icon",
-      "`CLICK`'File' menu in Calc",
-      "`CLICK`'Open...' option",
-      "`CLICK`'Documents' in the sidebar of the file open dialog",
-      "`CLICK`'tally_book.ods' (or your specific tally book file)",
-      "`CLICK`'Open' button in the file open dialog",
-      "`CLICK` the cell or row where the record needs to be updated",
-      "`TYPING` [Enter AWS invoice details, e.g., 'Dec AWS: $X.XX']",
+      "`CLICK` cell A7",
+      "`TYPING` 'AWS'",
+      "`CLICK` cell A8",
+      "`TYPING` '2023.12'",
+      "`CLICK` cell A9",
+      "`TYPING` '$10.02'",
       "`PRESS` Enter",
       "`CLICK`'File' menu in Calc",
       "`CLICK`'Save' option"
@@ -248,17 +250,12 @@
         "`CLICK`'LibreOffice Calc' icon"
       ],
       [
-        "`CLICK`'File' menu in Calc",
-        "`CLICK`'Open...' option"
-      ],
-      [
-        "`CLICK`'Documents' in the sidebar of the file open dialog",
-        "`CLICK`'tally_book.ods' (or your specific tally book file)",
-        "`CLICK`'Open' button in the file open dialog"
-      ],
-      [
-        "`CLICK` the cell or row where the record needs to be updated",
-        "`TYPING` [Enter AWS invoice details, e.g., 'Dec AWS: $X.XX']",
+        "`CLICK` cell A7",
+        "`TYPING` 'AWS'",
+        "`CLICK` cell A8",
+        "`TYPING` '2023.12'",
+        "`CLICK` cell A9",
+        "`TYPING` '$10.02'",
         "`PRESS` Enter"
       ],
       [

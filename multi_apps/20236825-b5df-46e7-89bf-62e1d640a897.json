@@ -9,11 +9,11 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1AQtZ8Hrf7WtyUtaHMtDN-UErKRXnW64d&export=download&authuser=0&confirm=t&uuid=bf7f2b4b-ecf9-4260-b74e-db0cd40b58ca&at=APZUnTVimJzbmwJ8-4E1lq9ipJf_:1709624149129",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/20236825-b5df-46e7-89bf-62e1d640a897/bubbleSort.zip",
             "path": "/home/user/Desktop/bubbleSort.zip"
           },
           {
-            "url": "https://drive.usercontent.google.com/download?id=168ZHCnK6v5PEZ8G5M25ZUW9fICk4OlfE&export=download&authuser=0&confirm=t&uuid=3642df08-dc40-4d37-93a0-8532e3012fb0&at=APZUnTUP1OTlq0kIgqcj7YSWw6MB:1709622592489",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/20236825-b5df-46e7-89bf-62e1d640a897/Bubble_Sort_tutorial.docx",
             "path": "/home/user/Desktop/Bubble_Sort_tutorial.docx"
           }
         ]
@@ -46,7 +46,7 @@
     "func": "compare_text_file",
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1g2Trt9oxQyW_sx8aIztFA0zNsE4yNw2x&export=download&authuser=0&confirm=t&uuid=342751c4-54f1-4760-9326-e7388845ded0&at=APZUnTV5BcbaxIZrDglWbs84Oxln:1709623697315",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/20236825-b5df-46e7-89bf-62e1d640a897/res.txt",
       "dest": "res_Gold.txt"
     },
     "result": {
@@ -55,18 +55,19 @@
       "dest": "res.txt"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",
       "`TYPING` cd ~/Desktop",
       "`PRESS` Enter",
-      "`TYPING` libreoffice --writer bubble_Sort_tutorial.docx",
-      "`PRESS` Enter",
-      "`WAIT` for document to open and review the bubble sort algorithm description",
       "`TYPING` open bubbleSort.py with text editor (e.g., nano bubbleSort.py or code bubbleSort.py)",
-      "`FIND` the bubbleSort function definition",
-      "`TYPING` complete the bubbleSort function according to the tutorial",
-      "`SAVE` the bubbleSort.py file",
+      "`SCROLL` to the bubbleSort function definition",
+      "`TYPING` to complete the bubbleSort function according to the tutorial",
+      "`TYPING` to save the bubbleSort.py file (e.g. exit nano with 'Ctrl+X', 'Y', 'Enter' or save in vscode with 'Ctrl+S')",
+      "`PRESS` enter to save the bubbleSort.py file",
       "`TYPING` python3 bubbleSort.py > res.txt",
       "`PRESS` Enter"
     ],
@@ -77,17 +78,13 @@
         "`PRESS` Enter"
       ],
       [
-        "`TYPING` libreoffice --writer bubble_Sort_tutorial.docx",
-        "`PRESS` Enter",
-        "`WAIT` for document to open and review the bubble sort algorithm description"
-      ],
-      [
         "`TYPING` open bubbleSort.py with text editor (e.g., nano bubbleSort.py or code bubbleSort.py)",
-        "`FIND` the bubbleSort function definition"
+        "`SCROLL` to the bubbleSort function definition"
       ],
       [
-        "`TYPING` complete the bubbleSort function according to the tutorial",
-        "`SAVE` the bubbleSort.py file"
+        "`TYPING` to complete the bubbleSort function according to the tutorial",
+        "`TYPING` to save the bubbleSort.py file (e.g. exit nano with 'Ctrl+X', 'Y', 'Enter' or save in vscode with 'Ctrl+S')",
+        "`PRESS` enter to save the bubbleSort.py file"
       ],
       [
         "`TYPING` python3 bubbleSort.py > res.txt",

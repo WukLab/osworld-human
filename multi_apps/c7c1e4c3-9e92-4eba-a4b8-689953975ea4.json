@@ -1,5 +1,5 @@
 {
-  "id": "c7c1e4c3-9e92-4eba-a4b8-689953975ea4",
+   "id": "c7c1e4c3-9e92-4eba-a4b8-689953975ea4",
   "snapshot": "libreoffice_calc",
   "instruction": "I am collecting the contact information of some professors and have their homepage links listed here. Assist me in completing the form by adding their respective email addresses.",
   "source": "",
@@ -28,7 +28,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1ZAia9SFnujBlmxCr5G_np6GtHp_Xzvc-&export=download&authuser=0&confirm=t&uuid=40c8cfef-cffb-416a-9e97-43cfbb50f17c&at=APZUnTUKoioAWjNtx7fqYRvf_Pbz:1709208000844",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/c7c1e4c3-9e92-4eba-a4b8-689953975ea4/Professor_Contact.xlsx",
             "path": "/home/user/Desktop/Professor_Contact.xlsx"
           }
         ]
@@ -81,7 +81,7 @@
     "func": "compare_table",
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1npesHVfOx8foPhjb9zYqsxT8_pvDcnII&export=download&authuser=0&confirm=t&uuid=396bb464-1308-4220-b795-ed442ff96303&at=APZUnTVTJMG5GeDCJTratyJZExCb:1709207996808",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/c7c1e4c3-9e92-4eba-a4b8-689953975ea4/Professor_Contact_Gold.xlsx",
       "dest": "Professor_Contact_Gold.xlsx"
     },
     "result": {
@@ -99,6 +99,9 @@
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on the first professor's homepage link to open in chrome",

@@ -1,5 +1,5 @@
 {
-  "id": "7ff48d5b-2df2-49da-b500-a5150ffc7f18",
+   "id": "7ff48d5b-2df2-49da-b500-a5150ffc7f18",
   "snapshot": "multiapps",
   "instruction": "I am a Chinese citizen and I want to go to Macau to watch a concert recently, but I have not yet applied for a visa for Macau. I live in Futian District, Shenzhen City. I heard that Shenzhen currently has 24-hour self-service check-in machines. Please help me find the addresses of 5 24-hour self-service check-in machines in Futian District and save them in Chinese in this open word document.",
   "source": "authors",
@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1H-GVXzyn30zxBKw02w5p5ZQzcwEZSlE4&export=download&authuser=0&confirm=t&uuid=da987f7a-7aa5-43d9-8426-741a97393726&at=APZUnTWyce0qNBfoOjOZ5pNRwIvX:1709971794981",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/7ff48d5b-2df2-49da-b500-a5150ffc7f18/All%20Locations.docx",
             "path": "/home/user/Desktop/AllLocations.docx"
           }
         ]
@@ -99,6 +99,9 @@
       }
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` google-chrome",

@@ -1,5 +1,5 @@
 {
-  "id": "6d72aad6-187a-4392-a4c4-ed87269c51cf",
+   "id": "6d72aad6-187a-4392-a4c4-ed87269c51cf",
   "snapshot": "libreoffice_calc",
   "instruction": "Could you please converting OpenOffice Impress presentation to video and play it with VLC?",
   "source": "https://superuser.com/questions/923171/converting-openoffice-impress-presentation-to-video-without-screen-recording",
@@ -14,6 +14,9 @@
   "evaluator": {
     "func": "infeasible"
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`FAIL`"

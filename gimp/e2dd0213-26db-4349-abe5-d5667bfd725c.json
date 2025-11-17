@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1KMHuScgF8Eq9OPR40SCntxO3Q1DUmbKV",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/e2dd0213-26db-4349-abe5-d5667bfd725c/orange_background.xcf",
             "path": "/home/user/Desktop/orange_background.xcf"
           }
         ]
@@ -53,7 +53,7 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.write(\"leftside_textbox\");pyautogui.press([\"enter\"]);"
+            "import time; import pyautogui; pyautogui.write(\"leftside_textbox\");time.sleep(1);pyautogui.press([\"enter\"]);"
           ]
         }
       },
@@ -87,6 +87,9 @@
       "dest": "leftside_textbox.png"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` the center of text box grid",

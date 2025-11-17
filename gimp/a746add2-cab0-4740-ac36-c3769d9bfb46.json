@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1IQPiNT6Vmd0YO0OytaB8lb_Dvo1mCGnP",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/a746add2-cab0-4740-ac36-c3769d9bfb46/dog_with_background.png",
             "path": "/home/user/Desktop/dog_with_background.png"
           }
         ]
@@ -37,7 +37,17 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.press([\"esc\"]);pyautogui.hotkey([\"ctrl\", \"q\"]);"
+            "import time; import pyautogui; pyautogui.press([\"esc\"]);time.sleep(1);pyautogui.hotkey([\"ctrl\", \"q\"]);time.sleep(1);"
+          ]
+        }
+      },
+      {
+        "type": "execute",
+        "parameters": {
+          "command": [
+            "python3",
+            "-c",
+            "import time; import pyautogui; pyautogui.press([\"right\"]);time.sleep(1);pyautogui.press([\"enter\"])"
           ]
         }
       },
@@ -48,24 +58,29 @@
         }
       }
     ],
-    "func": "check_config_status",
+    "func": "check_include_exclude",
+    "result": {
+      "type": "vm_command_line",
+      "command": "cat /home/user/.config/GIMP/2.10/action-history",
+      "shell": true
+    },
     "expected": {
       "type": "rule",
       "rules": {
-        "type:": "key-value",
-        "key": [
-          "history-item",
-          "\"filters-vignette\""
+        "include": [
+          "filters-vignette"
         ],
-        "value": "1"
+        "exclude": [
+          "error",
+          "failed",
+          "not found"
+        ]
       }
-    },
-    "result": {
-      "type": "gimp_config_file",
-      "file_name": "action-history",
-      "dest": "action-history"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` 'Filters' in the menu",

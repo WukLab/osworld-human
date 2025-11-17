@@ -1,7 +1,7 @@
 {
   "id": "1273e544-688f-496b-8d89-3e0f40aa0606",
   "snapshot": "libreoffice_calc",
-  "instruction": "Copy the \"Revenue\" column along with the header to a new sheet.",
+  "instruction": "Copy the \"Revenue\" column along with the header to a new sheet named \"Sheet2\".",
   "source": "SheetCopilot@123",
   "config": [
     {
@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?id=1VoEpRbXGxxrxIp-a2iGPqgVPQNdswQB-&export=download",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1273e544-688f-496b-8d89-3e0f40aa0606/NetIncome.xlsx",
             "path": "/home/user/NetIncome.xlsx"
           }
         ]
@@ -61,7 +61,7 @@
     "func": "compare_table",
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.google.com/uc?id=1J94ijzCqrop6eoKAelatAEP98FvbsrTU&export=download",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1273e544-688f-496b-8d89-3e0f40aa0606/3_NetIncome_gt1.xlsx",
       "dest": "3_NetIncome_gt1.xlsx"
     },
     "result": {
@@ -79,18 +79,21 @@
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on grey box with A for selecting entire column",
       "`HOTKEY` ctrl+c",
-      "`CLICK` on + to left of sheet1",
+      "`CLICK` on + to left of sheet1 if sheet2 does not exist, else click on sheet2",
       "`HOTKEY` ctrl+v"
     ],
     "grouped-action": [
       [
         "`CLICK` on grey box with A for selecting entire column",
         "`HOTKEY` ctrl+c",
-        "`CLICK` on + to left of sheet1",
+        "`CLICK` on + to left of sheet1 if sheet2 does not exist, else click on sheet2",
         "`HOTKEY` ctrl+v"
       ]
     ]

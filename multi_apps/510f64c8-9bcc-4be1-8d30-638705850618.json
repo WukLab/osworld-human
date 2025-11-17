@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=172YIofjzf_J4z1CIxqoqS-6t7Ng-ENg4&export=download",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/510f64c8-9bcc-4be1-8d30-638705850618/vscodeEvalExtension.zip",
             "path": "/home/user/Downloads/vscodeEvalExtension.zip"
           }
         ]
@@ -30,15 +30,15 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1Oz-JsoViKlS5hLBUJ772Bf8ErLCqfkVd&export=download&authuser=0&confirm=t&uuid=a957ab75-c9cc-4bb1-9fde-a9f6787d945b&at=APZUnTWNqtAOz6CZyaSmeHqyT4TL:1723046687217",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/510f64c8-9bcc-4be1-8d30-638705850618/main.py",
             "path": "/home/user/Desktop/project/main.py"
           },
           {
-            "url": "https://drive.usercontent.google.com/download?id=1vvHi6PL7RpX-i4OORf5BADkoeQ-mi4mC&export=download",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/510f64c8-9bcc-4be1-8d30-638705850618/README.md",
             "path": "/home/user/Desktop/project/README.md"
           },
           {
-            "url": "https://drive.usercontent.google.com/download?id=1rPs76hfueGaZQ8y4PePT2yeLYzYAlkNX&export=download",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/510f64c8-9bcc-4be1-8d30-638705850618/settings.json",
             "path": "/home/user/Desktop/project/.vscode/settings.json"
           }
         ]
@@ -113,31 +113,16 @@
       }
     ]
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`DOUBLE_CLICK` VS Code on desktop to open",
-      "`HOTKEY` 'Ctrl+Shift+P'",
-      "`TYPING` 'Shell'",
-      "`CLICK` 'Shell Command: Install 'code' command in PATH'",
-      "`PRESS` 'Enter'",
       "`HOTKEY` 'Ctrl+Alt+T'",
       "`TYPING` 'code ~/Desktop/project'",
       "`PRESS` 'Enter'"
     ],
     "grouped-action": [
-      [
-        "`DOUBLE_CLICK` VS Code on desktop to open"
-      ],
-      [
-        "`HOTKEY` 'Ctrl+Shift+P'"
-      ],
-      [
-        "`TYPING` 'Shell'"
-      ],
-      [
-        "`CLICK` 'Shell Command: Install 'code' command in PATH'",
-        "`PRESS` 'Enter'"
-      ],
       [
         "`HOTKEY` 'Ctrl+Alt+T'"
       ],

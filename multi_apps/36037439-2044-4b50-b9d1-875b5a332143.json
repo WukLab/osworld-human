@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1iTjv59rn8vcvUsh2-M7T5BLyNoutCwYo&export=download&authuser=0&confirm=t&uuid=cc13ea06-8d21-4d15-adb4-8fec94304bde&at=APZUnTX9ydwrAV0UPVKzYS9-LBlH:1709520068240",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/36037439-2044-4b50-b9d1-875b5a332143/shi17a.pdf",
             "path": "/home/user/Desktop/shi17a.pdf"
           }
         ]
@@ -33,7 +33,7 @@
         "command": [
           "python",
           "-c",
-          "import pyautogui; import time; pyautogui.hotkey('f11'); time.sleep(0.5); pyautogui.click(960, 540); time.sleep(0.5); pyautogui.scroll(-40)"
+          "import pyautogui; import time; pyautogui.hotkey('f11'); time.sleep(0.5); pyautogui.click({SCREEN_WIDTH_HALF}, {SCREEN_HEIGHT_HALF}); time.sleep(0.5); pyautogui.scroll(-40)"
         ]
       }
     }
@@ -61,49 +61,28 @@
       }
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` nano snake_game.py",
+      "`CLICK` to open google-chrome",
+      "`TYPING` Tianlin Shi Google Scholar",
       "`PRESS` Enter",
-      "`TYPING` Locate the game loop section where snake and food are updated",
-      "`TYPING` Check the collision condition, e.g., if snake[0] == food:",
-      "`TYPING` If missing, add: if snake[0] == food: ... (handle food eaten)",
-      "`TYPING` Append new segment to snake and generate new food position",
-      "`PRESS` Ctrl+O to save",
-      "`PRESS` Enter",
-      "`PRESS` Ctrl+X to exit",
-      "`TYPING` python3 snake_game.py",
-      "`PRESS` Enter"
+      "`CLICK` on 'Tianlin Shi - Google Scholar Citations' link"
     ],
     "grouped-action": [
       [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
+        "`CLICK` to open google-chrome"
       ],
       [
-        "`TYPING` nano snake_game.py",
+        "`TYPING` Tianlin Shi Google Scholar"
+      ],
+      [
         "`PRESS` Enter"
       ],
       [
-        "`TYPING` Locate the game loop section where snake and food are updated"
-      ],
-      [
-        "`TYPING` Check the collision condition, e.g., if snake[0] == food:"
-      ],
-      [
-        "`TYPING` If missing, add: if snake[0] == food: ... (handle food eaten)"
-      ],
-      [
-        "`TYPING` Append new segment to snake and generate new food position"
-      ],
-      [
-        "`PRESS` Ctrl+O to save",
-        "`PRESS` Enter",
-        "`PRESS` Ctrl+X to exit"
-      ],
-      [
-        "`TYPING` python3 snake_game.py",
-        "`PRESS` Enter"
+        "`CLICK` on 'Tianlin Shi - Google Scholar Citations' link"
       ]
     ]
   }

@@ -60,7 +60,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1cATYRGGbZ_vZEjJWajI1Dn4gmp3Won-l&export=download&authuser=0&confirm=t&uuid=156022ae-a56a-400c-a934-34e4369ec82a&at=APZUnTWMnGMhJciITn7IvRY33zuJ:1706707804986",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/a0b9dc9c-fc07-4a88-8c5d-5e3ecad91bcb/thunderbird-profile.tar.gz",
             "path": "/home/user/thunderbird-profile.tar.gz"
           }
         ]
@@ -118,8 +118,8 @@
       "type": "cloud_file",
       "multi": "true",
       "path": [
-        "https://drive.usercontent.google.com/download?id=1Fb2ofAjfn-wlIYbtIGXNvLJEB85KbO7Y&export=download&authuser=0&confirm=t&uuid=9a996347-9093-43ed-8ad2-7e769e0576bd&at=APZUnTUp2pvXjM0zGvjc22lewOv3:1706708252395",
-        "https://drive.usercontent.google.com/download?id=1LZ2PgwmVgO62dNOueWy7RLlJ1_d8Hz3E&export=download&authuser=0&confirm=t&uuid=f632abc2-3ff7-4e9f-a7c6-72c9bbc44654&at=APZUnTXihve7i15GwLyEx2rwDFUk:1706708265408"
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/a0b9dc9c-fc07-4a88-8c5d-5e3ecad91bcb/Amazon%20Web%20Services%20Invoice%20Available%20%5BAccount%3A%200123456789ab%5D.eml",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/a0b9dc9c-fc07-4a88-8c5d-5e3ecad91bcb/Your%20receipt%20from%20X%20(formerly%20Twitter)%20%230123-4567.eml"
       ],
       "dest": [
         "gold1.eml",
@@ -131,13 +131,14 @@
       ]
     }
   },
+  "proxy": true,
+  "fixed_ip": true,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` thunderbird",
-      "`PRESS` Enter",
+      "`CLICK` to open thunderbird",
       "`TYPING` In Thunderbird, navigate to the 'Bills' folder under your email account",
-      "`TYPING` Select all emails (e.g., `HOTKEY`'Ctrl+A')",
+      "`HOTKEY` Select all emails (e.g., `HOTKEY`'Ctrl+A')",
       "`RIGHT_CLICK` on selected emails",
       "`CLICK` 'Save As...' or 'Save Selected Messages > EML Format'",
       "`TYPING` Choose local folder to save emails (e.g., ~/Downloads/BillsBackup)",
@@ -146,20 +147,23 @@
       "`TYPING` cd ~/Downloads/BillsBackup",
       "`TYPING` for f in *.eml; do mv \"$f\" \"$(grep -m1 '^Subject:' \"$f\" | sed 's/Subject: //;s/[\\/:*?\"<>|]/_/g').eml\"; done",
       "`PRESS` Enter",
-      "`TYPING` mv *.eml ~/Google\\ Drive/emails/",
-      "`PRESS` Enter"
+      "`CLICK` open Google Drive tab",
+      "`CLICK` open folder 'emails'",
+      "`CLICK` open folder 'emails'",
+      "`RIGHT_CLICK` in the folder",
+      "`CLICK` upload files",
+      "`TYPING` select all .eml files from ~/Downloads/BillsBackup",
+      "`CLICK` upload"
     ],
     "grouped-action": [
       [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-        "`TYPING` thunderbird",
-        "`PRESS` Enter"
+        "`CLICK` to open thunderbird"
       ],
       [
         "`TYPING` In Thunderbird, navigate to the 'Bills' folder under your email account"
       ],
       [
-        "`TYPING` Select all emails (e.g., `HOTKEY`'Ctrl+A')",
+        "`HOTKEY` Select all emails (e.g., `HOTKEY`'Ctrl+A')",
         "`RIGHT_CLICK` on selected emails",
         "`CLICK` 'Save As...' or 'Save Selected Messages > EML Format'"
       ],
@@ -176,8 +180,25 @@
         "`PRESS` Enter"
       ],
       [
-        "`TYPING` mv *.eml ~/Google\\ Drive/emails/",
-        "`PRESS` Enter"
+        "`CLICK` open Google Drive tab"
+      ],
+      [
+        "`CLICK` open folder 'emails'"
+      ],
+      [
+        "`CLICK` open folder 'emails'"
+      ],
+      [
+        "`RIGHT_CLICK` in the folder"
+      ],
+      [
+        "`CLICK` upload files"
+      ],
+      [
+        "`TYPING` select all .eml files from ~/Downloads/BillsBackup"
+      ],
+      [
+        "`CLICK` upload"
       ]
     ]
   }

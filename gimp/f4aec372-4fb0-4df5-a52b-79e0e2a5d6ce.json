@@ -9,11 +9,11 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1p0m5meh7NIT4v6hNdqJqK3GCcpZiMapB",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/f4aec372-4fb0-4df5-a52b-79e0e2a5d6ce/Triangle_On_The_Side.png",
             "path": "/home/user/Desktop/Triangle_On_The_Side.png"
           },
           {
-            "url": "https://drive.google.com/uc?export=download&id=1w7f2fW2mWkUbteQvQd-lepHzvBC9GaG_",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/f4aec372-4fb0-4df5-a52b-79e0e2a5d6ce/Triangle_On_The_Side.xcf",
             "path": "/home/user/Desktop/Triangle_On_The_Side.xcf"
           }
         ]
@@ -57,7 +57,7 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.write(\"Triangle_In_The_Middle\");pyautogui.press([\"enter\"]);"
+            "import time; import pyautogui; time.sleep(1);pyautogui.write(\"Triangle_In_The_Middle\");time.sleep(1);pyautogui.press([\"enter\"]);"
           ]
         }
       },
@@ -73,7 +73,7 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.press([\"enter\"]);"
+            "import time; import pyautogui; time.sleep(1);pyautogui.press([\"enter\"]);"
           ]
         }
       },
@@ -91,6 +91,9 @@
       "dest": "Triangle_In_The_Middle.png"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` the center grid of the triangle",

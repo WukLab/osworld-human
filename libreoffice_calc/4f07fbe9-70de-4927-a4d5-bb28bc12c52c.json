@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1LHxVvEpLI7kp0Iiy8K74gwkoGiwcLeYP&export=download&authuser=0&confirm=t&uuid=690287ee-d413-46e7-9b01-c56c12e445ff&at=APZUnTVCSd_ajhMGWpEgLHiExfbf:1704199487820",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4f07fbe9-70de-4927-a4d5-bb28bc12c52c/Padding_Decimals_In_Formular.xlsx",
             "path": "/home/user/Padding_Decimals_In_Formular.xlsx"
           }
         ]
@@ -93,8 +93,8 @@
     "expected": {
       "type": "cloud_file",
       "path": [
-        "https://drive.usercontent.google.com/download?id=1DJTBic8_DREPhcau1GUkISfRm-L6xbBv&export=download&authuser=0&confirm=t&uuid=18e7d364-37fb-4e7f-baf1-9444ae5813ba&at=APZUnTXYuAaQ-Aa-2yqTn_2MXe0u:1704200380362",
-        "https://drive.usercontent.google.com/download?id=1Wy0Vf9Ivo6TLAv1nmkkkWTw0w14_hZIk&export=download&authuser=0&confirm=t&uuid=ad79fcff-1c23-4c11-aa47-a6a606f0a053&at=APZUnTUaukeh54t-7G1vWCms1AxS:1705896771858"
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4f07fbe9-70de-4927-a4d5-bb28bc12c52c/Padding_Decimals_In_Formular_gold.xlsx",
+        "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/4f07fbe9-70de-4927-a4d5-bb28bc12c52c/Padding_Decimals_In_Formular_gold-Sheet1.csv"
       ],
       "dest": [
         "Padding_Decimals_In_Formular_gold.xlsx",
@@ -112,6 +112,9 @@
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` cell D2",

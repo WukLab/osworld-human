@@ -61,7 +61,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=18TvzE8jnULU2g9XJsT-TaPEKcLGNVfu0&export=download&authuser=0&confirm=t&uuid=d914e031-9aa6-431b-81c0-73fcb87af027&at=APZUnTUx56WM_I3gnhHo-eZX__kx:1706158167271",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/897e3b53-5d4d-444b-85cb-2cdc8a97d903/form.docx",
             "path": "/home/user/Desktop/form.docx"
           }
         ]
@@ -92,18 +92,16 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=118wb7zmG8yP7DS1cImP9-GcOeKib3fLp&export=download&authuser=0&confirm=t&uuid=b82542fa-7731-4014-8ebc-d940f0fb83fe&at=APZUnTVkmL9rk3EpA0Ak5JLPEnJZ:1706101389421",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/897e3b53-5d4d-444b-85cb-2cdc8a97d903/form_gold.pdf",
       "dest": "form_gold.pdf"
     }
   },
+  "proxy": true,
+  "fixed_ip": true,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK`'LibreOffice Writer' icon",
-      "`CLICK`'File' menu",
-      "`CLICK`'Open...' option",
-      "`CLICK`'Desktop' in the file open dialog",
-      "`CLICK`'form.docx'",
-      "`CLICK`'Open' button",
       "`CLICK`'File' menu",
       "`CLICK`'Export As' submenu",
       "`CLICK`'Export as PDF...' option",
@@ -122,15 +120,6 @@
     "grouped-action": [
       [
         "`CLICK`'LibreOffice Writer' icon"
-      ],
-      [
-        "`CLICK`'File' menu",
-        "`CLICK`'Open...' option"
-      ],
-      [
-        "`CLICK`'Desktop' in the file open dialog",
-        "`CLICK`'form.docx'",
-        "`CLICK`'Open' button"
       ],
       [
         "`CLICK`'File' menu",

@@ -9,8 +9,8 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1MHk40tzMiyOwNbRj1W-_A-nIisk1TbuM&export=download&authuser=0&confirm=t&uuid=a8674a99-fb5f-4aeb-98ca-338197d73890&at=APZUnTW2thoQGMqgEyD0lNcRISJ_:1706006672423",
-            "path": "/home/user/cell_search.xlsx"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/f8cfa149-d1c1-4215-8dac-4a0932bad3c2/file.xls",
+            "path": "/home/user/cell_search.xls"
           }
         ]
       }
@@ -47,7 +47,7 @@
     {
       "type": "open",
       "parameters": {
-        "path": "/home/user/cell_search.xlsx"
+        "path": "/home/user/cell_search.xls"
       }
     }
   ],
@@ -65,17 +65,21 @@
       "type": "rule",
       "rules": {
         "expect": {
-          "pattern": "www\\.google\\.com.*?/search\\?q=Nereida&"
+          "pattern": "(?i)https?://(?:www\\.)?google\\.com/search\\?q=nereida(?:&|$|#).*"
         }
       }
     }
   },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on Libreoffice Calc window",
       "`CLICK` on Cell B6",
       "`HOTKEY` ['control', 'c']",
-      "`CLICK` on Chrome Calc window",
+      "`CLICK` on Chrome window",
+      "`CLICK` address bar",
       "`HOTKEY` ['control', 'v']",
       "`PRESS` enter"
     ],
@@ -90,7 +94,10 @@
         "`HOTKEY` ['control', 'c']"
       ],
       [
-        "`CLICK` on Chrome Calc window"
+        "`CLICK` on Chrome window"
+      ],
+      [
+        "`CLICK` address bar"
       ],
       [
         "`HOTKEY` ['control', 'v']",

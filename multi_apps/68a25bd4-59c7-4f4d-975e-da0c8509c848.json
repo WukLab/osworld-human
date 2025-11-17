@@ -9,16 +9,10 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1g2lhX7CtuT6kc2Bmss0WU5zT1eXnnbEU&export=download&authuser=0&confirm=t&uuid=37232f45-fedf-46c1-a292-f1080eb8c281&at=APZUnTV8C-zCWkPmRAc3BpiKz1uo:1709894768912",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/68a25bd4-59c7-4f4d-975e-da0c8509c848/rsc-ebook-collection-2023.xlsx",
             "path": "/home/user/Desktop/rsc-ebook-collection-2023.xlsx"
           }
         ]
-      }
-    },
-    {
-      "type": "open",
-      "parameters": {
-        "path": "/home/user/Desktop/rsc-ebook-collection-2023.xlsx"
       }
     },
     {
@@ -41,9 +35,9 @@
       }
     },
     {
-      "type": "activate_window",
+      "type": "open",
       "parameters": {
-        "window_name": "Google Chrome"
+        "path": "/home/user/Desktop/rsc-ebook-collection-2023.xlsx"
       }
     }
   ],
@@ -60,12 +54,12 @@
     "expected": [
       {
         "type": "cloud_file",
-        "path": "https://drive.usercontent.google.com/download?id=1kAp7ulAR_h4snny212yg1xyR1cMy3H2Q&export=download&authuser=0&confirm=t&uuid=3f6cb74c-63cc-4653-9083-00626ef2fc11&at=APZUnTWuXvVM2w1Q9h0hOsuX6thn:1709789680904",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/68a25bd4-59c7-4f4d-975e-da0c8509c848/paper01.pdf",
         "dest": "paper01_Gold.pdf"
       },
       {
         "type": "cloud_file",
-        "path": "https://drive.usercontent.google.com/download?id=1UMimItX51tzNXkIMGPpHOdPNF5Dx0Tpy&export=download&authuser=0&confirm=t&uuid=97b668a6-2d0d-4389-ac5e-234e931b4328&at=APZUnTVvuvbAE8r7jpK8AkzGUzyw:1709790384938",
+        "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/68a25bd4-59c7-4f4d-975e-da0c8509c848/ans.docx",
         "dest": "ans_Gold.docx"
       }
     ],
@@ -82,6 +76,9 @@
       }
     ]
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on window of chrome",

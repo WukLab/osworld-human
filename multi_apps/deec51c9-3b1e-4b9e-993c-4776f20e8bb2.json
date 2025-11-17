@@ -10,7 +10,7 @@
         "files": [
           {
             "path": "/home/user/Desktop/New Large Language Models.xlsx",
-            "url": "https://drive.google.com/uc?id=1NJFAUDzatd5TbBqXeCy3-ok4BWj-xayT&export=download"
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/deec51c9-3b1e-4b9e-993c-4776f20e8bb2/New%20Large%20Language%20Models.xlsx"
           }
         ]
       }
@@ -68,7 +68,7 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.google.com/uc?id=1BHOyjFo72b74YKWTqPMaoNvCzICkos-G&export=download",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/deec51c9-3b1e-4b9e-993c-4776f20e8bb2/New%20Large%20Language%20Models%20Gold.xlsx",
       "dest": "New Large Language Models Gold.xlsx"
     },
     "options": {
@@ -98,43 +98,124 @@
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "HOTKEY'Ctrl+Alt+T' open the terminal",
-      "TYPING firefox https://arxiv.org/list/cs.CL/pastweek?show=1000",
+      "TYPING chrome https://arxiv.org/list/cs.CL/pastweek?show=1000",
       "PRESS Enter",
-      "WAIT for browser to load",
       "SCROLL to find papers issued on 2023-10-11",
       "CLICK on relevant papers to open in new tabs",
-      "TYPING Extract paper title, arxiv PDF link, and date for each foundation model paper",
-      "HOTKEY'Ctrl+Tab' to switch to LibreOffice Calc",
-      "TYPING Paste each [paper title, arxiv link, date] into the corresponding row",
-      "PRESS Enter after each row"
+      "SCROLL Extract paper title, arxiv PDF link, and date for each foundation model paper",
+      "HOTKEY'Alt+Tab' to switch to LibreOffice Calc",
+      "`CLICK` the cell to enter",
+      "TYPING Paste each [paper title] into the corresponding row",
+      "PRESS Right",
+      "TYPING Paste each [arxiv link] into the corresponding row",
+      "PRESS Right",
+      "TYPING Paste each [date] into the corresponding row",
+      "`HOTKEY` 'Alt+Tab' to switch back to Chrome",
+      "SCROLL to find papers issued on 2023-10-11",
+      "CLICK on relevant papers to open in new tabs",
+      "SCROLL Extract paper title, arxiv PDF link, and date for each foundation model paper",
+      "HOTKEY'Alt+Tab' to switch to LibreOffice Calc",
+      "`CLICK` the cell to enter",
+      "TYPING Paste each [paper title] into the corresponding row",
+      "PRESS Right",
+      "TYPING Paste each [arxiv link] into the corresponding row",
+      "PRESS Right",
+      "TYPING Paste each [date] into the corresponding row",
+      "`HOTKEY` 'Alt+Tab' to switch back to Chrome",
+      "SCROLL to find papers issued on 2023-10-11",
+      "CLICK on relevant papers to open in new tabs",
+      "SCROLL Extract paper title, arxiv PDF link, and date for each foundation model paper",
+      "HOTKEY'Alt+Tab' to switch to LibreOffice Calc",
+      "`CLICK` the cell to enter",
+      "TYPING Paste each [paper title] into the corresponding row",
+      "PRESS Right",
+      "TYPING Paste each [arxiv link] into the corresponding row",
+      "PRESS Right",
+      "TYPING Paste each [date] into the corresponding row",
+      "`HOTKEY` 'Ctrl+S' save the sheet"
     ],
     "grouped-action": [
       [
         "HOTKEY'Ctrl+Alt+T' open the terminal"
       ],
       [
-        "TYPING firefox https://arxiv.org/list/cs.CL/pastweek?show=1000",
+        "TYPING chrome https://arxiv.org/list/cs.CL/pastweek?show=1000",
         "PRESS Enter"
       ],
       [
-        "WAIT for browser to load",
         "SCROLL to find papers issued on 2023-10-11"
       ],
       [
         "CLICK on relevant papers to open in new tabs"
       ],
       [
-        "TYPING Extract paper title, arxiv PDF link, and date for each foundation model paper"
+        "SCROLL Extract paper title, arxiv PDF link, and date for each foundation model paper"
       ],
       [
-        "HOTKEY'Ctrl+Tab' to switch to LibreOffice Calc"
+        "HOTKEY'Alt+Tab' to switch to LibreOffice Calc"
       ],
       [
-        "TYPING Paste each [paper title, arxiv link, date] into the corresponding row",
-        "PRESS Enter after each row"
+        "`CLICK` the cell to enter",
+        "TYPING Paste each [paper title] into the corresponding row",
+        "PRESS Right",
+        "TYPING Paste each [arxiv link] into the corresponding row",
+        "PRESS Right",
+        "TYPING Paste each [date] into the corresponding row"
+      ],
+      [
+        "`HOTKEY` 'Alt+Tab' to switch back to Chrome"
+      ],
+      [
+        "SCROLL to find papers issued on 2023-10-11"
+      ],
+      [
+        "CLICK on relevant papers to open in new tabs"
+      ],
+      [
+        "SCROLL Extract paper title, arxiv PDF link, and date for each foundation model paper"
+      ],
+      [
+        "HOTKEY'Alt+Tab' to switch to LibreOffice Calc"
+      ],
+      [
+        "`CLICK` the cell to enter",
+        "TYPING Paste each [paper title] into the corresponding row",
+        "PRESS Right",
+        "TYPING Paste each [arxiv link] into the corresponding row",
+        "PRESS Right",
+        "TYPING Paste each [date] into the corresponding row"
+      ],
+      [
+        "`HOTKEY` 'Alt+Tab' to switch back to Chrome"
+      ],
+      [
+        "SCROLL to find papers issued on 2023-10-11"
+      ],
+      [
+        "CLICK on relevant papers to open in new tabs"
+      ],
+      [
+        "SCROLL Extract paper title, arxiv PDF link, and date for each foundation model paper"
+      ],
+      [
+        "HOTKEY'Alt+Tab' to switch to LibreOffice Calc"
+      ],
+      [
+        "`CLICK` the cell to enter",
+        "TYPING Paste each [paper title] into the corresponding row",
+        "PRESS Right",
+        "TYPING Paste each [arxiv link] into the corresponding row",
+        "PRESS Right",
+        "TYPING Paste each [date] into the corresponding row"
+      ],
+      [
+        "`HOTKEY` 'Ctrl+S' save the sheet"
       ]
     ]
   }

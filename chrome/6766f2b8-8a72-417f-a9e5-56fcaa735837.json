@@ -1,7 +1,7 @@
 {
   "id": "6766f2b8-8a72-417f-a9e5-56fcaa735837",
   "snapshot": "chrome",
-  "instruction": "Could you help me install the unpacked extension at /home/user/Desktop/ in Chrome?",
+  "instruction": "Could you help me unzip the downloaded extension file from /home/user/Desktop/ to /home/user/Desktop/ and configure it in Chrome's extensions?",
   "source": "https://support.google.com/chrome/thread/205881926/it-s-possible-to-load-unpacked-extension-automatically-in-chrome?hl=en",
   "config": [
     {
@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?id=1t-6Qrpgox0UvqQ0EAhkCnSV8Rqsp4cMF&export=download",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/chrome/6766f2b8-8a72-417f-a9e5-56fcaa735837/helloExtension.zip",
             "path": "/home/user/Desktop/helloExtension.zip"
           }
         ]
@@ -18,7 +18,7 @@
     {
       "type": "execute",
       "parameters": {
-        "command": "echo password | sudo -S apt-get update -y && echo password | sudo -S apt-get install unzip -y && unzip /home/user/Desktop/helloExtension.zip -d /home/user/Desktop/ && rm /home/user/Desktop/helloExtension.zip",
+        "command": "echo {CLIENT_PASSWORD} | sudo -S apt-get update -y && echo {CLIENT_PASSWORD} | sudo -S apt-get install unzip -y && unzip /home/user/Desktop/helloExtension.zip -d /home/user/Desktop/ && rm /home/user/Desktop/helloExtension.zip",
         "shell": true
       }
     },
@@ -58,6 +58,9 @@
       }
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` URL bar",

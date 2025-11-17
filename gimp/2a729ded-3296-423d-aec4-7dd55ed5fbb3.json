@@ -9,11 +9,11 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1TOtPi1CQsWblGUtQ6AqayfjsPZ_THBJo",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2a729ded-3296-423d-aec4-7dd55ed5fbb3/dog_with_background.png",
             "path": "/home/user/Desktop/dog_with_background.png"
           },
           {
-            "url": "https://drive.google.com/uc?export=download&id=15YWmeOyUaA7vMX9Ts7-qyh82T8mHeepx",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/2a729ded-3296-423d-aec4-7dd55ed5fbb3/dog_cutout_gold.png",
             "path": "/home/user/Desktop/dog_cutout_gold.png"
           }
         ]
@@ -41,7 +41,7 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);"
+            "import time; import pyautogui; time.sleep(1);pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);"
           ]
         }
       },
@@ -57,7 +57,7 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.write(\"dog_without_background\");pyautogui.press([\"enter\"]);"
+            "import time; import pyautogui; time.sleep(1);pyautogui.write(\"dog_without_background\");time.sleep(1);pyautogui.press([\"enter\"]);"
           ]
         }
       },
@@ -73,7 +73,7 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.press([\"enter\"]);"
+            "import time; import pyautogui; time.sleep(1);pyautogui.press([\"enter\"]);"
           ]
         }
       },
@@ -96,6 +96,9 @@
       "dest": "dog_without_background.png"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` Fuzzy Select tool",

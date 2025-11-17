@@ -36,7 +36,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1WEDfILO-NijZBGArZ3ovO1933uHeOi1A&export=download&authuser=0&confirm=t",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/236833a3-5704-47fc-888c-4f298f09f799/raw_paper_reading_2024_03_01.docx",
             "path": "/home/user/Desktop/paper_reading_2024_03_01.docx"
           }
         ]
@@ -67,7 +67,7 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1wb0sQnVDCAz8sS49kO8boJIa1kqI5mx0&export=download&authuser=0&confirm=t",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/236833a3-5704-47fc-888c-4f298f09f799/paper_reading_2024_03_01.docx",
       "dest": "gold_paper_reading_2024_03_01.docx"
     },
     "options": {
@@ -76,55 +76,884 @@
       "ignore_order": true
     }
   },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` firefox https://huggingface.co/papers",
+      "`CLICK` chrome address bar",
+      "`TYPING` 'https://huggingface.co/papers/date/2024-03-01'",
       "`PRESS` Enter",
-      "`WAIT` for the Hugging Face Papers page to load",
-      "`SCROLL` navigate to March 1st, 2024",
-      "`CLICK` the section for papers on 1st March, 2024",
-      "`MOVE_TO` before the title, authors, publication venue, and URL for each paper",
-      "`DRAG_TO` after the title, authors, publication venue, and URL for each paper",
-      "`HOTKEY` 'Ctrl+C'",
-      "`HOTKEY`'Ctrl+Alt+T' open new terminal or reuse",
-      "`TYPING` libreoffice --writer ~/Desktop/daily_papers.docx",
+      "`DOUBLECLICK` on 'Griffin: Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models' title",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Title: ",
+      "`HOTKEY` Ctrl+V",
       "`PRESS` Enter",
-      "`WAIT` for document to open",
-      "`SCROLL` navigate to the end",
-      "`CLICK` to write",
-      "`HOTKEY` 'Ctrl+V' append the remaining paper entries under March 1st, 2024, matching the format of the first two",
-      "`SAVE` the document"
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Soham De' to 'Caglar Gulcehre' to select authors",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Authors: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Recurrent neural networks' to 'efficient distributed training.' to select abstract",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Abstract: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` to select 'https://arxiv.org/pdf/2402.19427.pdf'",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Arxiv PDF: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`DOUBLECLICK` on 'Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers' title",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Title: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Tsai-Shien Chen' to 'Sergey Tulyakov' to select authors",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Authors: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'The quality of the data' to 'across all the tasks.' to select abstract",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Abstract: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` to select 'https://arxiv.org/pdf/2402.19479.pdf'",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Arxiv PDF: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`DOUBLECLICK` on 'Humanoid Locomotion as Next Token Prediction' title",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Title: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Ilija Radosavovic' to 'Jitendra Malik' to select authors",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Authors: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'We cast real-world' to 'sensorimotor trajectories.' to select abstract",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Abstract: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` to select 'https://arxiv.org/pdf/2402.19469.pdf'",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Arxiv PDF: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`DOUBLECLICK` on 'MOSAIC: A Modular System for Assistive and Interactive Cooking' title",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Title: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Huaxiaoyue Wang' to 'Sanjiban Choudhury' to select authors",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Authors: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'We present MOSAIC' to 'challenges in this domain.' to select abstract",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Abstract: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.18796.pdf'",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Arxiv PDF: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`DOUBLECLICK` on 'Simple linear attention language models balance the recall-throughput tradeoff' title",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Title: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Simran Arora' to 'Christopher Ré' to select authors",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Authors: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Recent work has shown' to 'https://github.com/HazyResearch/based.' to select abstract",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Abstract: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.18668.pdf'",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Arxiv PDF: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`DOUBLECLICK` on 'Priority Sampling of Large Language Models for Compilers' title",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Title: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Dejan Grubisic' to 'Hugh Leather' to select authors",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Authors: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Large language models show' to 'in just 30 samples.' to select abstract",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Abstract: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.18734.pdf'",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Arxiv PDF: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`DOUBLECLICK` on 'DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models' title",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Title: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Muyang Li' to 'Song Han' to select authors",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Authors: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Diffusion models have achieved' to 'https://github.com/mit-han-lab/distrifuser.' to select abstract",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Abstract: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.19481.pdf'",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Arxiv PDF: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`DOUBLECLICK` on 'Trajectory Consistency Distillation' title",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Title: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Jianbin Zheng' to 'Tat-Jen Cham' to select authors",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Authors: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Latent Consistency Model (LCM)' to 'at high NFEs.' to select abstract",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Abstract: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.19159.pdf'",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Arxiv PDF: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`DOUBLECLICK` on 'ViewFusion: Towards Multi-View Consistency via Interpolated Denoising' title",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Title: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Xianghui Yang' to 'Anton van den Hengel' to select authors",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Authors: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` from 'Novel-view synthesis through' to 'detailed novel views.' to select abstract",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Abstract: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Alt+Tab",
+      "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.18842.pdf'",
+      "`HOTKEY` Ctrl+C",
+      "`HOTKEY` Alt+Tab",
+      "`TYPING` Arxiv PDF: ",
+      "`HOTKEY` Ctrl+V",
+      "`PRESS` Enter",
+      "`HOTKEY` Ctrl+S"
     ],
     "grouped-action": [
       [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-        "`TYPING` firefox https://huggingface.co/papers",
+        "`CLICK` chrome address bar",
+        "`TYPING` 'https://huggingface.co/papers/date/2024-03-01'",
         "`PRESS` Enter"
       ],
       [
-        "`WAIT` for the Hugging Face Papers page to load",
-        "`SCROLL` navigate to March 1st, 2024",
-        "`CLICK` the section for papers on 1st March, 2024"
+        "`DOUBLECLICK` on 'Griffin: Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models' title",
+        "`HOTKEY` Ctrl+C"
       ],
       [
-        "`MOVE_TO` before the title, authors, publication venue, and URL for each paper",
-        "`DRAG_TO` after the title, authors, publication venue, and URL for each paper",
-        "`HOTKEY` 'Ctrl+C'"
+        "`HOTKEY` Alt+Tab"
       ],
       [
-        "`HOTKEY`'Ctrl+Alt+T' open new terminal or reuse",
-        "`TYPING` libreoffice --writer ~/Desktop/daily_papers.docx",
-        "`PRESS` Enter",
-        "`WAIT` for document to open"
+        "`TYPING` Title: ",
+        "`HOTKEY` Ctrl+V"
       ],
       [
-        "`SCROLL` navigate to the end",
-        "`CLICK` to write"
+        "`PRESS` Enter"
       ],
       [
-        "`HOTKEY` 'Ctrl+V' append the remaining paper entries under March 1st, 2024, matching the format of the first two",
-        "`SAVE` the document"
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Soham De' to 'Caglar Gulcehre' to select authors",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Authors: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Recurrent neural networks' to 'efficient distributed training.' to select abstract",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Abstract: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` to select 'https://arxiv.org/pdf/2402.19427.pdf'",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Arxiv PDF: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`DOUBLECLICK` on 'Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers' title",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Title: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Tsai-Shien Chen' to 'Sergey Tulyakov' to select authors",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Authors: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'The quality of the data' to 'across all the tasks.' to select abstract",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Abstract: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` to select 'https://arxiv.org/pdf/2402.19479.pdf'",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Arxiv PDF: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`DOUBLECLICK` on 'Humanoid Locomotion as Next Token Prediction' title",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Title: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Ilija Radosavovic' to 'Jitendra Malik' to select authors",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Authors: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'We cast real-world' to 'sensorimotor trajectories.' to select abstract",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Abstract: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` to select 'https://arxiv.org/pdf/2402.19469.pdf'",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Arxiv PDF: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`DOUBLECLICK` on 'MOSAIC: A Modular System for Assistive and Interactive Cooking' title",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Title: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Huaxiaoyue Wang' to 'Sanjiban Choudhury' to select authors",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Authors: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'We present MOSAIC' to 'challenges in this domain.' to select abstract",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Abstract: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.18796.pdf'",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Arxiv PDF: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`DOUBLECLICK` on 'Simple linear attention language models balance the recall-throughput tradeoff' title",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Title: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Simran Arora' to 'Christopher Ré' to select authors",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Authors: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Recent work has shown' to 'https://github.com/HazyResearch/based.' to select abstract",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Abstract: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.18668.pdf'",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Arxiv PDF: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`DOUBLECLICK` on 'Priority Sampling of Large Language Models for Compilers' title",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Title: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Dejan Grubisic' to 'Hugh Leather' to select authors",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Authors: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Large language models show' to 'in just 30 samples.' to select abstract",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Abstract: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.18734.pdf'",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Arxiv PDF: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`DOUBLECLICK` on 'DistriFusion: Distributed Parallel Inference for High-Resolution Diffusion Models' title",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Title: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Muyang Li' to 'Song Han' to select authors",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Authors: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Diffusion models have achieved' to 'https://github.com/mit-han-lab/distrifuser.' to select abstract",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Abstract: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.19481.pdf'",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Arxiv PDF: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`DOUBLECLICK` on 'Trajectory Consistency Distillation' title",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Title: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Jianbin Zheng' to 'Tat-Jen Cham' to select authors",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Authors: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Latent Consistency Model (LCM)' to 'at high NFEs.' to select abstract",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Abstract: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.19159.pdf'",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Arxiv PDF: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`DOUBLECLICK` on 'ViewFusion: Towards Multi-View Consistency via Interpolated Denoising' title",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Title: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Xianghui Yang' to 'Anton van den Hengel' to select authors",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Authors: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` from 'Novel-view synthesis through' to 'detailed novel views.' to select abstract",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Abstract: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`CLICK` and `DRAG` to select 'https://arxiv.org/abs/2402.18842.pdf'",
+        "`HOTKEY` Ctrl+C"
+      ],
+      [
+        "`HOTKEY` Alt+Tab"
+      ],
+      [
+        "`TYPING` Arxiv PDF: ",
+        "`HOTKEY` Ctrl+V"
+      ],
+      [
+        "`PRESS` Enter"
+      ],
+      [
+        "`HOTKEY` Ctrl+S"
       ]
     ]
   }

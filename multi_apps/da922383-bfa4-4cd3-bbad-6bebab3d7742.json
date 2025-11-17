@@ -1,7 +1,7 @@
 {
   "id": "da922383-bfa4-4cd3-bbad-6bebab3d7742",
   "snapshot": "multiapps",
-  "instruction": "I browsed a lot of interesting blog articles today. I hope to store these articles in my local designated folder just like zotero stores papers. Please download the blogs opening now in pdf format and save them in their tile to /home/user/Documents/Blog.",
+  "instruction": "I browsed a lot of interesting blog articles today. I hope to store these articles in my local designated folder just like zotero stores papers. Please download the blogs opening now in pdf format and save them in their title to /home/user/Documents/Blog.",
   "source": "authors",
   "config": [
     {
@@ -45,7 +45,7 @@
         "parameters": {
           "files": [
             {
-              "url": "https://drive.usercontent.google.com/download?id=1fm4wqp91_3yzVSlenc9k2Tlh3-7QuRvu&export=download&authuser=0&confirm=t&uuid=5bb46f9e-ef04-4b52-bceb-a88f0058f696&at=APZUnTU6aWNzsiqLwAlyr_8pxKUd:1709971656456",
+              "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/da922383-bfa4-4cd3-bbad-6bebab3d7742/script.py",
               "path": "/home/user/Desktop/script.py"
             }
           ]
@@ -72,6 +72,9 @@
       }
     }
   },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY`'Ctrl+Alt+T' open the terminal",

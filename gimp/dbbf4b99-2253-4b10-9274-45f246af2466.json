@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1zcxzbQ5dp-mgpu0mom-LB8BKJH-V01Kr",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/dbbf4b99-2253-4b10-9274-45f246af2466/yicun.raw",
             "path": "/home/user/Desktop/yicun.raw"
           }
         ]
@@ -32,6 +32,9 @@
   "evaluator": {
     "func": "infeasible"
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`FAIL`"

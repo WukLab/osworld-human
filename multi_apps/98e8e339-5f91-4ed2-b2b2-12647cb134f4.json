@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1_1J2SvuTQSxSJk6lR2QlEiis7zSwdcmf",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/98e8e339-5f91-4ed2-b2b2-12647cb134f4/doc_proc.zip",
             "path": "/home/user/Desktop/doc_proc.zip"
           }
         ]
@@ -47,10 +47,13 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.google.com/uc?export=download&id=1nNoQoQUOfX-do0ZiFQcdJ0_rt2oGcr9Y",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/98e8e339-5f91-4ed2-b2b2-12647cb134f4/concat_gold.docx",
       "dest": "concat_gold.docx"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK`'VS Code' icon",
@@ -60,8 +63,9 @@
       "`CLICK`'LibreOffice Writer' icon",
       "`CLICK`'Insert' menu",
       "`CLICK`'File...' option",
-      "`CLICK`'Home' in the sidebar of the file picker dialog",
-      "`CLICK`'your_vscode_project_folder' (replace with actual project folder name)",
+      "`CLICK`Address bar in the sidebar of the file picker dialog",
+      "`TYPING`'/home/user/Desktop/doc_proc'",
+      "`PRESS` Enter",
       "`CLICK`'merged_temp.txt'",
       "`CLICK`'Insert' button",
       "`HOTKEY`'Ctrl+A' select all content in Writer",
@@ -93,8 +97,11 @@
         "`CLICK`'File...' option"
       ],
       [
-        "`CLICK`'Home' in the sidebar of the file picker dialog",
-        "`CLICK`'your_vscode_project_folder' (replace with actual project folder name)",
+        "`CLICK`Address bar in the sidebar of the file picker dialog",
+        "`TYPING`'/home/user/Desktop/doc_proc'",
+        "`PRESS` Enter"
+      ],
+      [
         "`CLICK`'merged_temp.txt'",
         "`CLICK`'Insert' button"
       ],

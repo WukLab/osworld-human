@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1MChpDlA3nkS8l8rCG9AU6vYz8kPv7eXS&export=download&authuser=0&confirm=t&uuid=2031ca44-b8f1-486e-a6f8-ee87518dc842&at=APZUnTVWaM1Pz6ZZ5hertMLxjb_v:1706003657696",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7e429b8d-a3f0-4ed0-9b58-08957d00b127/VLOOKUP_Fill_the_form.xlsx",
             "path": "/home/user/VLOOKUP_Fill_the_form.xlsx"
           }
         ]
@@ -61,7 +61,7 @@
     "func": "compare_table",
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1vjZj7KgfvEnAcXigUWGuIt1Xy6E2W_B5&export=download&authuser=0&confirm=t&uuid=f58e573f-ba94-4904-a5e4-4a7a4b095e6e&at=APZUnTVX7yytFQJQ2rdQ3o5zKVhd:1706003731041",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/7e429b8d-a3f0-4ed0-9b58-08957d00b127/VLOOKUP_Fill_the_form_gold.xlsx",
       "dest": "VLOOKUP_Fill_the_form_gold.xlsx"
     },
     "result": {
@@ -79,6 +79,9 @@
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` F2",

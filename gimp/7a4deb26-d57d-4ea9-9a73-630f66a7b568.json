@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1SIvX9Wimyw6i2UvnoLTNDHIObvDLAsIM&export=download&authuser=0&confirm=t&uuid=a48447ab-13a2-421f-9662-6ffff8f6f6d5&at=APZUnTVRxofs822XxgEv33WwYCkb:1705046264363",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/gimp/7a4deb26-d57d-4ea9-9a73-630f66a7b568/woman_sitting_by_the_tree.png",
             "path": "/home/user/Desktop/woman_sitting_by_the_tree.png"
           }
         ]
@@ -37,7 +37,7 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);"
+            "import time; import pyautogui; time.sleep(1);pyautogui.hotkey([\"shift\", \"ctrl\", \"e\"]);"
           ]
         }
       },
@@ -53,7 +53,7 @@
           "command": [
             "python3",
             "-c",
-            "import pyautogui; pyautogui.write(\"edited_darker\");pyautogui.press([\"enter\"]);"
+            "import time; import pyautogui; time.sleep(1);pyautogui.write(\"edited_darker\");time.sleep(1);pyautogui.press([\"enter\"]);"
           ]
         }
       },
@@ -92,6 +92,9 @@
       "dest": "edited_darker.png"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` the 'Colors' menu",

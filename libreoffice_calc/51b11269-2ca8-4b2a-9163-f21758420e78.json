@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.usercontent.google.com/download?id=1lMPR8itmrjesLPh8dqxrssNNnlQUSF8Y&export=download&authuser=0&confirm=t&uuid=f79c8ece-f42d-42dc-b320-9ee4d9a6b5d4&at=APZUnTUQAGyFOhO9mMS4r_Ap-cFy:1706001993533",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51b11269-2ca8-4b2a-9163-f21758420e78/Arrang_Value_min_to_max.xlsx",
             "path": "/home/user/Arrang_Value_min_to_max.xlsx"
           }
         ]
@@ -61,7 +61,7 @@
     "func": "compare_table",
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1gZq47ls5eD-YpRH8MIeEYOpYwAAUR_Ua&export=download&authuser=0&confirm=t&uuid=085c84a0-eb3f-4fe8-9fa0-6d2495985cc0&at=APZUnTVtt_9I5I8emixgM2hbnjMh:1706002085970",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/51b11269-2ca8-4b2a-9163-f21758420e78/Arrang_Value_min_to_max_gold.xlsx",
       "dest": "Arrang_Value_min_to_max_gold.xlsx"
     },
     "result": {
@@ -79,6 +79,9 @@
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` column D",

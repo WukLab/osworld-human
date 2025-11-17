@@ -1,7 +1,7 @@
 {
   "id": "58565672-7bfe-48ab-b828-db349231de6b",
   "snapshot": "chrome",
-  "instruction": "Can you assist me by opening the first link in the latest email in Bills folder from Thunderbird and displaying it in a new Chrome tab?",
+  "instruction": "Can you assist me by opening the first link in the latest email in Bills folder and displaying it in a new Chrome tab?",
   "source": "https://superuser.com/questions/1792660/open-link-from-other-application-does-not-open-the-url-in-firefox",
   "config": [
     {
@@ -37,7 +37,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?export=download&id=1z6W2bwbphINeAcRjtO0LgSN6UnHeUrZB",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/58565672-7bfe-48ab-b828-db349231de6b/thunderbird-profile.tar.gz",
             "path": "/home/user/thunderbird-profile.tar.gz"
           }
         ]
@@ -88,47 +88,28 @@
       }
     }
   },
+  "proxy": true,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` thunderbird",
-      "`PRESS` Enter",
-      "`WAIT`",
+      "`CLICK`to open thunderbird window",
       "`CLICK` on 'Bills' folder",
-      "`WAIT`",
       "`CLICK` on the latest email",
-      "`WAIT`",
-      "`CLICK` on the first link in the email body",
-      "`WAIT`"
+      "`CLICK` on the first link in the email body"
     ],
     "grouped-action": [
       [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
-      ],
-      [
-        "`TYPING` thunderbird",
-        "`PRESS` Enter"
-      ],
-      [
-        "`WAIT`"
+      "`CLICK`to open thunderbird window"
       ],
       [
         "`CLICK` on 'Bills' folder"
       ],
       [
-        "`WAIT`"
-      ],
-      [
         "`CLICK` on the latest email"
       ],
       [
-        "`WAIT`"
-      ],
-      [
         "`CLICK` on the first link in the email body"
-      ],
-      [
-        "`WAIT`"
       ]
     ]
   }

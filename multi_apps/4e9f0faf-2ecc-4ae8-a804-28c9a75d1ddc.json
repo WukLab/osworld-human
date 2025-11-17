@@ -18,7 +18,7 @@
             "trash": false
           },
           {
-            "url": "https://drive.usercontent.google.com/download?id=1KAhoPFM0AU2dgn_NRt3y7CjOr9Er4vwD&export=download&authuser=0&confirm=t&uuid=e8528cd1-5106-45f3-a644-e1bbf5e08278&at=APZUnTUnTuXfV2Ted_9Wv2QomMvA:1706181110208",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/4e9f0faf-2ecc-4ae8-a804-28c9a75d1ddc/invoice.pdf",
             "path": [
               "invoice.pdf"
             ]
@@ -76,7 +76,7 @@
     },
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.usercontent.google.com/download?id=1gkATnr8bk4JKQbzXZvzifoAQUA2sx5da&export=download&authuser=0&confirm=t&uuid=64ed0549-1627-49e8-8228-1e1925d6f6f7&at=APZUnTXkCm24SrOPuO5C6v4M3BiB:1706181091638",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/multi_apps/4e9f0faf-2ecc-4ae8-a804-28c9a75d1ddc/invoice.xlsx",
       "dest": "invoice_gold.xlsx"
     },
     "options": {
@@ -89,62 +89,208 @@
       ]
     }
   },
+  "proxy": true,
+  "fixed_ip": true,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` google-chrome https://drive.google.com",
+      "`HOTKEY` Ctrl+T",
+      "`TYPING` drive.google.com",
       "`PRESS` Enter",
-      "`CLICK` on the latest uploaded invoice",
-      "`CLICK` on 'Open with'",
-      "`CLICK` on 'Google Docs'",
-      "`WAIT`",
-      "`CLICK` on 'File'",
-      "`CLICK` on 'Download'",
-      "`CLICK` on 'Microsoft Excel (.xlsx)'",
-      "`WAIT` for download to complete",
-      "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-      "`TYPING` mv ~/Downloads/*.xlsx /home/user/Desktop/invoice.xlsx",
-      "`PRESS` Enter"
+      "`CLICK` on 'Recent' in the left navigation panel",
+      "`DOUBLECLICK` on 'invoice.pdf'",
+      "`HOTKEY` Ctrl+Alt+T",
+      "`TYPING` libreoffice --calc",
+      "`PRESS` Enter",
+      "`TYPING` Item Description",
+      "`PRESS` Tab",
+      "`TYPING` Quantity",
+      "`PRESS` Tab",
+      "`TYPING` Unit Price",
+      "`PRESS` Tab",
+      "`TYPING` Total",
+      "`PRESS` Enter",
+      "`TYPING` Web Design Services",
+      "`PRESS` Tab",
+      "`TYPING` 1",
+      "`PRESS` Tab",
+      "`TYPING` 500.00",
+      "`PRESS` Tab",
+      "`TYPING` 500.00",
+      "`PRESS` Enter",
+      "`TYPING` Logo Design",
+      "`PRESS` Tab",
+      "`TYPING` 1",
+      "`PRESS` Tab",
+      "`TYPING` 150.00",
+      "`PRESS` Tab",
+      "`TYPING` 150.00",
+      "`PRESS` Enter",
+      "`TYPING` SEO Optimization",
+      "`PRESS` Tab",
+      "`TYPING` 1",
+      "`PRESS` Tab",
+      "`TYPING` 200.00",
+      "`PRESS` Tab",
+      "`TYPING` 200.00",
+      "`PRESS` Enter",
+      "`TYPING` Web Hosting (1 Year)",
+      "`PRESS` Tab",
+      "`TYPING` 1",
+      "`PRESS` Tab",
+      "`TYPING` 100.00",
+      "`PRESS` Tab",
+      "`TYPING` 100.00",
+      "`PRESS` Enter",
+      "`TYPING` Domain Registration (1 Year)",
+      "`PRESS` Tab",
+      "`TYPING` 1",
+      "`PRESS` Tab",
+      "`TYPING` 15.00",
+      "`PRESS` Tab",
+      "`TYPING` 15.00",
+      "`PRESS` Enter",
+      "`TYPING` Email Setup and Configuratio",
+      "`PRESS` Tab",
+      "`TYPING` 1",
+      "`PRESS` Tab",
+      "`TYPING` 50.00",
+      "`PRESS` Tab",
+      "`TYPING` 50.00",
+      "`PRESS` Enter",
+      "`TYPING` Maintenance (1 Year)",
+      "`PRESS` Tab",
+      "`TYPING` 1",
+      "`PRESS` Tab",
+      "`TYPING` 300.00",
+      "`PRESS` Tab",
+      "`TYPING` 300.00",
+      "`PRESS` Enter",
+      "`TYPING` Total",
+      "`PRESS` Tab",
+      "`PRESS` Tab",
+      "`PRESS` Tab",
+      "`TYPING` 1315.00",
+      "`HOTKEY` Ctrl+Shift+S",
+      "`TYPING` invoice",
+      "`CLICK` on 'Save' button"
     ],
     "grouped-action": [
       [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
+        "`HOTKEY` Ctrl+T"
       ],
       [
-        "`TYPING` google-chrome https://drive.google.com",
+        "`TYPING` drive.google.com",
         "`PRESS` Enter"
       ],
       [
-        "`CLICK` on the latest uploaded invoice"
+        "`CLICK` on 'Recent' in the left navigation panel"
       ],
       [
-        "`CLICK` on 'Open with'"
+        "`DOUBLECLICK` on 'invoice.pdf'"
       ],
       [
-        "`CLICK` on 'Google Docs'"
+        "`HOTKEY` Ctrl+Alt+T"
       ],
       [
-        "`WAIT`"
-      ],
-      [
-        "`CLICK` on 'File'"
-      ],
-      [
-        "`CLICK` on 'Download'"
-      ],
-      [
-        "`CLICK` on 'Microsoft Excel (.xlsx)'"
-      ],
-      [
-        "`WAIT` for download to complete"
-      ],
-      [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal"
-      ],
-      [
-        "`HOTKEY`'Ctrl+Alt+T' open the terminal",
-        "`TYPING` mv ~/Downloads/*.xlsx /home/user/Desktop/invoice.xlsx",
+        "`TYPING` libreoffice --calc",
         "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` Item Description",
+        "`PRESS` Tab",
+        "`TYPING` Quantity",
+        "`PRESS` Tab",
+        "`TYPING` Unit Price",
+        "`PRESS` Tab",
+        "`TYPING` Total",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` Web Design Services",
+        "`PRESS` Tab",
+        "`TYPING` 1",
+        "`PRESS` Tab",
+        "`TYPING` 500.00",
+        "`PRESS` Tab",
+        "`TYPING` 500.00",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` Logo Design",
+        "`PRESS` Tab",
+        "`TYPING` 1",
+        "`PRESS` Tab",
+        "`TYPING` 150.00",
+        "`PRESS` Tab",
+        "`TYPING` 150.00",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` SEO Optimization",
+        "`PRESS` Tab",
+        "`TYPING` 1",
+        "`PRESS` Tab",
+        "`TYPING` 200.00",
+        "`PRESS` Tab",
+        "`TYPING` 200.00",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` Web Hosting (1 Year)",
+        "`PRESS` Tab",
+        "`TYPING` 1",
+        "`PRESS` Tab",
+        "`TYPING` 100.00",
+        "`PRESS` Tab",
+        "`TYPING` 100.00",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` Domain Registration (1 Year)",
+        "`PRESS` Tab",
+        "`TYPING` 1",
+        "`PRESS` Tab",
+        "`TYPING` 15.00",
+        "`PRESS` Tab",
+        "`TYPING` 15.00",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` Email Setup and Configuratio",
+        "`PRESS` Tab",
+        "`TYPING` 1",
+        "`PRESS` Tab",
+        "`TYPING` 50.00",
+        "`PRESS` Tab",
+        "`TYPING` 50.00",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` Maintenance (1 Year)",
+        "`PRESS` Tab",
+        "`TYPING` 1",
+        "`PRESS` Tab",
+        "`TYPING` 300.00",
+        "`PRESS` Tab",
+        "`TYPING` 300.00",
+        "`PRESS` Enter"
+      ],
+      [
+        "`TYPING` Total",
+        "`PRESS` Tab",
+        "`PRESS` Tab",
+        "`PRESS` Tab",
+        "`TYPING` 1315.00"
+      ],
+      [
+        "`HOTKEY` Ctrl+Shift+S"
+      ],
+      [
+        "`TYPING` invoice"
+      ],
+      [
+        "`CLICK` on 'Save' button"
       ]
     ]
   }

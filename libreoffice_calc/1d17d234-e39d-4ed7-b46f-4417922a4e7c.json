@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?id=1qILGOZpTwo2armXyGZM96ao-ydHRpZ_g&export=download",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1d17d234-e39d-4ed7-b46f-4417922a4e7c/FutureValue.xlsx",
             "path": "/home/user/FutureValue.xlsx"
           }
         ]
@@ -61,7 +61,7 @@
     "func": "compare_table",
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.google.com/uc?id=1KCTx2yEwTlSLa8doQ74ucE-opbCxQCeh&export=download",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1d17d234-e39d-4ed7-b46f-4417922a4e7c/5_FutureValue_gt1.xlsx",
       "dest": "5_FutureValue_gt1.xlsx"
     },
     "result": {
@@ -72,13 +72,110 @@
     "options": {
       "rules": [
         {
-          "type": "sheet_data",
-          "sheet_idx0": "RNSheet2",
-          "sheet_idx1": "ENSheet2"
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "A1",
+          "props": {
+            "value": {
+              "method": "eq",
+              "ref": "Investment Summary"
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "B1",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "C1",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "D1",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": false
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "A2",
+          "props": {
+            "value": {
+              "method": "eq",
+              "ref": "High Interest Rate"
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "B2",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "C2",
+          "props": {
+            "value": {
+              "method": "eq",
+              "ref": "Low Interest Rate"
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "D2",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": true
+            }
+          }
+        },
+        {
+          "type": "check_cell",
+          "sheet_idx": "RNSheet2",
+          "coordinate": "E2",
+          "props": {
+            "merge": {
+              "method": "eq",
+              "ref": false
+            }
+          }
         }
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on the + button to the left of 'Sheet1'",

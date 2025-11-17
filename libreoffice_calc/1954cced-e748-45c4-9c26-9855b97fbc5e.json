@@ -9,7 +9,7 @@
       "parameters": {
         "files": [
           {
-            "url": "https://drive.google.com/uc?id=1ydRPxPp5Cy1RIpURMwbgxE0ieAvCgQgC&export=download",
+            "url": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1954cced-e748-45c4-9c26-9855b97fbc5e/Invoices.xlsx",
             "path": "/home/user/Invoices.xlsx"
           }
         ]
@@ -61,7 +61,7 @@
     "func": "compare_table",
     "expected": {
       "type": "cloud_file",
-      "path": "https://drive.google.com/uc?id=1MK5UbXoEf0iqOgaC_V00oKx9PxB8i1Uo&export=download",
+      "path": "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/resolve/main/libreoffice_calc/1954cced-e748-45c4-9c26-9855b97fbc5e/8_Invoices_gt1.xlsx",
       "dest": "8_Invoices_gt1.xlsx"
     },
     "result": {
@@ -85,6 +85,9 @@
       ]
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`CLICK` on grey cell box A for selecting entire column",

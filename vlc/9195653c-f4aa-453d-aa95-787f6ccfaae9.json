@@ -7,7 +7,8 @@
     {
       "type": "launch",
       "parameters": {
-        "command": "VLC_VERBOSE=-1 vlc"
+        "command": "VLC_VERBOSE=-1 vlc --no-audio --no-video-title-show",
+        "shell": true
       }
     },
     {
@@ -16,7 +17,7 @@
         "command": [
           "python",
           "-c",
-          "import pyautogui; import time; pyautogui.click(960, 540); time.sleep(0.5);"
+          "import pyautogui; import time; pyautogui.click({SCREEN_WIDTH_HALF}, {SCREEN_HEIGHT_HALF}); time.sleep(0.5);"
         ]
       }
     }
@@ -39,7 +40,8 @@
       {
         "type": "launch",
         "parameters": {
-          "command": "vlc"
+          "command": "vlc --no-audio --no-video-title-show",
+          "shell": true
         }
       }
     ],
@@ -55,6 +57,9 @@
       "dest": "vlcrc"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY` 'Ctrl-P'",

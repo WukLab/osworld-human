@@ -41,6 +41,9 @@
       "dest": "keybindings.json"
     }
   },
+  "proxy": false,
+  "fixed_ip": false,
+  "possibility_of_env_change": "low",
   "human-ground-truth": {
     "single-action": [
       "`HOTKEY` 'ctrl-P'",
