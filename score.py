@@ -72,13 +72,13 @@ def get_human_tasks(human_path: str, use_query: bool = False) -> dict[TaskMeta, 
   for application in os.listdir(human_path):
     if application not in APPLICATIONS:
       continue # skip for now
-    app_path = os.path.join(os.path.join(human_path, application), "human")
+    app_path = os.path.join(os.path.join(human_path, application))
 
     if os.path.isdir(app_path):
       for task_file in os.listdir(app_path):
         if task_file.endswith(".json"):
           num_task_files += 1
-          with open(os.path.join(app_path, task_file), 'r') as f:
+          with open(os.path.join(app_path, task_file), 'r', encoding='utf-8') as f:
             num_task_files_opened += 1
             task_data = json.load(f)
             try:
