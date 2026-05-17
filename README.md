@@ -3,6 +3,8 @@
 
 Computer-use agents (CUAs) are often unusable due to extreme end-to-end latency—taking tens of minutes for tasks humans complete in just a few. We present the first temporal performance study of computer-use agents on OSWorld and find that large model calls for planning and reflection dominate latency, with later steps taking up to 3× longer than earlier ones. To measure efficiency, we introduce OSWorld-Human, a manually annotated version of OSWorld with human reference trajectories. Evaluating 16 agents, we find even top performers take 1.4–2.7× more steps than necessary.
 
+**This repository should not be used for training, as it contains solutions to the evaluation data for a popular benchmark.**
+
 ## News
 - <b>July 07, 2025</b>: OSWorld-Human blog post available on [mlsys.wuklab.io](https://mlsys.wuklab.io/posts/oshuman)
 - <b>June 19, 2025</b>: OSWorld-Human [research paper](https://arxiv.org/abs/2506.16042) available on arXiv.
